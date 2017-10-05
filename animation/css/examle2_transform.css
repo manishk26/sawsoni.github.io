@@ -1,0 +1,36 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+ body {
+ 	padding: 50px;
+ }
+ .parent {
+ 	width: 200px;
+ 	height: 150px;
+ 	background-color: aqua;
+
+
+ }
+ .child{
+ 	width: 200px;
+ 	height: 150px;
+ 	background-color: darkred;
+ 	transition: all 1s;
+ 	position: relative;
+ 	transform-origin:top center;
+
+
+ }
+
+  .parent:hover .child {
+	transform:rotateX(90deg);
+}
+
+.content {
+	position: absolute;
+	top: 40%;
+	left: 33%;
+	color: #fff;
+}

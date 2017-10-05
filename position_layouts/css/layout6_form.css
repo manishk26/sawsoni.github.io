@@ -1,0 +1,135 @@
+/*	body {
+
+	}*/
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	#wrapper {
+		width: 100%;
+		/*background-image: url('images/bgimage.jpg');*/
+		padding: 60px 100px;
+	}
+	/*==================*/
+	.search_parent {
+		width: 80%;
+		margin: 20px auto;
+		
+		position: relative;
+		/*border-radius: 5px;*/
+	}
+	.search_parent input {
+		display: block;
+		width: 100%;
+		height: 50px;
+		padding-left: 58px;
+		border: 2px solid #0F0B35;
+		font-size: 20px;
+		border-radius: 4px;
+		background-color: transparent;
+	}
+	.search_child {
+		position:absolute;
+		top: 1px;
+		left: 1px;
+		/*width: 55px;
+		height: 50px;*/ 
+		/*border: 2px solid #0F0B35;*/
+
+
+	}
+/*	div.search_child ,#search_icon {
+		font-size: 50px;
+		color: #0F0B35;
+	}*/
+	 .search_child a#search_icon  {
+		display: block;
+		width: 54px;
+		height: 48px;
+		font-size: 45px;
+		background-color:#0F0B35;
+		color: #FFF;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+
+	/*================*/
+	.form_page {
+		width: 80%;
+		margin: 0 auto;
+		background-color: #0F0B35;
+		padding: 50px 100px;
+	}
+	.form_page::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.parent {
+		width: 50%;
+		float: left;
+		padding: 20px 20px 50px 20px;
+		/*background-color: #f05;*/
+	}
+	div.child_one,div.child_two {
+		margin: 20px 0;
+	}
+	div.child_one h1, p {
+		color: #FFF;
+		margin-bottom: 40px;
+	}
+	div.child_one p {
+		letter-spacing: 2px;
+	}
+	/*==========*/
+	div.child_two input {
+		display: block;
+		padding: 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		width: 220px;
+		border: none;
+		border-radius: 5px;
+		/*font-size: 1em;*/
+	}
+	textarea {
+		padding: 10px;
+		width: 220px;
+		height: 100px;
+		border: none;
+		border-radius: 5px;
+		font-size: 1em;
+	}
+	div.child_two input[type="submit"] {
+		background-color: darkred;
+		color: #FFF;
+		font-size: 1em;
+	}
+	/*div#link {
+		padding-top: 50px;
+	}*/
+	ul#link_menu {
+		text-align: center;
+		list-style-type: none;
+
+	}
+	ul#link_menu li {
+		display: inline-block;
+		margin-right: 5px;
+		font-size: 30px;
+	}
+
+	ul#link_menu a {
+		display: block;
+		color: #FFF;
+		text-decoration: none;
+		width: 40px;
+		height: 40px;
+	}
+	/*
+		input, textarea:focus{
+			outline: 0;
+		}*/
+

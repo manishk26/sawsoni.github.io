@@ -1,0 +1,40 @@
+	body {
+		padding: 50px;
+	} 
+	#div1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+    margin-bottom: 50px;
+}
+
+	#div1:hover {
+    width: 300px;
+    height: 300px;
+ 	transform: rotate(180deg);
+}
+/*===========*/
+	/*CSS Syntax
+	perspective: length|none;*/
+
+#div2 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    /*-webkit-perspective: 150px;  Chrome, Safari, Opera  */
+    perspective: 150px;
+}
+
+#div3 {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    /*-webkit-transform: rotateX(45deg);  Chrome, Safari, Opera  */
+    transform: rotateX(45deg);
+}
+/*==========*/

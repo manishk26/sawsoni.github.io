@@ -1,0 +1,41 @@
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	body {
+		padding: 50px;
+	}
+	.trigger {
+		width: 250px;
+		height: 200px;
+		border: 20px solid #999;
+		background-color: #DDD;
+
+	}
+	/*syntex:shorthand
+		.element { transition: [property] [duration] [timeing-function] [delay]; }
+		.element {opacity 300ms ease-in-out 1s;}
+		(in side property it will go like width,height,opacity,background-color,font-size,
+			......we can wright (all)
+			*/
+		
+	.box {
+		display: inline-block;
+		width: 210px;
+		height: 160px;
+		background-color: pink;
+		/*transform: translate(200px,150px) rotate(20deg);*/
+		transition: transform 300ms ease-in-out 1s;
+		/*here we can use our timing function with cubic-bezier(0,0.47,0.32,1.97)*/
+		pointer-events: none;
+		/*with pointer-events:none now if i hover the .box steel animation will work*/
+
+	}
+	.trigger:hover .box {
+		transform: translate(200px,150px) rotate(20deg);
+	}
+	/*after use javascript*/
+	/*.trigger.clicked .box {
+		transform: translate(200px,150px) rotate(20deg);
+	}*/

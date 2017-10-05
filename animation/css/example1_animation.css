@@ -1,0 +1,39 @@
+* {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+ body {
+ 	padding: 50px;
+ }
+ .parent {
+ 	width: 200px;
+ 	height: 150px;
+ 	background-color: aqua;
+ 	/*transform-origin:right center;
+ 	transition: all 1s;*/
+ 	position: relative;
+
+ }
+ .child{
+ 	width: 200px;
+ 	height: 150px;
+ 	background-color: darkred;
+ 	transition: all 1s;
+ 	transform-origin:left center;
+ 	position: absolute;
+ 	/*left: 100%;*/
+ 	transform:rotate(90deg);
+
+ }
+
+/*  .parent:hover .child {
+	transform:rotate(90deg);
+}*/
+/*  .child:hover .parent {
+	transform:rotate(90deg);
+}*/
+
+.content {
+	 
+}

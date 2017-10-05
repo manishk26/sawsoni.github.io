@@ -1,0 +1,49 @@
+    body {
+        padding: 50px;
+    }
+    /*=========CSS Syntax-
+    perspective-origin: x-axis y-axis|initial|inherit;
+    x-axis  Defining where the view is placed at the x-axis
+
+    Possible values:
+
+    left
+    center
+    right
+    length
+    %
+    Default value: 50%
+
+    y-axis  Defining where the view is placed at the y-axis
+    
+    Possible values:
+
+    top
+    center
+    bottom
+    length
+    %
+    Default value: 50%
+    
+    ============*/
+    #div1 {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    /*-webkit-perspective: 150px;  Chrome, Safari, Opera */
+    /*-webkit-perspective-origin: 10% 10%; /* Chrome, Safari, Opera */
+    perspective: 150px;
+    perspective-origin: 10% 10%;
+}
+
+#div2 {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    /*-webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera */
+    transform: rotateX(45deg);
+}

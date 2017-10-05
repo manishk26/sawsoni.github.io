@@ -1,0 +1,107 @@
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body {
+		padding: 50px;
+	}
+	div {
+		margin-bottom: 100px;
+	}
+	.parent {
+		width: 50%;
+		float: left;
+	}
+	/* down */
+	#bubble_message_down {
+		width: 250px;
+		height: 100px;
+		background-color: #ABC;
+		border-radius: 10px;
+		position: relative;
+		
+
+	}
+	#bubble_message_down::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 100px;
+		/* equal to height */
+		left: 42%;
+
+		border-top: 22px solid #C05555;
+		/*border-left: 17px solid #C05555;*/
+		 border-left: 17px solid transparent;
+		/*border-right: 17px solid #C05555;*/
+		 border-right: 17px solid transparent;
+
+	}
+	/* top */
+	#bubble_message_top {
+		width: 250px;
+		height: 100px;
+		background-color: #ABC;
+		border-radius: 10px;
+		position: relative;
+		filter: drop-shadow(0 0 10px #000);
+	}
+	#bubble_message_top::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -20px;
+		left: 42%;
+
+		border-bottom:  22px solid #C05555;
+		/*border-left: 17px solid #C05555;*/
+		 border-left: 17px solid transparent;
+		/*border-right: 17px solid #C05555;*/
+		 border-right: 17px solid transparent;
+
+	}
+	/* right */
+	#bubble_message_right {
+		width: 250px;
+		height: 100px;
+		background-color: #ABC;
+		border-radius: 10px;
+		position: relative;
+	}
+	#bubble_message_right::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 39%;
+		left: 100%;
+
+		/*border-top:  22px solid #C05555;*/
+		border-top: 17px solid transparent;
+		 border-left: 17px solid #C05555;
+		/*border-right: 17px solid #C05555;*/
+		 border-bottom: 17px solid transparent;
+	}
+	/* left */
+	#bubble_message_left{
+		width: 250px;
+		height: 100px;
+		background-color: #ABC;
+		border-radius: 10px;
+		position: relative;
+	}
+	#bubble_message_left::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top:39%;
+		left: -20px;
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		border-right: 20px solid #C05555;
+		/*border-right: 20px solid transparent;*/
+		filter: drop-shadow(0 0 10px #000);
+
+	}
+
