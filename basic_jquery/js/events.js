@@ -17,8 +17,9 @@ var m = 0;
 // });
 
 $('#p1').mouseenter(function(){
-
-	console.log("n" + n++);//n = n + 1
+	var p = n++;
+	console.log("n" + p);//n = n + 1
+	$('#mydiv').html(p);
 });
 
 // =============
