@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>clearfix use</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/cf_layout.css">
+</head>
+<body>
+<div id="header">
+	<h1>Domain</h1>
+</div>
+<div class="clearfix">
+	<div class="column menu">
+		<ul>
+			<li><a href="">The class</a></li>
+			<li><a href="">The contant</a></li>
+			<li><a href="">The clear</a></li>
+			<li><a href="">The overflow</a></li>
+			<li><a href="">The display</a></li>
+			<li><a href="">The block</a></li>
+		</ul>
+	</div>
+	<!-- ul div end -->
+
+	<div class="column content">
+		<h1>The ClearFix</h1>
+		<p>The overflow:auto clearfix works well as long as you are able to keep control
+		 of your margins and padding (else you might see scrollbars). The new, 
+		 modern clearfix hack however, is safer to use, and the following code   
+		 is used for most webpages:clearfix::after {
+         content: "";
+         clear: both;
+         display: table;}</p>
+	</div>
+</div>
+
+<!-- clearfix div end here -->
+
+<div class="footer">
+	<p>Footer Text</p>
+</div>
+
+
+</body>
+</html>

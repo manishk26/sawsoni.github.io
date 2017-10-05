@@ -1,0 +1,234 @@
+	
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	#wrapper {
+		width: 100%;
+	}
+	/*#header_img {
+
+	}*/
+	header {
+		width: 100%;
+		background: #000;
+	}
+	#page_header {
+		width: 70%;
+		margin: 0 auto;
+		padding: 13px 0;
+		/*color: #FFF;*/
+	}
+	/*use clearfix*/
+	/*==========*/
+	#page_header {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	#logo h1 {
+		color: #fff;
+		float: left;
+		/*margin-left:100px;*/
+	}
+/*	.menu h1 span {
+		color: blue;
+	}*/
+	.menu {
+		list-style-type: none;
+		float: right;
+		/*margin-right:100px;*/
+		
+	}
+	.menu li {
+		display: inline-block;
+		
+	}
+	.menu a {
+		display: block;
+		width: 100px;
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+		color: #FFF;
+		text-decoration: none;
+
+	}
+	/*content_style inside the image style*/
+	.content_style {
+		text-align: center;
+		padding: 100px;
+		color: #fff;
+	
+
+	}
+	.content_style h1 {
+		font-size: 100px;
+		/*font-variant: small-caps;*/
+		/*all lowercase letters are converted to uppercase letters*/
+		text-transform: uppercase;
+	}
+	.content_style h6 {
+		font-size: 20px;
+		margin-bottom: 25px;
+		letter-spacing: 4px;
+		/*The letter-spacing property increases or decreases the space between characters in a text*/
+
+	}
+
+	.content_style a {
+		display: block;
+		width: 200px;
+		height: 40px;
+		background: #3EA7E4;
+		text-decoration: none;
+		line-height: 40px;
+		color: #FFF;
+		margin: 0 auto;
+	}
+
+	/*row_img style*/
+	/*============*/
+
+	#row1 {
+		width: 100%;
+	}
+	.row1_div {
+		width: 40%;
+		margin: 0 auto;
+		background-color: #3EA7E4;
+		padding:  100px ;
+		text-align: center;
+	}
+
+	.row1_content {
+		/*width: 90%;
+		background: #2E82B4;
+		margin: 0 auto;	*/
+	}
+	.row1_content h1 {
+		/*padding-bottom: 50px;*/
+		margin-bottom: 50px;
+		/*which one will good ask sir*/
+	}
+
+	/*row2 style*/
+	/*==========*/
+	.row2 {
+		width: 50%;
+		margin:100px auto;
+		text-align: center;
+	}
+	.row2 h1 {
+		padding-bottom: 20px;
+	}
+	.row2 p {
+		padding-bottom: 10px;
+	}
+
+	/*row3 style*/
+	/*==========*/
+	.row3 {
+		width: 100%;
+		/*background-color: #ccc;*/
+	}
+	/*use clearfix*/
+	.row3::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.row3 img {
+		width: 100%;
+	}
+	.row3_parent {
+		width: 33.33%;
+		float: left;
+		padding: 0 7px;
+	}
+	.row3_child {
+		margin: 5px 0;
+		/*padding: 0 7px;*/
+		/*i want space in between the image not left right ask sir*/
+	}
+	/*row4 style*/
+	/*===========*/
+	.row4 {
+		text-align: center;
+	}
+	.row4_child {
+		width: 60%;
+		margin: 100px auto;
+	}
+
+	.row4_child h1 {
+		padding-bottom: 15px;
+	}
+	/*row5 style*/
+	/*=========*/
+	.row5 {
+		width: 100%;
+		/*background-color: #ccc;*/
+	}
+	/*use clearfix*/
+	.row5::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.row5_parent img {
+		width: 100%;
+	}
+	.row5_parent {
+		width: 50%;
+		float: left;
+		/*padding: 0 7px;*/
+	}
+	.row5_child {
+		/*margin: 5px 0;*/
+
+	}
+
+	.row5_parent img:hover {
+		opacity: 0.5;
+
+	}
+
+	/*second row of row5 style*/
+	.sec_row5_parent img {
+		width: 100%;
+
+	}
+	
+	
+	.sec_row5_parent {
+		width: 50%;
+		float: left;
+		/*padding: 0 7px;*/
+	}
+	.sec_row5_child {
+		/*margin: 5px 0;*/
+		/*only one margin is consider browser default behaive*/
+	}
+	.sec_row5_parent img:hover {
+		opacity: 0.5;
+
+	}
+
+	/*=====footer style====*/
+
+	footer {
+		background-color: #000;
+		padding: 30px;
+		color: #FFF;
+		font-size: 30px;
+		text-align: center;
+	}
+
+
+
+
+
+

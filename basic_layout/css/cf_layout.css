@@ -1,0 +1,81 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#header, .footer {
+	background-color: #999;
+	color: white;
+	padding: 8px;
+	text-align: center;
+	font:bold 20px verdana;
+	border-radius: 5px;
+}
+
+.clearfix {
+	background-color: #AEABC5;
+}
+
+
+
+.column.menu {
+	/*background-color: #C57D19;*/
+	float: left;
+	width: 20%;
+}
+
+.column.content {
+	/*background-color: #B7C517;*/
+	float: left;
+	width:80%;
+	padding: 25px;
+	/*margin: 2px;*/
+
+}
+
+/**now use clearfix asudeo class*/
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+
+}
+
+/*now style ul*/
+.menu ul  {
+	list-style-type: none;
+	margin: 2px;
+	
+}
+
+.menu ul li {
+	padding: 8px;
+	margin-bottom: 8px;
+	/*with margin bottom got space between li*/
+	background-color: #C57D19; 
+	border-radius: 6px;
+}
+
+.menu ul li a {
+	/*background-color: #0099cc;*/
+	font: bold 20px verdana;
+	text-decoration: none;
+	color:#fff;
+	/*text-align: center;*/
+
+}
+/*.menu li a:hover {
+	background-color: #0099cc;
+}*/
+.menu ul li:hover{
+	background-color: #0099cc;
+}
+
+.content:hover {
+	background-color: #B7C517;
+}
+/*this the way we use Pseudo-class*/
+
+

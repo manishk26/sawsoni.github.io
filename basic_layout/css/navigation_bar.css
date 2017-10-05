@@ -1,0 +1,99 @@
+	
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	#wrapper {
+		width: 100%;
+	}
+	#container {
+		width: 90%;
+		margin: 0 auto;
+		background-color: #ABC;
+		
+	}
+	/*use class clearfix*/
+	.clearfix {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#container img, h4 {
+		float: left;
+	}
+	#container h4 {
+		padding: 50px 0;
+	}
+
+	ul#menubar {
+		float: right;
+		padding: 35px 0;
+	}
+
+	ul#menubar, ul.sub_service {
+		list-style-type: none;
+	}
+	/*work with li*/
+	/*==================*/
+	ul#menubar li {
+		/*border:  2px solid red;*/
+		/*display: inline-block;*/
+		float: left;
+		text-align: center;
+		margin-right: 8px;
+		position: relative;
+
+	}
+	ul.sub_service li {
+		clear: both;
+		/*display: block;*/
+		/*border: 1px solid green;*/
+		/*margin-top: 6px;*/
+		background-color: #ADF;
+
+	}
+	ul#menubar a {
+		display: block;
+		text-decoration: none;
+		width: 100px;
+		height: 40px;
+		line-height: 40px;
+		/*background-color: #ccc;*/
+		/*border: 1px solid darkred;*/
+		border-radius: 5px;
+		color: #000;
+	}
+
+	ul.sub_service a {
+		margin-top: 3px;
+	}
+
+	ul#menubar li:hover > a {
+		background-color: #CFC;
+	}
+	ul#menubar li:hover a:hover {
+		background-color: #FF0;
+	}
+
+	ul#menubar ul.sub_service {
+		/*display: block;*/
+		display: none;
+		position: absolute;
+		top: 37px;
+		left: 0;
+
+	}
+
+	ul#menubar li:hover .sub_service {
+		display: block;
+	}
+
+/*================================================================*/
+
+
+
+
+

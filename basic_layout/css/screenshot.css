@@ -1,0 +1,187 @@
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.wrapper {
+		width: 100%;
+		/*margin: 0 auto;*/
+	}
+	header {
+		background: #ABC;
+		padding:  20px;
+		margin-bottom: 40px;
+	}
+	.page_header {
+		width:90%;
+		margin: 0 auto;
+	}
+	/*use clearfix for page headerx*/
+	/*============*/
+	.page_header::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.page_header h2 {
+		float: left;
+	}
+	.menu {
+		float: right;
+		list-style-type: none;
+	}
+	.menu li {
+		float: left;
+	}
+	.menu a {
+		display: block;
+		width: 120px;
+		text-decoration: none;
+		font-weight: bold;
+		font-family: verdana;
+		line-height: 28px;
+		padding-left: 50px;
+		/*background: #ccc;*/
+	}
+	.menu a:hover {
+		color: #fff;
+	}
+
+	/*section  header part style start*/
+	/*=====================*/
+
+	.section_header {
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	.section_header h3 {
+		margin-bottom: 10px;
+		font-family: verdana;
+	}
+
+	.section_header hr {
+		width: 150px;
+		margin: 0 auto;
+		border: solid 3px black;
+		border-radius: 2px;
+
+	}
+	/*main section style*/
+	/*=====================*/
+	section {
+		/*background: #ccc;*/
+	}
+	/*clearfix for section class*/
+	/*========================*/
+	.main_section  {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.main_section {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.parent {
+		width: 50%;
+		float: left;
+		/*background-color: #9976DC;*/
+
+
+	}
+	.parent img {
+		width: 100%;
+		height: 392px;
+	}
+	
+
+	.child {
+		padding: 10px;
+		margin: 0 10px;
+
+	}
+	/*div with background image*/
+	/*====================*/
+
+	/*#style_parent {
+			background-image: url('image/bird.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 0 -100px;
+		}*/
+		#style_parent {
+			width: 100%;
+
+
+		}
+
+		#style_child {
+			width: 70%;
+			margin: 70px auto;
+			padding: 30px;
+			font-weight: bold;
+			color: #FFF;
+
+		}
+
+		#style_child h3 {
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			
+		}
+
+		/*main_div style start*/
+		/*====================*/
+		.main_div {
+			/*background: #ccc;*/
+			width: 90%;
+			margin: 0 auto;
+		}
+		/*clearfix use in maim_div*/
+		/*=========*/
+		.main_div::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.parent_div {
+			width: 33.33%;
+			float: left;
+			padding: 0 10px;
+		
+
+		}
+
+		.child_div {
+			background: #2E82B4;
+			margin:  20px 0;
+			border-radius: 5px;
+		}
+
+		.child_div h3 {
+			text-align: center;
+		}
+		.child_div h3, .child_div p {
+			padding: 10px;
+
+		}
+
+		/*footer style*/
+		/*============*/
+		footer {
+			background: #000;
+			color: #FFF;
+			padding: 30px;
+			text-align: center;
+		}
+
+
+	
+	

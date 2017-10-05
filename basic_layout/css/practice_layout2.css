@@ -1,0 +1,86 @@
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	#wrapper {
+		width: 100%;
+		/*background-color: #ABC;*/
+	}
+	/*header style*/
+	header {
+		/*width: 100%;*/
+		/*this width is required in responsive design*/
+	}
+	#container {
+		width: 90%;
+		margin: 0 auto;
+		/*background-color: #ccc;*/
+	}
+	/*use clearfix*/
+	#container::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	#container img, h4 {
+		float: left;
+	}
+
+	#container img {
+		width: 100px;
+		height: 120px;
+	}
+
+	#container h4 {
+		padding: 45px 45px 45px 0;
+		color: #ABC;
+	}
+
+	#container h4:hover {
+		color: #000;
+	}
+
+	#container ul {
+		float: right;
+		list-style-type: none;
+		padding: 40px;
+	}
+	#container li {
+		display: inline-block;
+		/*margin-right: 10px;*/
+		padding-right: 10px;
+	}
+
+	#container a {
+		/*background-color: #ccc;*/
+		display: block;
+		width: 90px;
+		height: 40px;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+		font-variant:small-caps;
+		/*color: #CCC;*/
+		color: #ABC;
+	}
+	#container a:hover  {
+		color: #000;
+	}
+	/*section part style*/
+	/*==rowimage div==*/
+	/*.rowimage {
+		background-image: url('image/fly-agaric.jpg');
+	}*/
+	.rowimage p {
+		font-size: 50px;
+		color: #FFF;
+		padding-bottom: 20px;
+		letter-spacing: 15px;
+	}
+
+
+
+
+
+	

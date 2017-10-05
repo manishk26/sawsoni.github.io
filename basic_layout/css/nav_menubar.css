@@ -1,0 +1,102 @@
+	
+	* {
+		margin: 0;
+		padding: 0;
+
+	}
+	body {
+		font-family: verdana;
+		padding: 50px;
+	}
+	h1 {
+		text-align: center;
+		border-bottom: 2px solid red;
+		margin-bottom: 50px;
+	}
+	/*rules for navigation menu*/
+	/*==================================*/
+
+	ul#navmenu, ul.sub1, ul.sub2  {
+		list-style-type: none;
+		/*outline: 2px solid red;*/
+		font-size: .9em;
+	}
+	ul#navmenu li {
+		/*border:  2px solid red;*/
+		width: 125px;
+		text-align: center;
+		position: relative;
+		float: left;
+		margin-right: 4px;
+	}
+	ul#navmenu a {
+		text-decoration: none;
+		display: block;
+		width: 125px;
+		height: 30px;
+		line-height: 30px;
+		background-color: #abc;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+	}
+	ul#navmenu .sub1 li {
+		/*border: 1px solid green;*/
+		/*margin-top: 6px;*/
+	}
+	ul#navmenu .sub1 a {
+		margin-top: 5px;
+	}
+	ul#navmenu .sub2 a {
+		margin-left: 10px;
+	}
+	ul#navmenu li:hover > a {
+		background-color: #CfC;
+		/*parent with child ,color path well show us*/
+		/*i am hover over the main parent as well as child*/
+	}
+	ul#navmenu li:hover a:hover {
+		background-color: #FF0;
+	}
+	/* here ul#navmenu is parent of ul.sub1 */
+	ul#navmenu ul.sub1 {
+		/*display: block;*/
+		display: none;
+		/*if we display none everthing will dis-appear*/
+		position: absolute;
+		/*i did  relative position to li of ul#navmenu before 
+		and he is parent*/
+		top: 26px;
+		left: 0px;
+	}
+
+	ul#navmenu ul.sub2 {
+		/*display: block;*/
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 125px;
+	}
+
+	ul#navmenu li:hover .sub1 {
+		display: block;
+	}
+	ul#navmenu  .sub1 li:hover .sub2 {
+		display: block;
+	}
+	.darrow {
+		font-size: 16px;
+		position: absolute;
+		top:8px;
+		right: 5px;
+	}
+	.rarrow {
+		font-size: 16px;
+		position: absolute;
+		top:10px;
+		right: 5px;
+	}
+
+
+
+
+

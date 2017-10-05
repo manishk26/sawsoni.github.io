@@ -1,0 +1,81 @@
+/**/
+	* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	}
+
+	.header {
+		background-color: #808080;
+       
+        padding: 25px 0;
+        /*width: 100%;*/
+
+	}
+
+	.header::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#space {
+		width:80%;
+		margin: 0 auto;
+		
+	}
+	/*with this div we get a space in left right margin*/
+
+	.logo {
+		float: left;
+		
+		
+	}
+
+	.menu {
+		float: right;
+		
+		
+		
+	}
+	.menu li {
+		display: inline-block;
+		margin-left: 18px;
+		text-align: center;
+		background-color: #0B9FDC;
+		border-radius: 5px;
+	
+		
+
+
+	}
+
+	.menu a {
+		display: block;
+		width: 120px;
+		/*this width will give full clickable area so width we should spacefay
+		with <a> only not in li*/
+		height: 40px;
+		line-height: 40px;
+		/*font: bold 20px verdana;*/
+		/*if we use font the the the line height will not came center*/
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+
+	}
+
+	.menu a:hover {
+		background-color: #6269DC;
+	}
+
+
+	
+
+		
+
+	
+
+
+
+	
