@@ -1,0 +1,61 @@
+ <html>
+ <head>
+    <title>Jquery dynamic table </title>
+     <script src="js/external/jquery/dist/jquery.js"></script>
+ </head>
+ <body>
+ <a href="#" id="insert-more"> Add New Row </a>
+
+    <br>
+<table>
+    <thead>
+        <th>Col 1</th>
+        <th>Col 2</th>
+        <th>Col 3</th>
+        <!-- <th>Col 4</th> -->
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <select name="code">
+                    <option value="1">Bus</option>
+                    <option value="2">Train</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" id="fee-1" class="fee" name="js-fee">
+            </td>
+            <td>
+                <input type="text" id="fee-2" class="fee" name="php-fee">
+            </td>
+            
+        </tr>
+    </tbody>
+</table>
+
+<script src="jquery.js"></script>
+<script>
+$("#insert-more").click(function () {
+ //console.log($('tbody',"#mytable").length);
+ $("table").each(function (a,b) {
+        console.log(b);
+     
+         var tds = '<tr>';
+         $('tr:last td', this).each(function () {
+
+        // jQuery.each($('tr:last td', this), function () {
+            tds += '<td>' + $(this).html() + '</td>';
+         });
+
+         tds += '</tr>';
+         if ($('tbody', this).length > 0) {
+             $('tbody', this).append(tds);
+         } else {
+             $(this).append(tds);
+         }
+     });
+ });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slider</title>
+</head>
+<body>
+	<div id="wrapperBGImage">
+	<div id="bgImage">
+		<a href="#"><p>STUDENT DREAM</p></a>
+
+		
+			<div id="slideImg"></div>
+		
+	
+		
+		</div>	
+	</div>
+
+
+
+
+	<script>
+		function Slider(data){
+		var i = 0;
+		var elem;
+
+		function _next(){
+			i = i + 1;
+			if(i > data.length - 1){
+				i = 0;
+			}
+		}
+
+		function slide(){
+			elem = data[i];
+			_next();
+			return elem;
+		}
+
+		return {slide};
+	}
+
+	var images= ['<img src="image/bgimage.jpg" width="500px",height="350px">','<img src="image/bird.jpg" width="500px",height="400px">','<img src="image/clover.jpg" width="500px",height="400px">','<img src="image/lime.jpg" width="500px",height="400px">','<img src="image/tree.jpg" width="500px",height="300px">'];
+
+	var count = Slider(images);
+	console.log(count.slide());
+	var c;
+
+	function updateDomElement(){
+		var e = document.getElementById('slideImg');
+		e.innerHTML = count.slide();
+	}
+
+	function callSetTime(){
+		 var c = setInterval(updateDomElement,3000);
+	}
+	function clearSetTime(){
+		clearInterval(c);
+	}
+	window.addEventListener('load',callSetTime);
+
+	</script>
+</body>
+</html>

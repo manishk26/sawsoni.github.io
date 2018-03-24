@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<input type="text" name="name" id="nameInput" placeholder="Soni/Reena">
+	<button id="btnName" onclick="checkNameDOM()"> check Name</button>
+	<p id="demoName"></p>
+
+	<script>
+			function checkName(namecheck){
+		var text;
+
+		switch(namecheck){
+			case "Soni":
+			text = 'she is Soni Saw.';
+			break;
+
+			case "Reena":
+			text = 'she is Reena chandra.';
+			break;
+
+			default:
+			text = 'wrong name.';
+		}
+
+		return text;
+	}
+
+	 function checkNameDOM(){
+	 	var name = document.getElementById('nameInput').value;
+	 	var collectName = checkName(name);
+	 	document.getElementById('demoName').innerHTML = collectName; 
+	 }
+	</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+#wrapper {
+		background-color: #ABC;
+		width: 80%;
+		margin: 20px auto;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	#myTable1{
+		width: 100%;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th,td{
+		border: 1px solid black;
+	}
+	#getStudentBtn {
+		display: block;
+		width: 120px;
+		margin: 5px 0 10px 10px;
+		height: 30px;
+		border-radius: 4px;
+		background-color: blue;
+		color: red;
+		font-size: 1.1em;
+	}
+
+	 #creatStudent {
+
+	 	display: block;
+		width: 150px;
+		margin: 15px 0 10px 10px;
+		height: 30px;
+		border-radius: 4px;
+		background-color: blue;
+		color: red;
+		font-size: 1.1em;
+
+	 }
+
+	 #studentCreatForm {
+
+	 	display: none;
+	 }
+
+	 label,input {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	#btnsubmit {
+		width: 70px;
+		height: 30px;
+		background-color: #CCC;
+	}

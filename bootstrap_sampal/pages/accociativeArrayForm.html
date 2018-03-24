@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Persion Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/accociativeArrayForm.css">
+	<link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../lib/awesome_fonts/css/font-awesome.css">
+	<script src="../lib/external/jquery/dist/jquery.js"></script>
+	<script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="../js/Model.js"></script>
+	<script src="../js/View.js"></script>
+</head>
+<body>
+	
+
+ <nav class="navbar navbar-inverse navbar-fixed-top "> <!-- navbar-fixed-top-->
+  <div class="container-fluid">
+    <div class="navbar-header bg">
+    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    	<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      	</button>
+    <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    	<!-- the value of button data-target will be id of div -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>
+        Page 1</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span>Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 4 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 4-1</a></li>
+            <li><a href="#">Page 4-2</a></li>
+            <li><a href="#">Page 4-3</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="navbar-form navbar-right" role="serch">
+      	<div class="form-group">
+      		<input type="text" class="form-control" placeholder="Search">
+      	</div>
+      	<button class="btn btn-default"> Submit</button>
+      </form>
+    </div>
+  </div>
+  </nav>
+	  <!-- nav end -->
+	
+  <div class="container">
+  	<div class="row main">
+  		<h1 ><i id="headText">PERSON INFORMATION:</i></h1>
+  			<form >
+  				<div class="form-group">
+							<label for="fName" class="cols-sm-2 control-label">FirstName:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="fname" id="fName"  placeholder="Enter your FirstName" required />
+								</div>
+							</div>
+						</div>
+  		
+  	
+  		<div class="form-group">
+  						<label for="lName" class="cols-sm-2 control-label">LastName:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="lname" id="lName"  placeholder="Enter your LastName"/>
+								</div>
+							</div>
+						</div>
+
+  		<div class="form-group">
+  						<label for="age" class="cols-sm-2 control-label">Age:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="number" class="form-control" name="age" id="age"  placeholder="Enter your Age "/>
+								</div>
+							</div>
+  						</div>
+  		<div class="form-group">
+  			<p  class="paraAddress">Current Address:</p>
+			<li>
+				<label for="streetAddress" class="cols-sm-2 control-label">StreetAddress:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-address-card-o" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="streetAddress" id="streetAddress"  placeholder="Enter your streetAddress"/>
+								</div>
+							</div>
+						</li>
+		<!-- ======== -->
+			<li>
+				<label for="city" class="cols-sm-2 control-label">City:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-address-card-o" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="city" id="city"  placeholder="Enter your city"/>
+								</div>
+							</div>
+						</li>
+		<!-- ======== -->
+			<li>
+				<label for="state" class="cols-sm-2 control-label">State:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-address-card-o" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="state" id="state"  placeholder="Enter your State"/>
+								</div>
+							</div>
+						</li>
+			<!-- ===== -->
+			<li>
+				<label for="postalCode" class="cols-sm-2 control-label">PostalCode:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-address-card-o" aria-hidden="true"></i></span>
+									<input type="number" class="form-control" name="postalCode" id="postalCode" placeholder="Enter your PinNo"/>
+								</div>
+							</div>
+						</li>
+	<!-- ======= -->
+			<p class="paraAddress">Permanent Address:</p>
+
+				<li>
+					<label for="streetAddress1" class="cols-sm-2 control-label">StreetAddress:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="streetAddress1" id="streetAddress1"  placeholder="Enter your streetAddress"/>
+								</div>
+							</div>
+						</li>
+			<!--=====  -->
+			<li>
+				<label for="city1" class="cols-sm-2 control-label">City:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="city1" id="city1"  placeholder="Enter your city"/>
+								</div>
+							</div>
+						</li>
+			<!--=====  -->
+
+			<li>
+				<label for="state1" class="cols-sm-2 control-label">State:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="state1" id="state1"  placeholder="Enter your State"/>
+								</div>
+							</div>
+						</li>
+			<!-- ====== -->
+			<li>
+				<label for="postalCode1" class="cols-sm-2 control-label">PostalCode:</label>
+							  <div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-address-book" aria-hidden="true"></i></span>
+									<input type="number" class="form-control" name="postalCode1" id="postalCode1" placeholder="Enter your PinNo"/>
+								</div>
+							</div>
+						</li>
+			<!-- ===== -->
+
+	</div>
+	<!-- address end-->
+	<div class="form-group">
+
+		<p class="paraAddress" >PhoneNumber:</p>
+
+		<li>
+			<label for="personal" class="cols-sm-2 control-label">Personal:</label>
+					<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-mobile"  aria-hidden="true"></i></span>
+									<input type="number" class="form-control" name="personal" id="personal" placeholder="Enter your personal mobile no"/>
+								</div>
+							</div>
+						</li>
+			<!-- ===== -->
+		<li>
+			<label for="fax" class="cols-sm-2 control-label">fax:</label>
+					<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+									<input type="number" class="form-control" name="fax" id="fax" placeholder="Enter your fax no"/>
+								</div>
+							</div>
+						</li>
+					</div>
+			
+	<!-- row end -->
+			<button id="btnsubmit" class="btn btn-success btn-md btn-block ">Submit</button>
+  		</form>
+  	</div>
+  		
+ </div>
+  <!-- ====== -->
+  <div class="container succesPanel">
+		<div class="col-xs-12 col-md-8">
+			<div class="row">
+			 	<div class="panel panel-success">
+			 		<div class="panel-heading">
+			      		<h3 class="panel-title">Person Added</h3>
+			   		</div>
+			  		<div class="panel-body">
+			    		
+			    	</div>
+			   </div>
+			</div>
+		</div>
+	</div>
+<!--====== -->
+<div class="container failurPanel">
+		<div class="col-xs-12 col-md-8">
+			<div class="row">
+			 	<div class="panel panel-danger">
+			 		<div class="panel-heading">
+			      		<h3 class="panel-title">Sorry Try Again</h3>
+			   		</div>
+			  		<div class="panel-body">
+			    		
+			    	</div>
+			   </div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

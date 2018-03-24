@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>layout 10 </title>
+	<title>Products</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/layout10.css">
 	<link rel="stylesheet" type="text/css" href="css/awesome_fonts/css/font-awesome.css">
@@ -18,10 +18,15 @@
 
 		}
 	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="js/external/jquery/dist/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script src="js/ajax/product_info_ajax.js"></script>
 </head>
 <body>
 
-	<div id="wrapper">
+	<div id="wrapper" class="container">
 		<header id="site_header">
 			<div class="site_header_container">
 				<div id="logo">
@@ -41,6 +46,7 @@
 						</ul>
 						</li>
 						<li><a href="">Contact</a></li>
+						<li><a href="feedback.html">Feedback</a></li>
 						
 					</ul>
 				</nav>
@@ -53,11 +59,7 @@
 		<!-- ============== -->
 		<section id="section_container">
 			<div class="image_container">
-				<div class="background_image">
-					<h3>CERAMIC-STUDIO</h3>
-					<p>Artisan Pottery</p>
-					<a href="">shop now</a>
-				</div>
+				
 				<!-- ================ -->
 				<div class="brand_icon">
 					<ul id="brand_icon_menu">
@@ -81,135 +83,43 @@
 				<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
 				
 			</div>
-			<!-- ======product image========= -->
-			<div class="product_image">
-			<!-- 1st row -->
-				<div class="parent">
-					<img src="images/hourglass.jpg" alt="img"/>
-					<div class="child">
-						<div class="content">
-							<a href="">Quick view</a>
-						</div>
-						<div class="price_tag">
-							<a href="">I'm a product</a>
-							<p>$85.00</p>
-						</div>
+			<!-- ======product image===appending image fron ajax in this  div====== -->
+			<div class="product_image" id="products_content">
+			
+			<!-- =========== -->
 
-					</div>
-				</div>
-				<div class="parent">
-					<img src="images/alarm-clock.jpg" alt="img" />
-					<div class="child">
-						<div class="content">
-							<a href="">Quick view</a>
-						</div>
-						<div class="price_tag">
-							<a href="">I'm a product</a>
-							<p>$85.00</p>
-						</div>
+			<!-- ======product details========= -->
+			<!-- <div class="product_image" id="product_details" style="display: none">
 
-					</div>
-				</div>
-				<div class="parent">
-					<img src="images/hourglass.jpg" alt="img" />
-					<div class="child">
-						<div class="content">
-							<a href="">Quick view</a>
-						</div>
-						<div class="price_tag">
-							<a href="">I'm a product</a>
-							<p>$85.00</p>
-						</div>
 
-					</div>
-				</div>
-				<!-- second row -->
-				<div class="parent">
-					<img src="images/hourglass.jpg" alt="img"  />
-					<div class="child">
-						<div class="content">
-							<a href="">Quick view</a>
-						</div>
-						<div class="price_tag">
-							<a href="">I'm a product</a>
-							<p>$85.00</p>
-						</div>
-
-					</div>
-				</div>
-				<div class="parent">
-					<img src="images/alarm-clock.jpg" alt="img"/>
-					<div class="child">
-						<div class="content">
-							<a href="">Quick view</a>
-						</div>
-						<div class="price_tag">
-							<a href="">I'm a product</a>
-							<p>$85.00</p>
-						</div>
-
-					</div>
-				</div>
-				<div class="parent">
-					<img src="images/hourglass.jpg" alt="img"/>
-					<div class="child">
-						<div class="content">
-							<a href="">Quick view</a>
-						</div>
-						<div class="price_tag">
-							<a href="">I'm a product</a>
-							<p>$85.00</p>
-						</div>
-
-					</div>
-				</div>
+			
+			</div> -->
+			<div id='blueDiv'>
+				
 			</div>
-			<!-- =========input=========== -->
-			<div class="contact_info">
-				<div class="info_parent1">
-					<div class="info_child2">
-						<h4>CERAMIC-STUDIO</h4>
-						<p>	A:500 Terry Francois St.San Francisco, CA 94158
-						T:123-456-7890
-						E:info@my-domain.com
-						</p>
-						<p> MON-FRI:7am -10pm
-							SATURDAY:8am -10pm
-							SUNDAY:8am -11pm
-						</p>
-						<p id="adress">
-							<a href="">FAQ/Shipping&#38;Returns/</a>
-							<a href="">Store Policy/</a>
-							<a href="">Payment Methods</a>
 
-						</p>
-					</div>
-				</div>
-				<!--  -->
-				<div class="info_parent1 " >
-					<div class="info_child2 " id="morespace">
-						<form id="" >
-							<div>
-								<input type="text" name="fname" id="fname" placeholder="Fname" required>
-							
-								<input type="text" name="lname" id="lname" placeholder="Lname" required>
-							</div>
-							<div>
-								<input type="email" name="email" id="email" placeholder="Email" required >
-							</div>
-							<div>
-								<textarea placeholder="Massage" id="massage_box"></textarea>
-							</div>
+      
+    </div>
+    
 
-							<div>
-								<input type="submit" name="send" id="field5" value="send">
-							</div>
-						</form>
-					</div>	
-
-				</div>
-				<!-- =========== -->
-			</div>
+			<!-- <! Modal -->
+		  <!-- <div class="modal fade" id="productModal" role="dialog">
+		    <div class="modal-dialog">
+		     -->
+		      <!-- Modal content->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Modal Header</h4>
+		        </div>
+		        <div class="modal-body">
+		          <p>Some text in the modal.</p>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		   </div> -->
+  </div>
 		</section>
 		<footer>
 			<p><b>&copy; copyright 2017</b></p>

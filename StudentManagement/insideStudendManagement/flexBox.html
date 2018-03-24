@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex box</title>
+	<style>
+	/*parent property for flex*/
+		#main {
+			display: flex;
+			flex-wrap: wrap;
+			/*flex-direction: column;*/
+			 /*justify-content: center;
+			 justify-content: space-around;
+			 justify-content: space-between;*/
+			 /*The align-items property aligns the items vertically ,if container has height*/
+			/* align-items: center;
+			 align-items: flex-start;
+			 align-items: stretch;
+			 align-items: baseline;*/
+			 /*A container with the align-items property set to baseline will align its items using the text baseline of all items.*/
+			 /*align-content: space-between;*/
+			 /*The align-content property aligns the item rows ,give space between row ,if ur container has height*/
+			/* align-content: stretch;
+			 align-content: center;
+			 align-content: flex-start;
+			 align-content: flex-end;*/
+
+			 /*Set both the justify-content and align-items properties to center, and the item will be perfectly centered in both axis:*/
+
+			  	/*justify-content: center;
+  				align-items: center;*/
+
+		}
+
+		#main > div {
+			width: 100px;
+			height: 100px;
+			border: 1px solid green;
+			flex-grow: 1;
+		}
+		#main > div:nth-of-type(2){
+			flex-grow: 2;
+		}
+		.flex-container {
+			display: flex;
+			flex-wrap: wrap;
+			background-color: #abc;
+			/*justify-content: space-between;*/
+			/*donot give child to flex grow,then justify-content will work*/
+			justify-content: space-around;
+		}
+		.flex-container > div {
+			width: 100px;
+			height: 100px;
+			border: 1px solid red;
+			/*flex-grow: 1;*/
+
+			margin:5px;
+		}
+		.flex-container > #div1{
+			order: 4;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div>1</div>
+		<div>2</div>
+		<div >3</div>
+		<div>4</div>
+		<div>5</div>
+	</div>
+
+	<div class="flex-container">
+  		<div id="div1">This is 1 ,has order property order:4</div>
+  		<div>2</div>
+  		<div>3</div> 
+  		<!-- <div>4</div> -->
+	</div>
+</body>
+</html>

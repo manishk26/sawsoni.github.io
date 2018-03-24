@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic table</title>
+	<script src="js/external/jquery/dist/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/dynamic_table.css">
+	<script type="text/javascript" src="js/dynamic_table.js"></script>
+</head>
+<body>
+	<code>
+		 <p>$#60 = < </p>
+		 <p>$#62 = > </p>
+		$('table').each(function(index,obj){ 
+
+ 			var tableRow = '$#60 tr $#62';
+ 				$('tr:last td').each(function(ind,object){ 
+
+ 					tableRow = tableRow + '$#60td$#62' + $(this).html()  + '$#60/td $#62';
+
+ 				}); 
+ 				tableRow = tableRow + '$#60/tr$#62';
+
+ 				console.log(tableRow );
+
+ 				$(this).append(tableRow);
+
+	</code>
+	<div id="wrapper">
+
+	<a href="#" id="rowButton" >Create new row </a>
+	<form>
+		<table border="1" id="myTable">
+			<thead>
+				<th>Communication</th>
+				<th>Persion Name</th>
+				<th>Persion Age</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="td box">
+						<select>
+							<option>Bus</option>
+							<option>Train</option>
+							<option>Car</option>
+						</select>
+					</td>
+					<td class="td box">
+						<input type="text" name="un" id="un">
+					</td>
+					<td class="td box">
+						<input type="text" name="ln" id="ln">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+</div>
+</body>
+</html>

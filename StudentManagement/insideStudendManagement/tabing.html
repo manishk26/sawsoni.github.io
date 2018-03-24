@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tabing</title>
+	<style>
+		.box { display: none;
+			background-color: red }
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#" id="btn1"><button>div1</button></a>
+		<a href="#" id="btn2"><button>div2</button></a>
+		<a href="#" id="btn3"><button>div3</button></a>
+	</header>
+
+	<div id="div1" class="text"><b>div1 </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam, reiciendis architecto ratione nostrum ullam unde asperiores minima magni, ea ex neque explicabo quisquam laborum quo officiis odio animi illo.</div>
+	<div id="div2" class="text box"><b>div2</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam, reiciendis architecto ratione nostrum ullam unde asperiores minima magni, ea ex neque explicabo quisquam laborum quo officiis odio animi illo.</div>
+	<div id="div3" class="text box"><b>div3</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nam, reiciendis architecto ratione nostrum ullam unde asperiores minima magni, ea ex neque explicabo quisquam laborum quo officiis odio animi illo.</div>
+
+	<script>
+		function hide(id){
+			var storeDiv = document.querySelectorAll('.text');
+			storeDiv.forEach(function(i,v){
+				i.style.display = 'none';
+			});
+
+			/*for(var i = 0; i < storeDiv.length; i++){storeDiv[i].style.display = 'none';}*/
+
+			document.getElementById(id).style.display = 'block';
+		}
+
+		btn1.addEventListener('click',function(){hide('div1')});
+		btn2.addEventListener('click',function(){hide('div2')});
+		btn3.addEventListener('click',function(){hide('div3')});
+
+
+	</script>
+</body>
+</html>

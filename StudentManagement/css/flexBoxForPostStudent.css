@@ -1,0 +1,168 @@
+	 body	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+	}
+
+	nav, .bg {
+		background-color: #0AB !important;
+	}
+
+	#myNavbar > ul > li > a ,.navbar-brand{
+		color: #A00 !important;
+	}
+/*===nav end===*/
+
+	.fieldsetParentDiv {
+	width: 90%;
+	margin: 100px auto;
+	display: flex;
+	/*flex-wrap: wrap;*/
+	/*shorthand property for flex-wrap and flex-direction*/
+	flex-flow: row wrap;
+	 /*flex-wrap: nowrap;*/
+	/*background-color: #ABC;*/
+	justify-content: space-around;
+	/*justify-content: flex-start;*/
+	 /*justify-content: flex-end;*/
+	 /*justify-content: space-between;*/
+	
+	}
+
+	.fieldsetParentDiv div:nth-child(1){
+		order: 1;
+		height: 300px;
+	}
+	
+
+
+
+	.fieldsetChildDiv {
+		/*flex-grow: 50%;*/
+		/*flex-grow: 1;*/
+		/*flex-basis: 45%;*/
+		/*shorthand of flex-grow,flex-shrink,flex-basis*/
+		/*Make the child element not growable, not shrinkable, and preferably 45% wide:*/
+		flex: 0 0 44%;
+		margin: 10px;
+		border: 1px solid red;
+		/*The align-self property overrides the default alignment set by the container's align-items property.*/
+		/*align-self: flex-start;*/
+		/*align-self: flex-end;*/
+		align-self: center;
+		padding: 12px;
+		background-color: #0AB;
+	}
+
+
+
+	.labelArea {
+		margin-right: 10px;
+	}
+
+	.inputArea {
+		display: block;
+		width: 500px;
+		border-radius: 3px;
+		border: 1px solid #0AD;
+		padding: 6px 12px;
+		margin-bottom: 5px;
+		font-size: .7em;
+
+	}
+
+	img{
+	display: block;
+	width: 550px;
+	height: 300px;
+	}
+
+	.fa-asterisk{
+		color: #A00;
+		vertical-align: super;
+	}
+	.buttonTD {
+		text-align: right;
+	}
+
+
+	.buttonTD > a >.btnAnc {
+		margin-top: 20px;
+		background-color: #0AB;
+		padding: 6px 10px;
+		border-radius: 3px;
+		color: #A00;
+		font-size: .8em
+	}
+
+	/*===transition effect==*/
+
+	.parentDiv {
+		position: relative;
+		text-align: center;
+ 		font-size: 1.2em;
+ 		color: #A00;
+ 		line-height: 300px;
+	}
+
+	.child{
+		position: absolute;
+		top: -1%;
+		left: -0.5%;
+		transition: all 1s;
+	 	transform-origin:top center;
+	}
+
+	.parentDiv:hover .child {
+		transform:rotateX(90deg);
+	}
+
+	/*===media responsive desige===*/
+
+
+  @media (max-width: 720px){
+
+  	.fieldsetParentDiv {
+  		flex-wrap:row wrap;
+  	}
+
+  	.fieldsetChildDiv {
+		flex:0 0 100%;
+        width: 100%;
+  	}
+  	.inputArea {
+  		width: 100%;
+  	}
+
+  	img{
+	width: 200px;
+	height: 300px;
+	}
+  }
+
+    @media (max-width: 1220px){
+
+  	.fieldsetParentDiv {
+  		flex-wrap:row wrap;
+  		justify-content: flex-start;
+  	}
+
+  	.fieldsetChildDiv {
+		flex:1 0 100%;
+        /*width: 100%;*/
+  	}
+  	.inputArea {
+  		width: 100%;
+  	}
+
+  	img{
+  	/*width: 100%;*/
+	width: 400px;
+	height: 300px;
+	}
+  }
+
+  /*Through normal css*/
+
+  

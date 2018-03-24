@@ -1,0 +1,148 @@
+	body {
+		padding: 0;
+		margin: 0;
+	}
+
+	 body > #wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		/*flex-wrap: wrap;*/
+	}
+
+	:root {
+		--main-bg-color:#0AB;
+	}
+
+	body > #wrapper > header,nav,main,aside,footer {
+		background-color: #CCC;
+		/*border-radius: 5px;*/
+		margin: 0.1%;
+		padding: 0.2%;
+		box-sizing: border-box;
+	}
+
+	body > #wrapper > header {
+		order: 1;
+		flex: 0 0 100% ;
+		position: relative;
+		border: 1px solid red;
+		background-color: var(--main-bg-color);
+		
+	}
+
+	 #leftMenu{
+	 	border: 1px solid red;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+		/*flex-wrap: wrap;*/
+		/*justify-content: space-around;*/
+		
+	}
+
+	body > #wrapper > header > nav > h3 {
+		 border: 1px solid red;
+		 margin-right: 12px;
+		 position: absolute;
+		 top: 10px;
+		 left: 10px;
+	}
+
+	 #leftMenu > li {
+	 	border: 1px solid red;
+	 	display: inline-block;
+		margin: 5px;
+		flex: 0 1 10%;
+	}	
+
+	#leftMenu > li > a {
+		display: block;
+		/*width: 100%;*/
+		background-color: #0AB;
+		line-height: 25px; 
+		padding: 5px;
+		text-align: center;
+		text-decoration: none;
+		color: #FFF;
+	}
+
+	#subMenu {
+		position: relative;
+		/*display: inline-block;*/
+	}
+
+	#subMenu  > .subMenuContent{
+		display: inline-block;
+		position: absolute;
+		top: 30px;
+		left: -4px;
+		display: none;
+		z-index: 1;
+	}
+
+	.subMenuContent > a {
+		text-decoration: none;
+		display: block;
+		margin: 7px;
+		background-color: #0AB;
+		line-height: 15px;
+		padding: 10px;
+		width: 100%;
+		width: 114px;
+		text-align: center;
+	}
+
+	#subMenu:hover  .subMenuContent {
+		display: block;
+	}
+
+
+
+
+
+	
+
+	
+
+	 /*.remove::-webkit-details-marker {
+	 	display: none;
+	 }*/
+
+	
+
+	body > #wrapper > main {
+		order: 2;
+		flex: 1 0 70%;
+		
+	}
+
+	body > #wrapper > aside {
+		order: 3;
+		flex: 1 0 200px;
+		
+	}
+
+	body > #wrapper > footer {
+		order: 4;
+		flex: 1 0 100% ;
+		
+	} 
+
+	@media (max-width: 700px){
+
+	body > #wrapper > header > nav > h3 {
+		display: none;
+	}
+	#leftMenu {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+	}
+
+	#leftMenu > li {
+		margin: 10px;
+		flex: 0 0 100%;
+
+		}
+	}
+

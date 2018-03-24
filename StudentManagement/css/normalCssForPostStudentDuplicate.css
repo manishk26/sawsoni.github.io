@@ -1,0 +1,191 @@
+.fieldsetParentDiv {
+		width: 90%;
+		margin: 80px auto;
+		/*background: #ABC;*/
+		box-sizing: border-box;
+		/*padding:10px;*/
+		
+	}
+	.fieldsetParentDiv:after {
+		display: table;
+		content: "";
+		clear: both;
+	}
+
+	.fieldsetChildDiv {
+		width: 49%;
+		float: left;
+		padding:10px;
+		margin-right: 5px;
+		box-sizing: border-box;
+		/*background-color: #0AA;*/
+		background-color: #0AB;
+
+
+	}
+	.fieldsetArea {
+		width: 100%;
+		/*border: 3px solid #ACD;*/
+		background-color: #0AB;
+		/*font-size: 1.2em;*/
+		padding: 10px;
+	}
+	.legendArea {
+		width: 100%;
+		color: rgb(36,38,105);
+		text-shadow: 1px 1px rgb(36,38,105);
+		border-bottom: 1px solid #0AA;
+	}
+	.labelArea {
+		color: #FFF;
+		/*font-size: 1.2em;*/
+		margin-right: 10px;
+
+	}
+	.fa-asterisk{
+		color: #A00;
+		vertical-align: super;
+		
+		
+	}
+
+	.inputArea {
+		display: block;
+		width: 400px;
+		border-radius: 3px;
+		border: 1px solid #0AD;
+		padding: 6px 12px;
+		margin-bottom: 5px;
+		font-size: .7em;
+
+	}
+	.buttonTD {
+		text-align:right;
+	}
+	.buttonTD > a >.btnAnc {
+		background-color: #0AB;
+		padding: 6px 10px;
+		border-radius: 3px;
+		color: #A00;
+		font-size: .8em;
+		
+	}
+
+	/*==img transition===*/
+
+	 .parentDiv ,img {
+	 	width: 100%;
+		/*padding: 7px;*/
+		/*display: block;*/
+ 		width: 600px;
+ 		height: 240px;
+ 		position: relative;
+ 		text-align: center;
+ 		font-size: 1.2em;
+ 		color: #A00;
+ 		line-height: 245px;
+ 	}
+ 	.child{
+ 		width: 100%;
+	 	width: 600px;
+	 	height: 242px;
+	 	background-color: #0AB;
+	 	position: absolute;
+		top: 0%;
+		left: 0%;
+	 	transition: all 1s;
+	 	transform-origin:top center;
+
+
+ 	}
+
+  	.parentDiv:hover .child {
+		transform:rotateX(90deg);
+	}
+
+
+	.content {
+		position: absolute;
+		top: 0%;
+		left: 0%;
+	}
+
+	/*make responsive*/
+	@media(max-width: 320px){
+		.fieldsetParentDiv {
+		width: 100%;
+		}
+		.fieldsetChildDiv {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		.fieldsetArea {
+		width: 100%;
+		}
+		.inputArea {
+		display: block;
+		width: 100%;
+		}
+
+		.parentDiv ,img {
+	 	width: 100%;
+	 	}
+
+	 	.parentDiv:hover .child {
+		transform:rotateX(90deg);
+	}
+	}
+
+		@media(max-width: 720px){
+		.fieldsetParentDiv {
+		width: 100%;
+		}
+		.fieldsetChildDiv {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		.fieldsetArea {
+		width: 100%;
+		}
+		.inputArea {
+		display: block;
+		width: 100%;
+		}
+
+		.parentDiv ,img {
+	 	width: 100%;
+	 	}
+
+	 	.parentDiv:hover .child {
+		transform:rotateX(90deg);
+	}
+	}
+			@media(max-width: 1220px){
+		.fieldsetParentDiv {
+		width: 100%;
+		}
+		.fieldsetChildDiv {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		.fieldsetArea {
+		width: 100%;
+		}
+		.inputArea {
+		display: block;
+		width: 100%;
+		}
+
+		.parentDiv {
+	 	width: 100%;
+	 	}
+
+	 	.content >p > img {
+	 		display: block;
+	 		/*width: 1200px;*/
+	 	}
+
+	 	.parentDiv:hover .child {
+		transform:rotateX(90deg);
+	}
+	}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<script src="../js/external/jquery/dist/jquery.js"></script>
+	<script>
+		//es5 way
+		/*function Calculator(x, y ){
+			this.x = x;
+			this.y = y;
+		}
+
+		Calculator.prototype.add = function(){
+			return this.x + this.y;
+		}*/
+
+		// model
+		class CalculatorModel{
+			constructor(){
+				this.x = 0;
+				this.y = 0;
+			}
+
+			add(){
+				return this.x + this.y;
+			}
+
+			subtract(){
+				return this.x - this.y;
+			}
+
+			multiply(){
+				return this.x * this.y;
+			}
+
+			divide(){
+				return this.x / this.y;
+			}
+		}
+
+		//view
+		// short form of $(document).ready(function(){});
+		$(function(){
+			var calculator = new CalculatorModel();
+
+			$('#x').on('change', function(){
+				calculator.x = parseInt($('#x').val());
+			})
+
+			$('#y').on('change', function(){
+				calculator.y = parseInt($('#y').val());
+			})
+
+			$('#addBtn').on('click', function(){
+				$('#addResult').html(calculator.add());
+				$('#substractResult').html(calculator.subtract());
+				$('#multiplyResult').html(calculator.multiply());
+				$('#divideResult').html(calculator.divide());
+			})
+		
+		})
+		
+		
+		
+	</script>
+</head>
+
+<body>
+	<lable for="x"><input type="text" id="x"></lable>
+	<lable for="y"><input type="text" id="y"></lable>
+	<button id="addBtn">Calculate</button>
+	<table>
+		<tr>
+			<td >+ Result:</td>
+			<td id='addResult'></td>
+		</tr>
+		<tr>
+			<td >- Result:</td>
+			<td id="substractResult"></td>
+		</tr>
+			<tr>
+			<td >* Result :</td>
+			<td id="multiplyResult"></td>
+		</tr>
+		<tr>
+			<td >/ Result :</td>
+			<td id="divideResult"></td>
+		</tr>
+	</table>
+	
+</body>
+</html>

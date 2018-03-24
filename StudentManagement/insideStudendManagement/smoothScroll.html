@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>smooth scroll</title>
+	<style>
+	#box1,#box2 ,#box3 {
+		background : #9DCEFF;
+		width: 400px;
+		height: 200px;
+	}
+	#box3 {
+		overflow: hidden;
+	}
+
+	#box4Parent {
+		position: relative;
+	}
+
+	#box4 {
+		background : #9DCEFF;
+		width: 400px;
+		height: 200px;
+		float: right;
+		/*position: absolute;*/
+		top: 500px;
+		/*left: -400px;*/
+	} 
+
+	
+	</style>
+</head>
+<body>
+	<h1>Smooth scroll</h1>
+	<a href="#" onclick="return false">click me</a>
+	<!-- if we do return false then in the address bar # will not visibal when we click -->
+	
+	<button onclick="changeBG('box1','#F0F')"> Magenta</button>
+	<button onclick="changeBG('box1','#0C0')"> Green</button>
+	<button onclick="changeBG('box1','#9DCEFF')"> blue</button>
+	<div id="box1">
+		
+	</div><br><br>
+
+	<button onclick="fadeOut('box2')"> fadeOut</button>
+	<button onclick="fadeIn('box2')"> fadeIn</button>
+	<div id="box2">
+		
+	</div><br><br>
+
+	<button onclick="slideClosed('box3')"> slideClosed</button>
+	<button onclick="slideOpen('box3')"> slideOpen</button>
+	<div id="box3">
+		div3 use overflow:hidden;
+	</div><br><br>
+
+	<button onclick="slideClosed('box3')"> slideClosed</button>
+	<button onclick="slideOpen('box3')"> slideOpen</button>
+	<div id="box4Parent">
+		<div id="box4">
+			
+		</div>
+	</div>
+	<script>
+		function changeBG(el,clr){
+			var elem = 	document.getElementById(el);
+			elem.style.transition = "background 1.0s linear 0s ";
+								// property duration animation delay
+			elem.style.background = clr;
+		}
+
+		function fadeOut(el){
+			var elem =document.getElementById(el);
+			elem.style.transition = 'opacity 1.0s ease-out 1s';
+			elem.style.opacity = 0;
+		}
+		function fadeIn(el){
+			var elem =document.getElementById(el);
+			elem.style.transition = 'opacity 1.0s ease-out 1s';
+			elem.style.opacity = 1;
+		}
+		function slideOpen(el){
+			var elem =document.getElementById(el);
+			elem.style.transition = 'height 1.0s ease-out 1s';
+			elem.style.height = '200px';
+		}
+		function slideClosed(el){
+			var elem =document.getElementById(el);
+			elem.style.transition = 'height 1.0s ease-out 1s';
+			elem.style.height = 0;
+		}
+
+		function slideIn(el){
+			var elem = document.getElementById(el);
+			elem.style.transition = ''
+		}
+	</script>
+</body>
+</html>

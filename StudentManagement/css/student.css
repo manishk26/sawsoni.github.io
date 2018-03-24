@@ -1,0 +1,369 @@
+  body {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+ 
+  .navbar {
+      background-color: #0AB !important;
+      color: black !important;
+  }
+  /*===================background image==================*/
+
+  #wrapperBGImage {
+      width: 90%;
+      margin: 150px auto;
+  }
+  #bgImage {
+      width: 100%;
+      background-image: url('../image/bgimage.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 100px -150px;
+      background-attachment: fixed;
+      /*padding: 100px 0 100px 0;*/
+      opacity: 0.9;
+      /*font-size:  3em;*/
+      /*text-align: center;*/
+      position: relative;
+  }
+  #bgImage>a {
+      text-decoration: none;
+      display: block;
+      color: #FFF;
+      letter-spacing: 10px;
+      text-align: right;
+      font-size: 3em;
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+  }
+  /*#ball{
+      width: 50px;
+      height: 50px;
+      box-shadow: 0 0 5px #000;
+      border-radius: 100%;
+      background: linear-gradient(#e3e3e3, #999);
+      position: absolute;
+      top: 200px;
+      left: 50px;
+    }*/
+
+  /*================slideimg======================*/
+
+  #bgImage>#slideImg {
+      /*border: 2px solid black;*/
+      position: absolute;
+      width: 500px;
+      height: 300px;
+      /*transition:all 0.7 10s;*/
+      left: 100px;
+      bottom: 0px;
+      overflow: hidden;
+      /*transition-timing-function:linear;*/
+      /*transition: all 1s;
+    transform-origin:top center;*/
+  }
+  /*=============student.html button=================*/
+.headerDiv {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+  #studentHeader {
+      background-color: #0AB;
+      padding: 5px;
+      text-align: center;
+      font-size: 2em;
+  }
+  .linkContainer>ul {
+      list-style: none;
+      width: 95%
+  }
+  .linkContainer>ul li {
+      display: inline-block;
+  }
+  
+  .buttonContainer>a>button {
+      font-size: 16px;
+  }
+  .linkContainer {
+      text-align: center;
+  }
+  .linkContainer>ul>li>a {
+      background-color: #0AB;
+      padding: 5px;
+      display: block;
+      width: 80px;
+      color: #FFF;
+      text-decoration: none;
+  }
+  .linkContainer>ul>li>a:hover {
+      text-decoration: underline;
+  }
+  .buttonContainer {
+      width: 95%;
+      margin: 5px;
+      text-align: right;
+      position: fixed;
+      top: 100px;
+      right: 20px;
+      border: 1px solid black;
+  }
+  .buttonContainer>a>button {
+      display: inline-block;
+      padding: 6px;
+      background-color: #0AB;
+      color: #FFF;
+  }
+  .buttonContainer>a {
+      text-decoration: none;
+  }
+  /*=====================================*/
+  #students {
+    margin-top: 140px;
+  }
+  .tableStyle {
+      /*width: 95%;*/
+      /*margin: 5px auto;*/
+      border-collapse: collapse;
+  }
+  .tableStyle th {
+      width: 32%;
+      background-color: #0AB;
+      color: #FFF;
+      padding: 10px;
+      border: 1px solid #0AB;
+  }
+  #stuTable > th {
+      padding: 10px;
+      border: 1px solid grey;
+  }
+  #studentList > tr > td {
+    width: 32%;
+    padding: 10px;
+    border: 1px solid grey;
+  }
+  .tableStyle tr:nth-child(even) {
+      background-color: #FFF;
+  }
+  .tableStyle tr:nth-child(even):hover {
+      background-color: #E6E6E6;
+  }
+  /*#stuTable > th >td{
+    border: 3px solid black;
+  }*/
+  /*=================studentDetail==========================*/
+  #studentDetail {
+    margin-top: 100px;
+  }
+
+  .detailLink  {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+  }
+  .detailLink:hover {
+    text-decoration: underline;
+    color: #0AA;
+  }
+
+  .detailFieldsetDiv {
+      /*width: 50%;*/
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+
+  }
+
+  .detailFieldset {
+    flex: 0 0 50%;
+    /*margin: 70px;*/
+    padding:30px; 
+    background-color: #0AB;
+    border: 2px solid #0AB;
+  }
+
+  .detailLegend > span {
+    color: #A0A;
+    cursor: pointer;
+  }
+
+  .detailTable {
+    color: #A00;
+  }
+
+  .detailTable  label:nth-of-type(1)  {
+    /*margin-right: 30px;*/
+  
+    }
+
+    .detailTable  td:nth-child(2) input {
+      display: inline-block;
+      padding: 5px;
+      width: 100%;
+    }
+
+    .detailTrBtn  {
+     /*text-align: right;*/
+
+    }
+
+
+
+
+
+
+  /*==================postStudent.html============*/
+
+  /*First define a custom property named "--main-bg-color", 
+    then use the var() function to insert the value of 
+    the custom property later in the style sheet:*/
+
+  :root {
+      --main-bg-color: #0AB;
+  }
+  .fieldsetChildDiv {
+      --main-shadow-h-size: 3px;
+      --main-shadow-v-size: 4px;
+      --main-shadow-b-size: 2px;
+      --main-shadow-color: #ABC;
+      /*box-shadow: horizontal vertical blur color */
+  }
+  .fieldsetParentDiv {
+      width: 90%;
+      margin: 100px auto;
+      display: flex;
+      /*flex-wrap: wrap;*/
+      /*shorthand property for flex-wrap and flex-direction*/
+      flex-flow: row wrap;
+      /*flex-wrap: nowrap;*/
+      /*background-color: #ABC;*/
+      /*justify-content: space-around;*/
+      /*justify-content: flex-start;*/
+      /*justify-content: flex-end;*/
+      /*justify-content: space-between;*/
+      justify-content: center;
+      align-items: center;
+  }
+  .fieldsetParentDiv div:nth-child(1) {
+      /*order: 1;*/
+      /*height: 300px;*/
+  }
+  .fieldsetChildDiv {
+      /*flex-grow: 50%;*/
+      /*flex-grow: 1;*/
+      /*flex-basis: 45%;*/
+      /*shorthand of flex-grow,flex-shrink,flex-basis*/
+      /*Make the child element not growable, not shrinkable, and preferably 45% wide:*/
+      /*flex: 0 0 43%;*/
+      margin: 10px;
+      /*border: 1px solid red;*/
+      /*The align-self property overrides the default alignment set by the container's align-items property.*/
+      /*align-self: flex-start;*/
+      /*align-self: flex-end;*/
+      /*align-self: center;*/
+      padding: 12px;
+      background-color: #0AB;
+      box-shadow: var(--main-shadow-h-size) var(--main-shadow-v-size) var(--main-shadow-b-size) var(--main-shadow-color);
+  }
+
+  .fieldsetArea {
+    padding: 20px;
+    border: 2px solid #0AB;
+
+  }
+
+  .fieldsetArea  table  {
+    border-collapse: collapse;
+  }
+
+  .fieldsetArea table > tr > td {
+    padding: 15px;
+  }
+
+  .legendArea{
+    color: #A0A;
+  }
+
+
+  .labelArea {
+      margin-right: 10px;
+  }
+  .inputArea {
+      display: block;
+      width: 500px;
+      /*border-radius: 3px;*/
+      /*border: 1px solid #0AD;*/
+      padding: 6px 12px;
+      margin-bottom: 5px;
+      font-size: .7em;
+  }
+  .content>p>img {
+      /*display: block;*/
+      width: 100%;
+      height: 310px;
+  }
+  .fa-asterisk {
+      color: #A00;
+      vertical-align: super;
+  }
+  .buttonTD {
+      text-align: right;
+  }
+  .buttonTD> a {
+    text-decoration: none;
+  }
+  .buttonTD> a >.btnAnc {
+      margin-top: 20px;
+      background-color: #0AB;
+      padding: 6px 10px;
+      /*border-radius: 3px;*/
+      color: #A00;
+      font-size: .8em;
+      cursor: pointer;
+  }
+  /*===transition effect==*/
+
+  .parentDiv {
+      position: relative;
+      text-align: center;
+      font-size: 1.2em;
+      color: #A00;
+      line-height: 300px;
+  }
+  .child {
+      position: absolute;
+      top: -2%;
+      left: -0.3%;
+      transition: all 1s;
+      transform-origin: top center;
+  }
+  .parentDiv:hover .child {
+      transform: rotateX(90deg);
+  }
+  /*===media responsive desige===*/
+
+  @media (max-width: 1220px) {
+      .fieldsetParentDiv {
+          flex-wrap: row wrap;
+          justify-content: flex-start;
+      }
+      .fieldsetChildDiv {
+          flex: 1 0 100%;
+          /*width: 100%;*/
+      }
+      .inputArea {
+          width: 100%;
+          width: 200px;
+      }
+      .content>p>img {
+          /*width: 100%;*/
+          width: 100%;
+          height: 300px;
+      }
+  }
+  /*==========postStudent.html end =====*/

@@ -1,0 +1,6 @@
+		
+		select ,option,input,button {
+			display: block;
+			width: 200px;
+			margin-top: 10px;
+		}

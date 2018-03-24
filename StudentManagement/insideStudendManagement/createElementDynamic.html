@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>create element</title>
+</head>
+<style>
+	#move_out_event{
+			width: 220px;
+			height: 100px;
+			background: linear-gradient(#000, #159, #953);
+			border-radius: 20px;
+		}
+	#ball{
+			width: 50px;
+			height: 50px;
+			box-shadow: 0 0 5px #000;
+			border-radius: 100%;
+			background: linear-gradient(#e3e3e3, #999);
+			position: absolute;
+			top: 200px;
+			left: 50px;
+		}
+</style>
+<body>
+
+	
+	<!-- ball -->
+	<div onmousemove="myFunction(event)" onmouseout="secFunc()" id="move_out_event"></div>
+	<p id="ex_4"></p>
+	<div id="ball"></div>
+	<!-- ball -->
+
+	<div id="demoid"></div>
+	<div id="demo"></div>
+	<button onclick="myFunction1('p','i am para','demo')">getElemnt</button>
+
+<hr>
+<br>
+	<!-- ====== -->
+	
+
+
+
+
+
+	<script>
+		
+	function myFunction() {
+	    var btn = document.createElement("BUTTON");
+	    var t = document.createTextNode("CLICK ME");
+	    btn.appendChild(t);
+	    document.getElementById('demoid').appendChild(btn);
+	}
+	myFunction();
+	
+
+	function myFunction1(e,t,i) {
+	    var btn = document.createElement(e);
+	    var t = document.createTextNode(t);
+	    btn.appendChild(t);
+	    document.getElementById(i).appendChild(btn);
+	}
+
+	/*ball*/
+	function myFunction(e) {
+	
+	 var x = e.clientX;
+   	 var y = e.clientY;
+   	 var ball = document.getElementById('ball');
+   	 ball.style.top = y+"px";
+   	 ball.style.left = x+"px";
+
+	var randomText = "I'm visible now....!!";
+    document.getElementById("ex_4").innerHTML = randomText;
+	}
+	function secFunc() {
+    document.getElementById("ex_4").innerHTML = "";
+	}
+
+
+
+	/*===*/
+
+	 
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+html,body {
+	box-sizing: border-box;
+}
+
+#div1 {
+	height: 40px;
+	width:90%;
+	padding: 0;
+	margin: 0 auto;
+	background-color: #ABC;
+}
+
+.table1 {
+	/*text-align: center;*/
+	font-family: Arial;
+	font-size: 15pt;
+	width: 100%;
+	color: #FFF;
+
+}
+.table1 th {
+	padding: 5px;
+}
+
+#div2 {
+	height: 100px;
+	width: 90%;
+	margin: 0 auto;
+	overflow: auto;
+	overflow-x: hidden;
+	/*display: table;*/
+}
+
+.table2 {
+	border: 1px solid grey;
+	/*text-align: center;*/
+	font-family: Arial;
+	font-size: 15pt;
+	width: 100%;
+	margin: 0 auto;
+	/*color: #FFF;*/
+	height: 100%; 
+}
+
+.table2 td {
+	padding: 5px;
+	border: 1px solid grey;
+}
+
+/*==================================*/
+	#fix {
+	  position: -webkit-sticky;
+	  position: sticky;
+	  top: 0px;
+	  padding: 5px;
+	  /*width: 100%;*/
+	  background-color: #cae8ca;
+	  border: 1px solid #4CAF50;
+	  display: inline-flex;
+	  flex-flow: row wrap;
+	  width: 100%;
+	  outline: 1px solid #4CAF50;
+	  outline-offset: 1px;
+	  z-index: 1000;
+
+	 
+	}
+	#fix > span {
+		display: inline-block;
+		width: 25%;
+		line-height: 30px;
+		text-align: center;
+		flex: 1 0 25%;
+		box-sizing: border-box;
+		font-style: bold;
+		/*align-content: center;*/
+		align-items: center;
+		
+	}
+	.table3 {
+		width: 100%;
+		/*max-width: 100%;*/
+		margin: 0 auto;
+		border-collapse: collapse;
+	}
+
+	#trDiv {
+		width: 100%;
+		overflow: auto;
+		overflow-x: hidden;
+		height: 100%;
+	}
+
+	.table3 tr ,td {
+		padding: 5px;
+		text-align: center;
+	}
+
+	@media screen and  (max-width: 900px) {
+		#fix {
+			width: 98%;
+
+		}
+
+	}
+	

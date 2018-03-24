@@ -1,0 +1,59 @@
+.studentFlex {
+	 display: flex; 
+	 flex-flow: column; 
+	 align-items: center;
+	 /*border: 1px solid red;*/
+	 /*overflow-y: hidden;*/
+	 height: 100%
+}
+
+.btnDiv {
+	/*flex-grow: 1 1 100% ; */
+	/*border: 1px solid red; */
+	width: 95%; 
+	text-align: right;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+
+}
+.btnDiv button {
+	padding: 10px;
+	background-color: #0AB;
+	color: white;
+	border-style: none;
+	font-size: 16px;
+}
+
+.btnDiv button a {
+	
+
+}
+
+.fixedDiv {
+	position: sticky;
+}
+
+.tableDiv {
+	flex-grow: 1; 
+	/*border: 1px solid red; */
+	width: 95%; 
+	text-align: center;
+	border-collapse: collapse;
+	height: 100%;
+}
+
+.tableFlex th {
+	background-color: #0AB;
+	color: white;
+	padding: 10px;
+	width: 33%;
+	box-sizing:border-box;
+	border: 0px;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 110px;
+  
+}

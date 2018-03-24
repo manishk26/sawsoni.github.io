@@ -1,0 +1,180 @@
+	* {
+	    box-sizing: border-box;
+	}
+	body {
+	    margin: 0;
+	    padding: 0;
+	}
+	/*
+	#gettingData {
+		columns: 3;
+		column-fill: 1px solid red;
+	}*/
+
+	:root {
+	    --main-bg-color: #0AA;
+	}
+
+
+	.headBtnWrapper {
+	    position: fixed;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	}
+	header {
+	    width: 100%;
+	    background-color: var(--main-bg-color);
+	    padding: 5px;
+	    text-align: center;
+	}
+	.parentBtnDiv {
+	    display: flex;
+	    justify-content: space-around;
+	}
+	.parentBtnDiv>button {
+	    flex: 0 0 200px;
+	    margin: 5px auto;
+	    padding: 5px;
+	    background-color: var(--main-bg-color);
+	    color: #FFF;
+	    cursor: pointer;
+	    outline: none;
+	    transition: all 0.4s;
+	}
+	/* .active class will use in js*/
+
+	.active, .parentBtnDiv>button:hover {
+	    background-color: #CAC;
+	}
+	.parentBtnDiv>button:after {
+	    content: '\002B';
+	    color: #777;
+	    font-weight: bold;
+	    float: right;
+	}
+	/* .active class will use in js*/
+
+	.active:after {
+	    content: "\2212";
+	}
+
+	.bodyDiv {
+		display: inline-flex;
+	}
+
+	#gettingData {
+	    margin-top: 150px;
+	    flex: 0 0 400px;
+	}
+	#gettingData>div {
+	    margin: 10px;
+	    border: 1px solid var(--main-bg-color);
+	    padding: 5px;
+	    width: 400px;
+	    box-sizing: border-box;
+	}
+	.temlateDiv>span:nth-of-type(1) {
+	    background-color: var(--main-bg-color);
+	    color: 000;
+	}
+	.temlateDiv>span:before {
+	    /*content: "\2193";*/
+	    content: "\25B6";
+	    color: var(--main-bg-color);
+	}
+	hr {
+	    width: 100px;
+	    height: 3px;
+	    background-color: var(--main-bg-color);
+	    /*text-align: left;*/
+	}
+	.temlateDiv>span {
+	    display: block;
+	}
+
+	/*=============create Student==fieldset=*/
+
+	 .fieldsetChildDiv {
+      --main-shadow-h-size: 3px;
+      --main-shadow-v-size: 4px;
+      --main-shadow-b-size: 2px;
+      --main-shadow-color: #ABC;
+      /*box-shadow: horizontal vertical blur color */
+  }
+
+  #createStudent {
+  	position: fixed;
+  	top: 50px;
+  	right: 0;
+  	flex: 0 0 400px;
+  	/*z-index: -50;*/
+  }
+  .fieldsetParentDiv {
+      width: 90%;
+      margin: 100px auto;
+      display: flex;
+      /*flex-wrap: wrap;*/
+      /*shorthand property for flex-wrap and flex-direction*/
+      flex-flow: row wrap;
+      /*flex-wrap: nowrap;*/
+      /*background-color: #ABC;*/
+      justify-content: space-around;
+      /*justify-content: flex-start;*/
+      /*justify-content: flex-end;*/
+      /*justify-content: space-between;*/
+  }
+  .fieldsetParentDiv div:nth-child(1) {
+      order: 1;
+      height: 300px;
+  }
+  .fieldsetChildDiv {
+      /*flex-grow: 50%;*/
+      /*flex-grow: 1;*/
+      /*flex-basis: 45%;*/
+      /*shorthand of flex-grow,flex-shrink,flex-basis*/
+      /*Make the child element not growable, not shrinkable, and preferably 45% wide:*/
+      flex: 0 0 43%;
+      margin: 10px;
+      /*border: 1px solid red;*/
+      /*The align-self property overrides the default alignment set by the container's align-items property.*/
+      /*align-self: flex-start;*/
+      /*align-self: flex-end;*/
+      align-self: center;
+      padding: 12px;
+      background-color: #0AB;
+      box-shadow: var(--main-shadow-h-size) var(--main-shadow-v-size) var(--main-shadow-b-size) var(--main-shadow-color);
+  }
+  .labelArea {
+      margin-right: 10px;
+  }
+  .inputArea {
+      display: block;
+      width: 500px;
+      border-radius: 3px;
+      border: 1px solid #0AD;
+      padding: 6px 12px;
+      margin-bottom: 5px;
+      font-size: .7em;
+  }
+  .content>p>img {
+      /*display: block;*/
+      width: 100%;
+      height: 310px;
+  }
+  .fa-asterisk {
+      color: #A00;
+      vertical-align: super;
+  }
+  .buttonTD {
+      text-align: right;
+  }
+  .buttonTD>a>.btnAnc {
+      margin-top: 20px;
+      background-color: #0AB;
+      padding: 6px 10px;
+      border-radius: 3px;
+      color: #FFF;
+      font-size: .8em
+  }
+

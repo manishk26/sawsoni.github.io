@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>input</title>
+</head>
+<body>
+	<input  id="fName" type="text">
+	<input id="lName" type="text">
+	<script>
+		var clientData = {
+			id:12,
+			fullName:' ',
+			setUserName: function(firstName,lastName){
+				this.fullName = firstName +' '+lastName;
+			}
+		}
+
+		function getUserInput(firstName,lastName,callback,callbackObj){
+			callback.apply(callbackObj,[firstName,lastName]);
+		}
+
+		getUserInput('Soni','Saw',clientData.setUserName,clientData);
+
+		console.log(clientData.fullName);
+	</script>
+</body>
+</html>

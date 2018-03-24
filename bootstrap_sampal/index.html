@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Home page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="lib/external/jquery/dist/jquery.js"></script>
+	<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="lib/external/handlebars-v4.0.11.js"></script>
+	<script type="text/handlebars" id="entry-template">
+		<div class="container">
+		  <h1 class="h1">{{name}}</h1>
+		  <div class="body">
+		    {{description}}
+		  </div>
+		</div>
+	</script>
+	<script src="js/handleBarExample.js"></script>
+</head>
+<body>
+	<div class="container-fluid"></div>
+	 <h2>Tab with Dropdown Menu</h2>
+	 <ul class="nav nav-tabs nav-justified" role="tablist">
+	 	<li ><a href="">Home</a></li>
+
+	 	<li class="active">
+	 		<a href="#" data-toggle='dropdown'>About us
+	 		<span class="caret"></span>
+	 		</a>
+
+	 		<ul class="dropdown-menu" role="menu">
+	 			<li><a href="">X</a></li>
+	 			<li><a href="">y</a></li>
+	 			<li><a href="">z</a></li>
+	 		</ul>
+
+	 	</li>
+	 	<li><a href="">a</a></li>
+	 	<li><a href="">b</a></li>
+	 	<li><a href="">c</a></li>
+	 	<li><a href="">d</a></li>
+	 	<li><a href="">e</a></li>
+	 	<li><a href="">f</a></li>
+	 	<li >
+	 		<a href="#" data-toggle='dropdown'>Submenu
+	 		<span class="caret"></span>
+	 		</a>
+	 		<ul class="dropdown-menu" role="menu">
+	 			<li><a href="">X</a></li>
+	 			<li><a href="">y</a></li>
+	 			<li><a href="">z</a></li>
+	 		</ul>
+	 	</li>
+	 </ul>
+<!-- 
+	 <div class="btn-group dropup" style="position:asolute;top:350px;">
+	 	<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span> -->
+  
+	 </div>
+	 <button id='showTemplate'>Show Template</button>
+	 <div id='templateData'></div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+	<link rel="stylesheet" href="js/lib/awesome_fonts/css/font-awesome.css">
+</head>
+<style>
+	/*.fieldsetParentDiv:after {
+		display: table;
+		content: "";
+		clear: both;
+	}*/
+
+	/*The flex property is a shorthand for the flex-grow, flex-shrink, and the flex-basis properties.
+		flex-grow :A number specifying how much the item will grow relative to the rest of the flexible items
+
+		flex-shrink :A number specifying how much the item will shrink relative to the rest of the flexible items
+
+		flex-basis:The length of the item. Legal values: "auto", "inherit", or a number followed by "%", "px", "em" or any other length unit*/
+
+
+	.fieldsetParentDiv {
+		display: flex;
+		/*flex-wrap: wrap;*/
+		/*this behave like responsive*/
+	}
+
+	 .fieldsetParentDiv div:nth-of-type(1) {
+		flex-grow: 2;
+		background-color: red;
+	}
+	.fieldsetParentDiv div:nth-of-type(2) {
+		flex-grow: 1;
+		background-color: green;
+	}
+
+	
+
+	
+
+
+
+	/*.fieldsetChildDiv {
+		width: 50%;
+		float: left;
+		padding: 5px;
+		box-sizing: border-box;
+		flex: 1;
+	}*/
+
+	.
+	.fieldsetArea {
+		border: 3px solid #ACD;
+		/*background-color: #0AA;*/
+		font-size: 1.2em;
+	}
+	.legendArea {
+		font-size: 1.3em;
+		color: rgb(36,38,105);
+		text-shadow: 1px 1px rgb(36,38,105);
+	}
+	.labelArea {
+		/*color: #FFF;*/
+	}
+
+	.inputArea {
+		border-radius: 3px;
+		border: 1px solid #0AD;
+		padding: 6px 12px;
+		margin-bottom: 5px;
+		font-size: .7em;
+
+	}
+	.buttonTD > a >.btnAnc {
+		background-color: #0AB;
+		padding: 6px 10px;
+		border-radius: 3px;
+		color: #FFF;
+		font-size: .7em;
+	}
+
+
+
+	
+</style>
+<body>
+	<div class="fieldsetParentDiv">
+	<div class="fieldsetChildDiv">
+	<fieldset class="fieldsetArea">
+	<legend class="legendArea">Create Student</legend>
+	<table>
+			<tr>
+				<td>
+				<label for="idName" class="labelArea" >ID</label><span><i class="fa fa-asterisk"></i></span>
+				</td>
+				<td>
+				<input class="inputArea" type="text" id="idName" name="ID" placeholder ="Enter your ID" required />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<label for="stuName" class="labelArea">Student Name:</label>
+				</td>
+				<td>
+				<input class="inputArea" type="text" id="stuName" name="fname" placeholder ="Enter your Name" required >
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="className" class="labelArea">Class:</label>
+				</td>
+				<td>
+					<input class="inputArea" type="text" name="cName" id="className"  placeholder="Enter your Class" required />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="ageName" class="labelArea">Age:</label>
+				</td>
+				<td>
+					<input class="inputArea" type="text"  name="aName" id="ageName"  placeholder="Enter your Age" required />
+				</td>
+			</tr>
+			<tr>
+				<td class="buttonTD" colspan='2' style='text-align:right'>
+				<a href="#" ><button class="btnAnc">Cancel</button></a>
+				<a href="#" ><button class="btnAnc">Submit</button></a>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+</div>
+<div class="fieldsetChildDiv">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam nesciunt id obcaecati! Facilis a, assumenda laboriosam placeat nam, reprehenderit tempora sunt eaque libero amet aut error quia, delectus atque qui.</p>
+</div>
+</div>
+			
+</body>
+</html>

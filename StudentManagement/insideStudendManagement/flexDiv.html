@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flexDiv</title>
+	<style>
+	div {
+			box-sizing: border-box;
+		}
+		
+	#mainDiv {
+			display: flex;
+			flex-flow: column wrap;
+			width: 100%;
+			border: 1px solid grey;
+		}
+		
+	 .header {
+			position: sticky;
+			top: 0;
+			width: 100%;
+			background-color: #0AB;
+			/*border:1px solid red;*/
+		}
+	/**********Header**ROW flex****************/
+	.rowContainer {
+			width: 100%;
+			height: 300px;
+			overflow: auto;
+		}
+	.row {
+		display: flex;
+		flex-flow: row wrap;
+		border-top:  1px solid grey;
+	}
+	.row > div {
+		flex:1 0 20%;
+		padding: 5px;
+		border-right: 1px solid grey;
+	}
+	/*********** row***************************/
+	 .footer {
+			position: sticky;
+			bottom: 0;
+			background-color: #0AB;
+		}
+
+	</style>
+</head>
+<body>
+
+		<div id="mainDiv">
+			<div class="header row">
+						<div>ID
+							<span style="float:right">TT</span></div>
+						<div>Name </div>
+						<div>Start Date</div>
+						<div>End Date</div>
+					</div>
+				
+			<div class="rowContainer">
+				
+
+			</div>
+			
+				<div class="footer row">
+					<div>total </div>
+					<div>student</div>
+					<div>1000</div>
+					<div>good</div>
+				</div>
+			
+		</div>
+		<script>
+			// create single row -student
+function getRow(student){
+   if(typeof student != 'object' || Array.isArray(student)){
+       return;
+   }
+    var columns = `
+    <div>${student.id}</div>
+    <div>${student.name}</div>
+    <div>${student.class}</div>
+    <div>${student.age}</div>
+    `;
+    return row = `<div class='row'>${columns}</div>`;
+}
+
+// create rows of students
+function getRows(students){
+    if(students){
+        var rowOfStudents='';
+        students.forEach( (student, index) =>{
+            rowOfStudents = rowOfStudents + getRow(student);
+        } )
+        return rows = `${rowOfStudents}
+        `;
+    }
+}
+
+// bring data from REST Api
+function getStudentsFromAPI(url){
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadysatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            console.log(this.responseText);
+            return JSON.parse(this.responseText); 
+                     
+        }
+    }
+    xhr.open('GET', url, true);
+    xhr.send();
+}
+
+function fetchStudents(url){
+    var url = 'http://localhost:3000/students';
+    var p = fetch(url);
+    p.then( (response) => {
+            return response.json();
+    }).then( (data) => {
+        var rows = getRows(data);
+        document.querySelector('.rowContainer').innerHTML = rows;
+    })
+}
+
+
+fetchStudents();
+		</script>
+
+</body>
+</html>

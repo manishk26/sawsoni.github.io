@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>asychronous call</title>
+	<link rel="stylesheet" href="../css/ajaxWithPromiseMltipalThen.css">
+	<script src="../js/external/jquery/dist/jquery.js"></script>
+
+</head>
+
+<body>
+	<div id="wrapper">
+			<div id="massage"></div>
+			<button id="getStudentBtn">GetStudent</button>
+
+
+			<table id="myTable1" >
+				<thead>
+					
+					<td>NAME</td>
+					<td>Class</td>
+					<td>Age</td>
+				</thead>
+				<tbody id="myTableBody">
+					
+				</tbody>
+			</table>
+		</div>
+
+	<hr>
+		
+		<div id="onlyDivParent">
+			<div id="onlyName" class="onlyDiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laudantium, voluptatum magni minus blanditiis voluptatem veniam, provident pariatur. Porro perferendis, quod saepe. Pariatur, sit voluptate odio vitae, labore in deleniti.</div>
+			<div id="onlyClass" class="onlyDiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laudantium, voluptatum magni minus blanditiis voluptatem veniam, provident pariatur. Porro perferendis, quod saepe. Pariatur, sit voluptate odio vitae, labore in deleniti.</div>
+			<div id="onlyAge" class="onlyDiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laudantium, voluptatum magni minus blanditiis voluptatem veniam, provident pariatur. Porro perferendis, quod saepe. Pariatur, sit voluptate odio vitae, labore in deleniti.</div>
+		</div>	
+
+
+
+
+
+			<script>
+				// var jsonObject = {"name":"soni","age":30,"sex":"female"};
+				var a = [{"name":"soni","age":30,"sex":"female"},{"name":"Toni","age":40,"sex":"female"}]
+				$.each(a,function(key,val){
+					console.log(key + ':' + val.name + ':' + val.age);
+				})
+			</script>
+
+		
+		<script src="../js/ajax/ajaxWithPromiseMltipalThen.js"></script>	
+</body>
+</html>

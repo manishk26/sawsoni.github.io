@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>basic concept</title>
+</head>
+<body>
+	<div id="demo"></div>
+	<div id="demoId"></div>
+	<script>
+		function check(){
+			var s = confirm('Are you sure you want to delete?')
+			 var deletedFlag = false;
+
+			 if(s){
+			 	console.log('i am ok');
+			 	  deletedFlag = true;
+			 }else{
+			 	console.log('i am cancel');
+			 		deletedFlag = false;
+
+			 }
+		}
+
+		check();
+
+
+		/*======*/
+
+		function onlyNode(e){
+			return document.createElement(e);
+		}
+
+		function createNode(e,t,i) {
+		    var btn = document.createElement(e);
+		    var t = document.createTextNode(t);
+		    btn.appendChild(t);
+		    document.getElementById(i).appendChild(btn);
+		}
+
+		document.getElementById('demo').appendChild(createNode('p','i am pra','demo'));
+
+
+
+		function myFunction() {
+    	var btn = document.createElement("BUTTON");
+    	var t = document.createTextNode("CLICK ME");
+    	btn.appendChild(t);
+    	document.getElementById('demoId').appendChild(btn);
+		}
+
+		myFunction();
+	
+
+		/*==*/
+		// /*function append(parent,el){
+		// 	return parent.appendChild(el);
+		// }
+		// /*===*/
+
+		// let p =  createNode('p');
+		// let span = createNode('span');
+		
+		// append(p,span);
+		// console.log(p);
+		// // document.write(p);
+		// console.log(span);
+		// // console.log(append(p,span));
+		// document.getElementById('demo').innerHTML = '<div>Div<p>i am para</p></div>';
+
+		// /*===*/
+		// var itd=document.createElement('div'),
+  //  			ita=document.createElement('a'),
+  //   		idt=document.createTextNode('hello world');
+	 //    	iat=document.createTextNode('click me');
+	 //   		idn=document.createTextNode('also');
+
+	 //    ita.appendChild(iat);
+	 //    itd.appendChild(idt);
+	 //    itd.appendChild(ita);
+	 //    itd.appendChild(idn)
+
+	 //     document.getElementById('demoId').appendChild(itd);
+
+		function addElement(){
+			var newDiv = document.createElement('div');
+			var textNode = document.createTextNode('hello world');
+			newDiv.appendChild(textNode);
+
+			
+		}
+
+		document.body.onload = addElement;
+
+		
+
+		
+	</script>
+</body>
+</html>

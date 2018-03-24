@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product information</title>
+	<script src="../js/external/jquery/dist/jquery.js"></script>
+	<script src="../js/ajax/product_info_ajax.js
+	"></script>
+	<style>
+		* {
+			padding: 0px;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			border:1px solid green;
+			/*padding: 3px;*/
+			margin: 12px;
+
+		}
+		tr {
+			border: red;
+		}
+
+		div#formPage {
+			display: none;
+		}
+
+		 label,input {
+			display: block;
+			margin-top: 10px;
+			
+			
+		}
+
+		input[type='text']{
+			width: 100px;
+			height: 30px;
+		}
+
+		button {
+			margin-top: 10px;
+			width: 50px;
+			height: 30px;
+			border-radius: 2px;
+			background-color: light-grey;
+		}	
+
+		#error {
+			color: red;
+		}
+
+			
+	</style>
+		
+
+</head>
+<body>
+	<div>
+		<a href="index.html">Home</a>
+		<h2>example of jquery ajax about product information</h2>
+		<div id='msg'></div>
+		<div id='error'></div>
+
+		<button id="createProductBtn">Create</button><br><br>
+		<!-- ============= -->
+		<div id="formPage">
+			<select name="productCategory" id="pCategory">
+				<option value="elecrtroninc" name="pro" >Elecrtroninc</option>
+				<option value="book" name="pro">Book</option>
+				<option value="furniture" name="pro">Furniture</option>
+			</select><br>
+			<label for="name">
+			 Name:<input type="text" id="name"></label>
+			<label for="price">price:<input type="Number" id="price"></label>
+
+			<button id="btnCancel">Cancel</button>
+			<button id="btnSave">Save</button>
+			
+		</div>
+
+		<table border="1">
+			<thead>
+				<td>Category</td>
+				<td>Name</td>
+				<td>Price</td>
+			</thead>
+			<tbody id="tableBody">
+				
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

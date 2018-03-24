@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Post Student</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/flexBoxForPostStudent.css">
+	
+	<link rel="stylesheet" href="js/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="js/lib/awesome_fonts/css/font-awesome.css">
+
+	<script src="js/lib/jquery/dist/jquery.js"></script>
+	<script src="js/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- <div class="container" id="createStuCss"> -->
+		<div id="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top "> <!-- navbar-fixed-top-->
+  <div class="container-fluid">
+    <div class="navbar-header bg">
+    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    	<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      	</button>
+    <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    	<!-- the value of button data-target will be id of div -->
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+        <li><a href="students.html"><span class="glyphicon glyphicon-home"></span>Students</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>
+        Phone-No</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span>Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 4-1</a></li>
+            <li><a href="#">Page 4-2</a></li>
+            <li><a href="#">Page 4-3</a></li>
+          </ul>
+        </li>
+      </ul>
+<!-- ===== -->
+      <form class="navbar-form navbar-right" role="serch">
+<div class="form-group">
+      		<input type="text" class="form-control" placeholder="Search">
+      	</div>
+      	<button class="btn btn-default"> Submit</button>
+      </form>
+    </div>
+  </div>
+  </nav>
+</div>
+<!-- ======nav end ========-->
+
+	<div class="fieldsetParentDiv">
+	<div class="fieldsetChildDiv">
+	<fieldset class="fieldsetArea">
+	<legend class="legendArea">Create Student <p id="mms"></p></legend>
+	<table>
+			<tr>
+				<td>
+				<label for="idName" class="labelArea" >ID<span><i class="fa fa-asterisk"></i></span></label>
+
+				</td>
+				<td>
+				<input class="inputArea" type="number" id="ID" name="ID" placeholder ="Enter your ID" required />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<label for="stuName" class="labelArea">Student Name:</label>
+				</td>
+				<td>
+				<input class="inputArea" type="text" id="name" name="stuName" placeholder ="Enter your Name" required >
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="className" class="labelArea">Class:</label>
+				</td>
+				<td>
+					<!--
+					<input class="inputArea" type="text" name="cName" id="class"  placeholder="Enter your Class" required />
+				-->
+				<input list="browsers" name="browser" id="class" class="inputArea" placeholder="class">
+			  		<datalist id="browsers">
+			  			 <option value="Pre-KG">
+			    		<option value="Nursery">
+					    <option value="LKG">
+					    <option value="UKG">
+			  		</datalist>
+			  	</input>
+				</td> 
+			</tr>
+			<tr>
+				<td>
+					<label for="ageName" class="labelArea">Age:</label>
+				</td>
+				<td>
+					<input class="inputArea" type="number"  name="aName" id="age"  placeholder="Enter your Age" required />
+				</td>
+			</tr>
+			<tr>
+				<td class="buttonTD" colspan='2'>
+				<a href="students.html" ><button class="btnAnc">Cancel</button></a>
+				<a href="#" id='createStudentBtn' onclick='createStudentObject();'><button class="btnAnc">Submit</button></a>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+</div>
+
+<div class="fieldsetChildDiv">
+	<div class="parentDiv"><span>
+		<p>Hello..kids...</p> 
+	</span>
+	<div class="child">
+			<div class="content">
+				<p id="transitionImg"><img src="image/bgimage.jpg" alt="img"></p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<script src="js/StudentAPI.js"></script>
+<script>
+	
+/*========post/create student====*/
+	function createStudentObject(){
+		var url = "http://localhost:3000/students";
+		
+		var ID = document.getElementById('ID').value;
+		var nameS = document.getElementById('name').value;
+		var classN = document.getElementById('class').value;
+		var age = document.getElementById('age').value;
+
+		var newStudentData = {id:ID, name:nameS, class:classN, age:age};
+		//var newStudentData = {id:8, name:'Soni Kumari', class:'Nursery', age:5};
+		var createStudent = fetch(url, 
+		    { body: JSON.stringify(newStudentData),
+		    headers: {
+		      'user-agent': 'Mozilla/4.0 MDN Example',
+		      'content-type': 'application/json'
+		    },
+		    method:'POST'})
+			createStudent.then( function(response){
+			    document.getElementById('mms').innerHTML = 'Student creaeted.';
+			    window.location = "students.html";
+			    //after clicking create button, window.location will take me to the student.html page
+			}).catch( function(error) {
+			    console.log(error);
+			})
+	}
+
+</script>
+	
+</body>
+</html>

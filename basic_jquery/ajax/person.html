@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/external/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="../js/ajax/person.js"></script>
+	<script type="text/javascript" src="../js/ajax/personOperation.js">
+	</script>
+
+	<style>
+		#personTable {
+			border-collapse: collapse;
+		}
+		#message {
+			color : green;
+		}
+		#errorMessage {
+			color : red;
+		}
+	</style>
+</head>
+<body>
+	<a href="index.html">Home</a>
+	<h2>Example of JQuery Ajax - Get Operation</h2>
+	<div id='message'></div>
+	<div id='errorMessage'></div>
+	<div id="rootDiv"></div>
+	<a href='createPerson.html'>Create </a>
+	<hr/>
+	<table id="personTable" border="1">
+		<thead>
+		<tr>
+			<th> #ID </th>
+			<th> First Name</th>
+			<th>Last Name</th>
+			<th>Sex</th>
+			<th>Age</th>
+
+		</tr>
+		</thead>
+		<tbody id='pBody'>
+			
+		</tbody>
+	</table>
+
+</body>
+</html>

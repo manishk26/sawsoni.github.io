@@ -1,0 +1,11 @@
+body {
+	 padding: 20px;
+}
+.container {
+	margin-bottom: 50px;
+	background-color: #ABC;
+}
+.space {
+
+	margin-bottom :10px !important;
+}

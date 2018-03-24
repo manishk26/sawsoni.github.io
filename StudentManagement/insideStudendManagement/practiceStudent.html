@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1" name="viewport">
+                <title>
+                    practice students
+                </title>
+                <link href="css/practiceStudent.css" rel="stylesheet">
+                    <link href="../js/lib/awesome_fonts/css/font-awesome.css" rel="stylesheet">
+                    </link>
+                </link>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <div class="headBtnWrapper">
+            <header>
+                <h1>
+                    Student Managment
+                </h1>
+            </header>
+            <div class="parentBtnDiv">
+                <button id="getStudentBTN">
+                    Show Student List
+                </button>
+                <p id="mms">Display success massage after created student</p>
+                <button id="createStudentBTN">
+                    New Student
+                </button>
+            </div>
+        </div>
+        <div class="bodyDiv">
+            <div id="gettingData">
+            </div>
+
+            <div id="createStudent">
+                <div class="fieldsetParentDiv">
+                    <div class="fieldsetChildDiv">
+                        <fieldset class="fieldsetArea">
+                            <legend class="legendArea">
+                                Create Student
+                                <p id="mms">
+                                </p>
+                            </legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label class="labelArea" for="idName">
+                                            ID
+                                            <span>
+                                                <i class="fa fa-asterisk">
+                                                </i>
+                                            </span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input class="inputArea" id="ID" name="ID" placeholder="Enter your ID" required="" type="number"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="labelArea" for="stuName">
+                                            Student Name:
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input class="inputArea" id="name" name="stuName" placeholder="Enter your Name" required="" type="text">
+                                        </input>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="labelArea" for="className">
+                                            Class:
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input class="inputArea" id="class" list="browsers" name="browser">
+                                            <datalist id="browsers">
+                                                <option value="Pre-KG">
+                                                    <option value="Nursery">
+                                                        <option value="LKG">
+                                                            <option value="UKG">
+                                                            </option>
+                                                        </option>
+                                                    </option>
+                                                </option>
+                                            </datalist>
+                                        </input>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="labelArea" for="ageName">
+                                            Age:
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input class="inputArea" id="age" name="aName" placeholder="Enter your Age" required="" type="number"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="buttonTD" colspan="2">
+                                        <a href="#">
+                                            <button class="btnAnc" onclick="cancel()">
+                                                Cancel
+                                            </button>
+                                        </a>
+                                        <a href="#" id="createStudentBtn">
+                                            <button class="btnAnc">
+                                                Submit
+                                            </button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/practiceStudent.js">
+        </script>
+    </body>
+</html>

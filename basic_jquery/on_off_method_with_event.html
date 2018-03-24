@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How to attach multiple events to an element</title>
+	<meta charset="utf-8">
+	<script src="js/external/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="js/on_off_method_with_event.js"></script>
+	<style type="text/css">
+		.intro {
+			font-size: 20px;
+			color: red;
+		}
+		.box {
+			width: 200px;
+			height: 150px;
+			background-color: #abc;
+			margin-top: 10px;
+		}
+		.ButtonStyle {
+			background-color: red;
+			font-weight: bold;
+			color: white;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<h3>Click Event Examples 1 </h3>
+<code>
+	$('#clickMe').click(function(e){
+	alert('Hello. You clicked me '+e);
+});
+<button id="clickMe1"> Click Me  1</button>
+<hr/>
+<h3>Click Event Examples 2 </h3>
+<code>
+	$('#clickMe').on('click', function(){
+	alert('Hello. You clicked me');
+});
+<a href="#" id="clickMe2"> Click Me 2 </a>
+<div id='updateOnClickMe2'>
+	<table border="1" width="50%">
+		<thead>
+			<td> Name </td>
+			<td> Age </td>
+		</thead>
+		<tbody id='tableRows'>
+			<tr>
+				<td>Naresh</td>
+				<td>40</td>
+			</tr>	
+
+		</tbody>
+	</table>
+</div>
+<hr/>
+</code>	
+
+	<p>1: How to attach multiple events to an element?use toggleClass()</p>
+   <h3 id="text">Move the mousepointer over this paragraph.</h3>
+
+   <p>2: How to attach multiple event handlers to the selected elements using the map parameter?</p>
+   <p>using map parameter in div </p>
+   <button id="btn1">3Event fire button</button>
+   <div id="div1" class="box">mouseover to button </div>
+   <div id="div2" class="box">mouseout to button</div>
+   <div id="div3" class="box">click the button</div>
+
+   <p><b>useing on() and off() method in button</b></p>
+   <p>we creat an event object here as a parameter of anonymouse function so that we can co-ordinate mousepointer x-axis and y-axis </p>
+
+   <p>multipal event handlers to the button- btnclickme.if required, the event object can also be passed to the event handler</p>
+   <br>
+
+   <input type="button" name="" id="btnclickme" value="click Me">
+   <input type="button" name="" id="btnEnableMouseOverEffect" value="EnableMouseOverEffect">
+   <input type="button" name="" id="btnDisableMouseOverEffect" value="DisableMouseOverEffect">
+   <br><br>
+
+<h2>Example</h2>
+   <code>
+   	$('#btn1').on({
+
+		mouseover:function(){
+			$('#div1').css('background-color','lightgray');
+		},
+		mouseout:function(){
+			$('#div2').css('background-color','lightblue');
+		},
+		click:function(){
+			$('#div3').css('background-color','yellow');
+		}
+
+
+	});
+   </code>
+
+   <div id="divResult"></div>
+</body>
+</html>

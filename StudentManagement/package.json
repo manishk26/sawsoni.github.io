@@ -1,0 +1,11 @@
+{
+  "name": "studentmanagement",
+  "version": "1.0.0",
+  "description": "A student management application",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Soni Saw",
+  "license": "ISC"
+}
