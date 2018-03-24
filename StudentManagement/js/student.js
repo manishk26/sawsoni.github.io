@@ -30,7 +30,7 @@ function cancel() {
 * Update student lists
  */
 function updateStudentList() {
-	var p = Students.getAll('http://demo.soni.com:3000/students');
+	var p = Students.getAll('demo/stdudent.json');
 	p.then(function(response) {
 		return JSON.parse(response);
 	}).then(function(data) {
