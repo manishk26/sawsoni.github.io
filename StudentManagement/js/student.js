@@ -32,8 +32,7 @@ function cancel() {
 function updateStudentList() {
 	var p = Students.getAll(URL);
 	p.then(function(response) {
-		const student = JSON.parse(response);
-		return student.students;
+		return JSON.parse(response);
 	}).then(function(data) {
 		let tr = "";
 		let id;
