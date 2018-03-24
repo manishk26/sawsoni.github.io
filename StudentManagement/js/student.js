@@ -1,4 +1,4 @@
-
+var URL  = 'https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students/';
 function newStudentBtnClick(){
         var c = $('#createStudent');
         c.css('display','block'); // show div to create 
@@ -30,7 +30,7 @@ function cancel() {
 * Update student lists
  */
 function updateStudentList() {
-	var p = Students.getAll('data/student.json');
+	var p = Students.getAll(URL);
 	p.then(function(response) {
 		const student = JSON.parse(response);
 		return student.students;
@@ -122,7 +122,7 @@ $('#deleteStudentBtn').on('click', function(event) {
 function getStudentDetail(id) {
 	//var id = window.location.href.substr(window.location.href.lastIndexOf('?') + 1, window.location.href.length);
 	// console.log(id);
-	var p = Students.get('http://demo.soni.com:3000/students/' + id);
+	var p = Students.get(URL + id);
 	p.then(function(response) {
 		return JSON.parse(response);
 	}).then(function(data) {
@@ -173,7 +173,7 @@ function updateStudent() {
 	var classN = document.getElementById('class').value;
 	var age = document.getElementById('age').value;
 
-	var url = "http://localhost:3000/students/" + ID;
+	var url = URL + ID;
 
 
 	var newStudentData = {
@@ -205,7 +205,7 @@ function updateStudent() {
  * ========post/create student====
  */
 function createStudent() {
-	var url = "http://localhost:3000/students";
+	var url = URL;
 
 	var ID = document.getElementById('ID').value;
 	var nameS = document.getElementById('name').value;
