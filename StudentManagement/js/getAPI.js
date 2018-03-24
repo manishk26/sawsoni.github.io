@@ -1,4 +1,4 @@
-
+var URL  = 'https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students/';
 	//create dynamic row
 	function getRow(student) {
 		if (typeof student != 'object' || Array.isArray(student)) {
@@ -52,7 +52,7 @@
 	// $.ajax to get data through input
 	function searchStudent() {
 		var input = $('#serchByClass').val();
-		var url = 'http://localhost:3000/students?q=' + input;
+		var url = URL+'?q=' + input;
 		$.ajax({
 			url: url,
 			method: 'GET'
@@ -103,14 +103,13 @@
 
 	$('#deleteAll').on('click',function(){
 		// alert('i will delete all');
-		deleteCheckedObject('http://localhost:3000/students/');
+		deleteCheckedObject(URL);
 
 	})
 
 
 function deleteStudent(id){
-	var url = 'http://localhost:3000/students';
-	url = url + '/'+ id;
+	var url = URL + '/'+ id;
 	var that = this;
 	$.ajax({
 					url : url,
