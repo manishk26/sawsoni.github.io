@@ -30,7 +30,7 @@ function cancel() {
 * Update student lists
  */
 function updateStudentList() {
-	var p = Students.getAll('demo/stdudent.json');
+	var p = Students.getAll('data/student.json');
 	p.then(function(response) {
 		return JSON.parse(response);
 	}).then(function(data) {
