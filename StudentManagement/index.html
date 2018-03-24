@@ -2,77 +2,68 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Student Management</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/student.css">
+	<title>flexDiv</title>
+	<link rel="stylesheet" href="css/flexDiv.css">
+	<script type="text/javascript" src="js/lib/jquery/dist/jquery.min.js"></script>
 	
-	<link rel="stylesheet" href="js/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="js/lib/awesome_fonts/css/font-awesome.css">
-
-	<script src="js/lib/jquery/dist/jquery.js"></script>
-	<script src="js/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-	<div id="container">
-		<nav class="navbar navbar-inverse navbar-fixed-top "> <!-- navbar-fixed-top-->
-  <div class="container-fluid">
-    <div class="navbar-header bg">
-    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-    	<span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      	</button>
-    <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-    	<!-- the value of button data-target will be id of div -->
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-        <li><a href="students.html"><span class="glyphicon glyphicon-home"></span>Students</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-earphone"></span>
-        Phone-No</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span>Contact</a></li>
-        <li><a href="#">About</a></li>
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 4-1</a></li>
-            <li><a href="#">Page 4-2</a></li>
-            <li><a href="#">Page 4-3</a></li>
-          </ul>
-        </li>
-      </ul>
-<!-- ===== -->
-      <form class="navbar-form navbar-right" role="serch">
-<div class="form-group">
-      		<input type="text" class="form-control" placeholder="Search">
-      	</div>
-      	<button class="btn btn-default"> Submit</button>
-      </form>
-    </div>
-  </div>
-  </nav>
-</div>
-	
-  
-	<!-- =====backgroung image -->
-	<div id="wrapperBGImage">
-	<div id="bgImage">
-		<a href="#"><p>STUDENT DREAM</p></a>
+		<div id="mainDiv">
+			<!-- ============================ -->
+			
+				<div class="logoNavwrapper">
+					<div class="logo"><a href=""><h5>LOGO</h5></a></div>
+					<!-- <nav class='navBar'> -->
+					
+					<div class="parentOfNavMenu" id='parent'>
+						<nav>
+							<div class="navMenu">
+								<div><a href="">Home</a></div>
+								<div><a href="fileUpload.html">Upload</a></div>
+								<div><a href="" id='about'>About</a></div>
+								<div><a href="">Contact Us</a></div>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<div style="margin-top: 70px;">
+					<div class="searchWrapper"><input id="serchByClass" type="text" placeholder="Search Students..."></div>
+					</div>
+				</div>	
+			
+			<!-- ====== -->
+				<div class="contentHeader"></div>
+				<button id="deleteAll">DELETE</button>
+			<!-- flex table -->
+			<div class="header row">
+						<div>ID
+							<span style="float:right"></span></div>
+						<div>Name </div>
+						<div>Class</div>
+						<div>Age</div>
+						<div>Delete</div>
+					</div>
+				
+			<div class="rowContainer">
+				
 
-		<div id="slideControl">
-			<div id="slideImg"></div>
+			</div>
+			
+				<div class="footer">
+					<div>Total: </div>
+					<div id='total'></div>
+				</div>
+			
 		</div>
-		
-	</div>	
-	</div>
-	<!-- slider -->
 
-	<script src="js/StudentAPI.js"></script>
-	<script src="js/updateDOM.js"></script>
-  <script src="js/sliderAPI.js"></script>
-  <script src="js/Slider.js"></script>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident at odio laboriosam deserunt rem quisquam quae natus sed ad aut, reiciendis voluptates sequi dolorem totam, quibusdam sunt dicta. Nobis, nulla!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid magnam non dolore, hic fugiat, voluptate iure maiores ea doloribus delectus. A est repudiandae accusamus assumenda officia mollitia. Nostrum, incidunt, odio!</p>
+		<button class="tryClick">click me</button>
+		<button class="tryClick">click me</button>
+		<button class="tryClick">click me</button>
+		<!-- <script src="js/flexDivAPI.js"></script> -->
+		<script src="js/getAPI.js"></script>
+		
 </body>
 </html>
