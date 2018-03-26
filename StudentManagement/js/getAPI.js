@@ -109,7 +109,7 @@ var URL  = 'https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/studen
 
 
 function deleteStudent(id){
-	var url = URL + '/'+ id;
+	var url = URL + id;
 	var that = this;
 	$.ajax({
 					url : url,

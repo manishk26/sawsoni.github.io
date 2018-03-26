@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>new</title>
+	<style>
+	 :root {
+      --main-bg-color: #0AB;
+  		}
+		 .fieldsetChildDiv {
+      --main-shadow-h-size: 3px;
+      --main-shadow-v-size: 4px;
+      --main-shadow-b-size: 2px;
+      --main-shadow-color: #ABC;
+      /*box-shadow: horizontal vertical blur color */
+  	}
+  	 .fieldsetParentDiv {
+      width: 90%;
+      margin: 100px auto;
+      display: flex;
+      flex-flow: row wrap;
+     
+      justify-content: center;
+      align-items: center;
+  }
+ 
+  .fieldsetChildDiv {
+     
+      margin: 10px;
+      
+      padding: 12px;
+      background-color: #0AB;
+      box-shadow: var(--main-shadow-h-size) var(--main-shadow-v-size) var(--main-shadow-b-size) var(--main-shadow-color);
+  }
+
+  .fieldsetArea {
+    padding: 20px;
+    border: 2px solid #0AB;
+
+  }
+
+  .fieldsetArea  table  {
+    border-collapse: collapse;
+  }
+
+  .fieldsetArea table > tr > td {
+    padding: 15px;
+  }
+
+  .legendArea{
+    color: #A0A;
+  }
+
+
+  .labelArea {
+      margin-right: 10px;
+  }
+  .inputArea {
+      display: block;
+      width: 500px;
+      padding: 6px 12px;
+      margin-bottom: 5px;
+      font-size: .7em;
+  }
+  .content>p>img {
+      /*display: block;*/
+      width: 100%;
+      height: 310px;
+  }
+  .fa-asterisk {
+      color: #A00;
+      vertical-align: super;
+  }
+  .buttonTD {
+      text-align: right;
+  }
+  .buttonTD> a {
+    text-decoration: none;
+  }
+  .buttonTD> a >.btnAnc {
+      margin-top: 20px;
+      background-color: #0AB;
+      padding: 6px 10px;
+      color: #A00;
+      font-size: .8em;
+      cursor: pointer;
+  }
+	</style>
+</head>
+<body>
+	 <div id="createStudent" style="">
+                    <div class="fieldsetParentDiv">
+                        <div class="fieldsetChildDiv">
+                            <fieldset class="fieldsetArea">
+                                <legend class="legendArea">
+                                    Create Student
+                                    <p id="mms">
+                                    </p>
+                                </legend>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <label class="labelArea" for="idName">
+                                                ID
+                                                <span>
+                                                    <i class="fa fa-asterisk">
+                                                    </i>
+                                                </span>
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="inputArea" id="ID" name="ID" placeholder="Enter your ID" required="" type="number"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="labelArea" for="stuName">
+                                                Student Name:
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="inputArea" id="name" name="stuName" placeholder="Enter your Name" required="" type="text">
+                                            </input>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="labelArea" for="className">
+                                                Class:
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="inputArea" id="class" list="browsers" name="browser">
+                                                <datalist id="browsers">
+                                                    <option value="Pre-KG">
+                                                        <option value="Nursery">
+                                                            <option value="LKG">
+                                                                <option value="UKG">
+                                                                </option>
+                                                            </option>
+                                                        </option>
+                                                    </option>
+                                                </datalist>
+                                            </input>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="labelArea" for="ageName">
+                                                Age:
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <input class="inputArea" id="age" name="aName" placeholder="Enter your Age" required="" type="number"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="buttonTD" colspan="2">
+                                            <a href="#">
+                                                <button class="btnAnc" onclick="cancel()">
+                                                    Cancel
+                                                </button>
+                                            </a>
+                                            <a href="#" id="createStudentBtn" onclick="createStudent();">
+                                                <button class="btnAnc">
+                                                    Submit
+                                                </button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

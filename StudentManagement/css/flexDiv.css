@@ -124,3 +124,9 @@
 			padding: 10px;
 			padding-right: 30px;
 		}
+/*==================btn warpper========*/
+	.btnWrapper {
+		margin: 50px auto;
+		border:1px solid red;
+	}
+/*==================new STudent========*/		
