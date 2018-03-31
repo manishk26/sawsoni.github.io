@@ -216,7 +216,7 @@
   .buttonTD> a {
     text-decoration: none;
   }
-  .text {
+  .divPadding {
   	padding: 10px;
   }
   .buttonTD> a >.btnAnc {
