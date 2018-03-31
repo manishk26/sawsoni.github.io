@@ -13,7 +13,9 @@
 			<!-- ============================ -->
 			
 				<div class="logoNavwrapper">
-					<div class="logo"><a href=""><h5>LOGO</h5></a></div>
+					<div class="logo"><a href=""><h5>LOGO</h5>
+					</a>
+					</div>
 					<!-- <nav class='navBar'> -->
 					
 					<div class="parentOfNavMenu" id='parent'>
@@ -28,41 +30,129 @@
 					</div>
 				</div>
 				<div style="margin-top: 70px;">
-					<div class="searchWrapper"><input id="serchByClass" type="text" placeholder="Search Students..."></div>
+					<div class="searchWrapper"><input id="serchByClass" type="text" placeholder="Search Students...">
 					</div>
-				</div>	
-			
+				</div>
+				<!-- </div> -->	
 			<!-- ====== -->
 			<div class="btnWrapper">
-				
-				<button id="createStudent">NEW STUDENT</button>
-				<button id="deleteAll">DELETE All</button>
+				<button id="createStudentBTN">NEW STUDENT</button>
+				<button id="deleteAllBTN">DELETE All</button>
 			</div>
+			<!-- =====createStudent== -->
+			<div id="createStudent" style="display: none">
+            <div class="fieldsetParentDiv">
+                <div class="fieldsetChildDiv">
+                    <fieldset class="fieldsetArea">
+                        <legend class="legendArea">
+                            Create Student
+                        </legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="labelArea" for="idName">
+                                        ID
+                                        <span>
+                                            <i class="fa fa-asterisk">
+                                            </i>
+                                        </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input class="inputArea" id="ID" name="ID" placeholder="Enter your ID" required="" type="number"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="labelArea" for="stuName">
+                                        Student Name:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input class="inputArea" id="name" name="stuName" placeholder="Enter your Name" required="" type="text">
+                                    </input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="labelArea" for="className">
+                                        Class:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input class="inputArea" id="class" list="browsers" name="browser">
+                                        <datalist id="browsers">
+                                            <option value="Pre-KG">
+                                                <option value="Nursery">
+                                                    <option value="LKG">
+                                                        <option value="UKG">
+                                                        </option>
+                                                    </option>
+                                                </option>
+                                            </option>
+                                        </datalist>
+                                    </input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="labelArea" for="ageName">
+                                        Age:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input class="inputArea" id="age" name="aName" placeholder="Enter your Age" required="" type="number"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="buttonTD" colspan="2">
+                                    <a href="#">
+                                        <button class="btnAnc" onclick="cancel()">
+                                            Cancel
+                                        </button>
+                                    </a>
+                                    <a href="index.html" id="createStudentBtn" onclick="createStudent();">
+                                        <button class="btnAnc">
+                                            Submit
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+        	</div>
+
 			<!-- table start -->
 			<div class="contentHeader"></div>
 				
 			<!-- flex table -->
-			<div class="header row">
-						<div>ID
-							<span style="float:right"></span></div>
-						<div>Name </div>
-						<div>Class</div>
-						<div>Age</div>
-						<div>Delete</div>
-					</div>
-				
-			<div class="rowContainer">
-				
+			<div id="studentDataTable">
+				<span id="mms" style="color:#0AA">massage</span>
+				<div class="header row">
+							<div>ID
+								<span style="float:right"></span></div>
+							<div>Name </div>
+							<div>Class</div>
+							<div>Age</div>
+							<div>Delete</div>
+						</div>
+					
+				<div class="rowContainer">
+					
 
-			</div>
-			
-				<div class="footer">
-					<div>Total: </div>
-					<div id='total'></div>
 				</div>
-			
+				
+					<div class="footer">
+						<div>Total: </div>
+						<div id='total'></div>
+					</div>
+			</div>
+			<!-- get singal student detail -->
+			<div id="getStudentDetail"></div>
 		</div>
-		<script src="js/getAPI.js"></script>
+		<script src="js/indexAPI.js"></script>
 		
 </body>
 </html>

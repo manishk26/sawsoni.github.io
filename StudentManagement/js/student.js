@@ -1,4 +1,5 @@
-var URL  = 'https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students/';
+//var URL  = 'https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students/';
+var URL = "http://demo.soni.com:3000/students/";
 function newStudentBtnClick(){
         var c = $('#createStudent');
         c.css('display','block'); // show div to create 
@@ -157,7 +158,9 @@ function getStudentDetail(id) {
 		 		 </fieldset>
 		 		 </div>
 		 		 `;
-		$('#studentDetail').html(template);
+		
+		$('#studentDetail').html(template).css('display', 'block');
+
 	}).catch(function(error) {
 		console.log(error);
 	})
@@ -181,7 +184,16 @@ function updateStudent() {
 		class: classN,
 		age: age
 	};
-	//var newStudentData = {id:8, name:'Soni Kumari', class:'Nursery', age:5};
+
+	// POST adds a random id to the object sent
+	$.ajax(url, {
+	  method: 'PUT',
+	  data: newStudentData
+	}).then(function(data) {
+	  console.log(data);
+	  window.location = "students.html";
+	});
+	/**
 	var createStudent = fetch(url, {
 		body: JSON.stringify(newStudentData),
 		headers: {
@@ -196,7 +208,7 @@ function updateStudent() {
 		//after clicking create button, window.location will take me to the student.html page
 	}).catch(function(error) {
 		console.log(error);
-	})
+	})*/
 }
 
 

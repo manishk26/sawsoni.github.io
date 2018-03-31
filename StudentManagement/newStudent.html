@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>new</title>
-	<style>
-	 :root {
+    <head>
+        <meta charset="utf-8">
+            <title>
+                new
+            </title>
+            <style>
+                :root {
       --main-bg-color: #0AB;
-  		}
-		 .fieldsetChildDiv {
+      }
+     .fieldsetChildDiv {
       --main-shadow-h-size: 3px;
       --main-shadow-v-size: 4px;
       --main-shadow-b-size: 2px;
       --main-shadow-color: #ABC;
       /*box-shadow: horizontal vertical blur color */
-  	}
-  	 .fieldsetParentDiv {
+    }
+     .fieldsetParentDiv {
       width: 90%;
       margin: 100px auto;
       display: flex;
@@ -85,94 +87,94 @@
       font-size: .8em;
       cursor: pointer;
   }
-	</style>
-</head>
-<body>
-	 <div id="createStudent" style="">
-                    <div class="fieldsetParentDiv">
-                        <div class="fieldsetChildDiv">
-                            <fieldset class="fieldsetArea">
-                                <legend class="legendArea">
-                                    Create Student
-                                    <p id="mms">
-                                    </p>
-                                </legend>
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <label class="labelArea" for="idName">
-                                                ID
-                                                <span>
-                                                    <i class="fa fa-asterisk">
-                                                    </i>
-                                                </span>
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <input class="inputArea" id="ID" name="ID" placeholder="Enter your ID" required="" type="number"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="labelArea" for="stuName">
-                                                Student Name:
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <input class="inputArea" id="name" name="stuName" placeholder="Enter your Name" required="" type="text">
-                                            </input>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="labelArea" for="className">
-                                                Class:
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <input class="inputArea" id="class" list="browsers" name="browser">
-                                                <datalist id="browsers">
-                                                    <option value="Pre-KG">
-                                                        <option value="Nursery">
-                                                            <option value="LKG">
-                                                                <option value="UKG">
-                                                                </option>
-                                                            </option>
+            </style>
+        </meta>
+    </head>
+    <body>
+        <div id="createStudent" style="">
+            <div class="fieldsetParentDiv">
+                <div class="fieldsetChildDiv">
+                    <fieldset class="fieldsetArea">
+                        <legend class="legendArea">
+                            Create Student
+                            <p id="mms">
+                            </p>
+                        </legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="labelArea" for="idName">
+                                        ID
+                                        <span>
+                                            <i class="fa fa-asterisk">
+                                            </i>
+                                        </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input class="inputArea" id="ID" name="ID" placeholder="Enter your ID" required="" type="number"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="labelArea" for="stuName">
+                                        Student Name:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input class="inputArea" id="name" name="stuName" placeholder="Enter your Name" required="" type="text">
+                                    </input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="labelArea" for="className">
+                                        Class:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input class="inputArea" id="class" list="browsers" name="browser">
+                                        <datalist id="browsers">
+                                            <option value="Pre-KG">
+                                                <option value="Nursery">
+                                                    <option value="LKG">
+                                                        <option value="UKG">
                                                         </option>
                                                     </option>
-                                                </datalist>
-                                            </input>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <label class="labelArea" for="ageName">
-                                                Age:
-                                            </label>
-                                        </td>
-                                        <td>
-                                            <input class="inputArea" id="age" name="aName" placeholder="Enter your Age" required="" type="number"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="buttonTD" colspan="2">
-                                            <a href="#">
-                                                <button class="btnAnc" onclick="cancel()">
-                                                    Cancel
-                                                </button>
-                                            </a>
-                                            <a href="#" id="createStudentBtn" onclick="createStudent();">
-                                                <button class="btnAnc">
-                                                    Submit
-                                                </button>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </fieldset>
-                        </div>
-                    </div>
+                                                </option>
+                                            </option>
+                                        </datalist>
+                                    </input>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="labelArea" for="ageName">
+                                        Age:
+                                    </label>
+                                </td>
+                                <td>
+                                    <input class="inputArea" id="age" name="aName" placeholder="Enter your Age" required="" type="number"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="buttonTD" colspan="2">
+                                    <a href="#">
+                                        <button class="btnAnc" onclick="cancel()">
+                                            Cancel
+                                        </button>
+                                    </a>
+                                    <a href="#" id="createStudentBtn" onclick="createStudent();">
+                                        <button class="btnAnc">
+                                            Submit
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
                 </div>
             </div>
-</body>
+        </div>
+    </body>
 </html>
