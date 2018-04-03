@@ -5,48 +5,240 @@
 	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 	<style>
 		body {
-	    	font-family: 'ABeeZee';font-size: 22px;
+	    	font-family: 'ABeeZee';
+	    	/*background-color: #ABC;*/
 		}
-		
-		ul {
-			list-style-type: none;
+
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.wrapper {
+			width: 95%;
+			margin:0 auto;
+		}
+		.pageHeader {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
 			padding: 10px;
-			border: 1px solid #0AB;
-			text-align: center;
-			width: 65%;
-			margin: 0 auto;
-
+			/*background-color: #0AB;*/
 		}
 
-		ul  li {
-			font-size:  20px;
-			display: inline-block;
-			background-color: #34AAA9;
+		.pageHeaderchild1 {
+			flex: 1 0 30%;
+		}
+		.pageHeaderchild2 {
+			flex: 1 0 60%;
+		}
+
+		.flexParentROW {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
 			padding: 10px;
-		}
 
-		li a {
-			color : white;
+		}
+		.navcolumn > a {
+			display: block;
+			padding: 6px;
 			text-decoration: none;
+			color: #000;
+			/*border: 1px solid red;*/
 		}
-
-		li a:hover {
+		.navcolumn > a:hover {
 			text-decoration: underline;
 		}
+		.stu-manag-sublink {
+			display:none;
+		}
+
+		  div.one:hover > ul.stu-manag-sublink > li {
+			display: block;
+		}
+		.sectionBody {
+		display: flex;
+		flex-flow: row wrap;
+		margin-top: 100px;
+		}
+		.sectionBodychild {
+			flex: 1 0 30%;
+		}
+		.verticalLineParent {
+			text-align: center;
+			/*position: relative;*/
+		}
+
+		.verticalLine {
+			
+			border:2px solid #C05555;
+			
+		}
+		.imgDiv {
+			width: 400px;
+			/*border:1px solid red;*/
+		}
+
+		.circle {
+			width: 200px;
+			height: 200px;
+			border-radius: 200px;
+			/*background-color: #000;*/
+			
+			/*position: absolute;*/
+			/*top: 70px;*/
+			/*left: 300px;*/
+		}
+
+		.massageParent{
+			/*float: right;*/
+		}
+		.Box{
+	      width: 350px;
+	      height: 200px;
+	      background-color: #C05555;
+	      border-radius: 10px;
+	      position: relative;
+	      margin-bottom: 130px;
+    	}
+    	.Box::before{
+	    content: "";
+	     display: block;
+	      position: absolute;
+	      top: 39%;
+	      left: -17px;
+	      border-top: 12px solid transparent;
+	      border-right: 17px solid #C05555;
+	      border-bottom: 12px solid transparent;
+    	}
+	footer {
+		padding: 20px;
+		color: #FFF;
+		background-color: #000;
+	}
 
 
 	</style>
 </head>
 <body>
-<header>
-	<ul>
-		<li><a href="StudentManagement/index.html">Student Management</a></li>
-		<li><a href="basic_layout/index.html">Basic Layouts</a></li>
-		<li><a href="position_layouts/index.html">Position Layouts</a></li>
-		<li><a href="animation/index.html">Animation</a></li>
-		<li><a href="form_validation/index.html">Form Validation</a></li>	
-	</ul>
-</header>
+
+
+	
+	<div class="wrapper">
+		<header class="pageHeader">
+		<div class="pageHeaderchild1"><h2 id="editableText" contentEditable>BRAVE NEW CREATIVE</h2><span><button onclick="myFunction(this)">s</button></span></div>
+
+		<div class="flexParentROW pageHeaderchild2">
+			<div class="navcolumn one"><a href="StudentManagement/index.html">Student Management</a>
+				<ul class="stu-manag-sublink">
+					<li><a href="">Stu-Manag-flexBox-ajax</a></li>
+					<li><a href="">Stu-Manag-css-promise</a></li>
+					<li><a href="">Stu-Manag-fetch</a></li>
+					<li><a href="">Stu-Manag-vanillaJS</a></li>
+				</ul>
+			</div>
+			<div class="navcolumn"><a href="position_layouts/index.html">Position Layouts</a></div>
+			<div class="navcolumn"><a href="basic_layout/index.html">Basic Layouts</a></div>
+			<div class="navcolumn"><a href="javascript_basic/index.html">javascriptBasic</a></div>
+			<div class="navcolumn"><a href="form_validation/index.html">Form Validation</a></div>
+			
+		</div>
+		</header>
+<div class="sectionBody">
+	<div class="imgDiv sectionBodychild">
+			<a href="#">Portfolio</a>
+			<span class="circle"><img src="soniPix.jpeg" alt="img" width="200px" height="200px" style="border-radius: 200px;"></span>
+
+	</div>
+	<div class="verticalLineParent sectionBodychild">
+		<div>
+			<div class="work"><a href="StudentManagement/index.html">Student Management</a></div>
+			
+			<hr class="verticalLine" width="1" size="300">
+
+		</div>
+
+		<div>
+			<!-- <div class="circle"></div> -->
+			<div class="work"><a href="position_layouts/index.html">Position Layouts</a></div>
+			<hr class="verticalLine" width="1" size="300">
+			
+		</div>
+		<div>
+			<!-- <div class="circle"></div> -->
+			<div class="work"><a href="basic_layout/index.html">Basic Layouts</a></div>
+			<hr class="verticalLine" width="1" size="300">
+		</div>
+		<div>
+			<!-- <div class="circle"></div> -->
+			<div class="work"><a href="javascript_basic/index.html">javascriptBasic</a></div>
+			<hr class="verticalLine" width="1" size="300">
+		</div>
+		<div>
+			<!-- <div class="circle"></div> -->
+			<div class="work"><a href="form_validation/index.html">Form Validation</a></div>
+			<hr class="verticalLine" width="1" size="300">
+		</div>
+
+	</div>
+
+	<div class="massageParent sectionBodychild">
+		<div class="massage Box">
+			<ul>
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+		</div>
+		<div class="massage Box">
+			<ul>
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+		</div>
+		<div class="massage Box">
+			<ul>
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+		</div>
+		<div class="massage Box">
+			<ul>
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+		</div>
+		<div class="massage Box">
+			<ul>
+				<li>a</li>
+				<li>b</li>
+				<li>c</li>
+			</ul>
+		</div>
+		
+	</div>
+</div>
+<footer>
+	<p><b>&copy;  Soni Saw copyright 2018</b></p>
+</footer>
+</div>
+
+<script>
+	function myFunction(button) {
+    var x = document.getElementById("editableText");
+    if (x.contentEditable == "true") {
+        x.contentEditable = "false";
+        button.innerHTML = "X";
+    } else {
+        x.contentEditable = "true";
+        button.innerHTML = "s";
+    }
+}
+</script>
 
 </body>
 </html>

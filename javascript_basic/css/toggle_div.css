@@ -1,0 +1,19 @@
+
+ body {
+ 	padding: 30px;
+ }
+
+ .green {
+ 	width: 150px;
+ 	height: 150px;
+ 	background-color: green;
+ 	cursor: pointer;
+ }
+
+ .blue {
+ 	width: 150px;
+ 	height: 150px;
+ 	background-color: blue;
+ 	cursor: pointer;
+ }
+
