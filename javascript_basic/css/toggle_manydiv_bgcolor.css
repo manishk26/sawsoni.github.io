@@ -1,0 +1,34 @@
+ body {
+ 	padding: 50px;
+ }
+
+ .box {
+ 	box-sizing: border-box;
+ }
+ #main {
+ 	width: 100%;
+ }
+
+ .clearfix::after{
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+
+ }
+ .style1 {
+ 	width: 24%;
+ 	height: 150px;
+ 	float: left;
+ 	background-color: green;
+ 	margin-right: 5px;
+ 	cursor: pointer;
+ }
+
+.style2 {
+ 	width: 24%;
+ 	height: 150px;
+ 	float: left;
+ 	background-color: blue;
+ 	margin-right: 5px;
+ 	cursor: pointer;
+ }

@@ -1,0 +1,19 @@
+	body {
+		padding: 50px;
+	}
+	#move_out_event{
+			width: 220px;
+			height: 100px;
+			background: linear-gradient(#000, #159, #953);
+			border-radius: 20px;
+		}
+	#ball{
+			width: 50px;
+			height: 50px;
+			box-shadow: 0 0 5px #000;
+			border-radius: 100%;
+			background: linear-gradient(#e3e3e3, #999);
+			position: absolute;
+			top: 70px;
+			left: 80px;
+		}

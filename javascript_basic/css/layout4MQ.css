@@ -1,0 +1,33 @@
+
+	/*Width from 520 to 699px - Apply an email icon to each link*/
+	@media screen and (max-width: 699px) and (min-width: 520px) {
+    ul li a {
+        padding-left: 30px;
+        background: url('imgs/Mail.png') left center no-repeat;
+    }
+	}
+	/*Width from 700 to 1000px - Preface the links with a text*/
+	@media screen and (max-width: 1000px) and (min-width: 700px) {
+    		ul li a:before {
+        	content: "Email: ";
+        	font-style: italic;
+        	color: #666666;
+    	}
+	}
+	/*Width above 1001px - Apply email address to links*/
+	@media screen and (min-width: 1001px) {
+    ul li a:after {
+        content: " (" attr(data-email) ")";
+        font-size: 12px;
+        font-style: italic;
+        color: #666666;
+    }
+  }
+  /*Width above 1151px - Add icon again as we used before*/
+
+  	@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+    	ul li a {
+        	padding-left: 30px;
+        	background: url('imgs/Mail.png') left center no-repeat;
+    	}
+	}

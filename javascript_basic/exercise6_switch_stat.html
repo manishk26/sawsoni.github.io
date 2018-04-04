@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>switch example</title>
+	<meta charset="utf-8">
+	<script>
+		function clickMe(){
+			// get the value from user input
+			var fruitName = document.getElementById('myInput').value;
+			// call a javascript function
+			// the function takes fruitName as parameter
+			// the function returns a value
+			var output = checkFruit(fruitName);
+			document.getElementById('demo').innerHTML = output;
+		}
+
+	</script>
+</head>
+<body>
+
+	<input type=" text" name="fruit" id="myInput" value="Apple">
+	<button onclick="clickMe()">Check Fruit Name</button>
+
+	<p id="demo"></p>
+
+	<input type="text" name="name" id="name" placeholder="name">
+	<button id="btn2"> check Name</button>
+	<p id="demo1"></p>
+
+<script type="text/javascript" src="js/exercise6.js"></script>
+</body>
+</html>

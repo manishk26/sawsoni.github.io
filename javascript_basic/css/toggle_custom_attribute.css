@@ -1,0 +1,27 @@
+body {
+	padding: 20px;
+}
+.green {
+	width: 150px;
+	height: 150px;
+	background-color: green;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+}
+
+.pink {
+	width: 150px;
+	height: 150px;
+	background-color: pink;
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+}
+
+/*can select custom attribute data- 
+*/
+
+	div.green[data-div="div1"] {
+		font-size: 2.5em;
+	}

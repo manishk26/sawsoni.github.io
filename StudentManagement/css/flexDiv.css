@@ -216,9 +216,7 @@
   .buttonTD> a {
     text-decoration: none;
   }
-  .divPadding {
-  	padding: 10px;
-  }
+ 
   .buttonTD> a >.btnAnc {
       margin-top: 20px;
       background-color: #0AB;

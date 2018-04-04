@@ -1,0 +1,70 @@
+
+	body {
+		margin: 0px;
+		background-color: #999;
+	}
+	div#topbar {
+         background: linear-gradient(#666, #000);
+         height: 60px;
+	}
+	/*.clearfix::after{
+		content: "";
+		display: table;
+		clear: both;
+	}*/
+	div#topbar > #logo{
+		float: left;
+		width: 150px;
+		height: 30px;
+		margin: 10px 0 0 30px;
+		font-size: 38px;
+		color: #999;
+	}
+
+	div#topbar > #section_btn_holder {
+		float: left;
+		width: 145px;
+		height: 46px;
+		padding-top: 20px;
+	}
+	div#topbar > #section_btn_holder > button {
+		display: block;
+		width: 120px;
+		height: 25px;
+		font-size: 16px;
+	}
+
+	div#topbar > #section_content_panel {
+		position: absolute;
+		top: 60px;
+		left: 170px;
+		background: #000;
+		color: #FFF;
+		height: 0px;
+		width: 550px;
+		
+		border-radius: 0 0 8px 8px;
+		overflow: hidden;
+		z-index: 10000;
+		/*The z-index property specifies the stack order of an element.
+
+			An element with greater stack order is always in front of an element with a lower stack order.
+
+			Note: z-index only works on positioned elements (position:absolute, position:relative, or position:fixed).*/
+		transition: height .3s linear 0s;
+
+
+	}
+
+	div#topbar > #section_content_panel > #text {
+		background-color: #333;
+		padding: 20px;
+		height: 235px;
+		margin: 10px;
+		color: #FFF;
+	} 
+
+
+
+
+
