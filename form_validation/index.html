@@ -5,7 +5,28 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/validate_string_input.css">
 </head>
+<style>
+	.flexParent {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		margin-bottom: 100px;
+	}
+</style>
 <body>
+	<div class="flexParent">
+		<div class="flexChild"><a href="../index.html">Home</a></div>
+		<div class="flexChild"><a href="ex1_input.html">Input</a></div>
+		<div class="flexChild"><a href="ex2.input_get.html">Input get</a></div>
+		<div class="flexChild"><a href="ex3.input_post.html">Input post</a></div>
+		<div class="flexChild"><a href="ex4.input_if.html">InputIf</a></div>
+		<div class="flexChild"><a href="ex5_radio.html">radio</a></div>
+		<div class="flexChild"><a href="ex6_check.html">check</a></div>
+		<div class="flexChild"><a href="isNan_function.html">IsNan</a></div>
+		<div class="flexChild"><a href="typeof_operater.html">typeOf</a></div>
+		<div class="flexChild"><a href="validate_number.html">IsNan</a></div>
+
+	</div>
 	<form action="abc.html" method="post" onsubmit="return validateStringInput()">
 
 		<label for="fname">Firstname</label>

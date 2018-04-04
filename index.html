@@ -72,7 +72,7 @@
 
 		.verticalLine {
 			
-			border:2px solid #0AB;
+			border:2px solid #C05555;
 			
 		}
 		.imgDiv {
@@ -127,7 +127,7 @@
 	
 	<div class="wrapper">
 		<header class="pageHeader">
-		<div class="pageHeaderchild1"><h2>BRAVE NEW CREATIVE</h2></div>
+		<div class="pageHeaderchild1"><h2 id="editableText" contentEditable>BRAVE NEW CREATIVE</h2><span><button onclick="myFunction(this)">s</button></span></div>
 
 		<div class="flexParentROW pageHeaderchild2">
 			<div class="navcolumn one"><a href="StudentManagement/index.html">Student Management</a>
@@ -153,7 +153,7 @@
 	</div>
 	<div class="verticalLineParent sectionBodychild">
 		<div>
-			<div class="work"><a href="#">Student Management</a></div>
+			<div class="work"><a href="StudentManagement/index.html">Student Management</a></div>
 			
 			<hr class="verticalLine" width="1" size="300">
 
@@ -161,23 +161,23 @@
 
 		<div>
 			<!-- <div class="circle"></div> -->
-			<div class="work"><a href="#">Position Layouts</a></div>
+			<div class="work"><a href="position_layouts/index.html">Position Layouts</a></div>
 			<hr class="verticalLine" width="1" size="300">
 			
 		</div>
 		<div>
 			<!-- <div class="circle"></div> -->
-			<div class="work"><a href="#">Basic Layouts</a></div>
+			<div class="work"><a href="basic_layout/index.html">Basic Layouts</a></div>
 			<hr class="verticalLine" width="1" size="300">
 		</div>
 		<div>
 			<!-- <div class="circle"></div> -->
-			<div class="work"><a href="#">javascriptBasic</a></div>
+			<div class="work"><a href="javascript_basic/index.html">javascriptBasic</a></div>
 			<hr class="verticalLine" width="1" size="300">
 		</div>
 		<div>
 			<!-- <div class="circle"></div> -->
-			<div class="work"><a href="#">Form Validation</a></div>
+			<div class="work"><a href="form_validation/index.html">Form Validation</a></div>
 			<hr class="verticalLine" width="1" size="300">
 		</div>
 
@@ -226,6 +226,19 @@
 	<p><b>&copy;  Soni Saw copyright 2018</b></p>
 </footer>
 </div>
+
+<script>
+	function myFunction(button) {
+    var x = document.getElementById("editableText");
+    if (x.contentEditable == "true") {
+        x.contentEditable = "false";
+        button.innerHTML = "X";
+    } else {
+        x.contentEditable = "true";
+        button.innerHTML = "s";
+    }
+}
+</script>
 
 </body>
 </html>
