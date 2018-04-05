@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>My Learning</title>
-	 <link rel="icon" href="gradient-star-16-203568.png" type="image/png">
+	 <link rel="icon" href="image/gradientStar.png" type="image/png">
 </head>
 	
 	<style>
@@ -24,7 +24,7 @@
 			flex-flow: row wrap;
 			justify-content: space-between;
 			padding: 10px;
-			/*background-color: #0AB;*/
+			background-color: #0AB;
 		}
 
 		.pageHeaderchild1 {
@@ -61,7 +61,7 @@
 		.sectionBody {
 		display: flex;
 		flex-flow: row wrap;
-		margin-top: 100px;
+		margin-top: 70px;
 		}
 		.sectionBodychild {
 			flex: 1 0 30%;
@@ -73,11 +73,12 @@
 
 		.verticalLine {
 			
-			border:2px solid #C05555;
+			border:2px solid #0AB;
 			
 		}
 		.imgDiv {
 			width: 400px;
+			text-align: right;
 			/*border:1px solid red;*/
 		}
 
@@ -98,10 +99,10 @@
 		.Box{
 	      width: 350px;
 	      height: 200px;
-	      background-color: #C05555;
+	      background-color: #0AB;
 	      border-radius: 10px;
 	      position: relative;
-	      margin-bottom: 130px;
+	      margin-bottom: 50px;
     	}
     	.Box::before{
 	    content: "";
@@ -110,13 +111,13 @@
 	      top: 39%;
 	      left: -17px;
 	      border-top: 12px solid transparent;
-	      border-right: 17px solid #C05555;
+	      border-right: 17px solid #0AB;
 	      border-bottom: 12px solid transparent;
     	}
 	footer {
 		padding: 20px;
 		color: #FFF;
-		background-color: #000;
+		background-color: #0AB;
 	}
 
 
@@ -128,7 +129,7 @@
 	
 	<div class="wrapper">
 		<header class="pageHeader">
-		<div class="pageHeaderchild1"><h2 id="editableText" contentEditable>BRAVE NEW CREATIVE</h2><span><button onclick="myFunction(this)">s</button></span></div>
+		<div class="pageHeaderchild1"><h2 id="editableText" contentEditable>BRAVE NEW CREATIVE <span onclick="myFunction(this)"><i style="font-size: .5em">click</i></span></h2></div>
 
 		<div class="flexParentROW pageHeaderchild2">
 			<div class="navcolumn one"><a href="StudentManagement/index.html">Student Management</a>
@@ -149,37 +150,37 @@
 <div class="sectionBody">
 	<div class="imgDiv sectionBodychild">
 			<a href="#">Portfolio</a>
-			<span class="circle"><img src="soniPix.jpeg" alt="img" width="200px" height="200px" style="border-radius: 200px;"></span>
+			<span class="circle"><img src="image/mypix.jpg" alt="img" width="200px" height="200px" style="border-radius: 200px;"></span>
 
 	</div>
 	<div class="verticalLineParent sectionBodychild">
 		<div>
 			<div class="work"><a href="StudentManagement/index.html">Student Management</a></div>
 			
-			<hr class="verticalLine" width="1" size="300">
+			<hr class="verticalLine" width="1" size="200">
 
 		</div>
 
 		<div>
 			<!-- <div class="circle"></div> -->
 			<div class="work"><a href="position_layouts/index.html">Position Layouts</a></div>
-			<hr class="verticalLine" width="1" size="300">
+			<hr class="verticalLine" width="1" size="200">
 			
 		</div>
 		<div>
 			<!-- <div class="circle"></div> -->
 			<div class="work"><a href="basic_layout/index.html">Basic Layouts</a></div>
-			<hr class="verticalLine" width="1" size="300">
+			<hr class="verticalLine" width="1" size="200">
 		</div>
 		<div>
 			<!-- <div class="circle"></div> -->
 			<div class="work"><a href="javascript_basic/index.html">javascriptBasic</a></div>
-			<hr class="verticalLine" width="1" size="300">
+			<hr class="verticalLine" width="1" size="200">
 		</div>
 		<div>
 			<!-- <div class="circle"></div> -->
 			<div class="work"><a href="form_validation/index.html">Form Validation</a></div>
-			<hr class="verticalLine" width="1" size="300">
+			<hr class="verticalLine" width="1" size="200">
 		</div>
 
 	</div>
@@ -233,10 +234,12 @@
     var x = document.getElementById("editableText");
     if (x.contentEditable == "true") {
         x.contentEditable = "false";
-        button.innerHTML = "X";
+        button.innerHTML = "click Change";
+        button.style.fontSize = "0.5em";
     } else {
         x.contentEditable = "true";
-        button.innerHTML = "s";
+        button.innerHTML = "click save";
+         button.style.fontSize = "0.5em";
     }
 }
 </script>
