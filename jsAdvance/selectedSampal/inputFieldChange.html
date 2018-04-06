@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document when an input field change</title>
+</head>
+<body>
+	<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+	<label for="fName"></label>
+	<input type="text" id="fName" onchange="myFunction()">
+
+
+	<script>
+		function myFunction(){
+			var x = document.getElementById('fName');
+			x.value = x.value.toUpperCase();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Closure Slide Show</title>
+</head>
+<style>
+	img {
+		width: 450px;
+		height: 450px;
+		margin-left: 100px;  
+	}
+	#back {
+		display: inline-block;
+		position: absolute;
+		top: 220px;
+		left: 110px;
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+		}
+	#front {
+		display: inline-block;
+		position: absolute;
+		top: 220px;
+		left: 525px;
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+
+		}
+</style>
+<body>
+	<div>
+	<button id="back"><b> < </b></button>
+	<span id="display"><img src="../image/sea.jpg"></span>
+	<button id="front"> <b> > </b> </button>
+	</div>
+
+	<div id="test"></div>
+	<script src="../js/closureImageLooping.js"></script>
+</body>
+</html>

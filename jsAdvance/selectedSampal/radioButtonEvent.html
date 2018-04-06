@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RadioButton</title>
+</head>
+<style>
+	input {
+		display: inline-block;
+		margin-top: 20px;
+	}
+</style>
+<body>
+<form action="">
+	 <div>
+	 <label for="continue_yes">Yes</label>
+	 <input type="radio" name="continue" id="continue_yes" value="yes">
+	</div>
+	<div>
+	 <label for="continue_no">No</label>
+	 <input type="radio" name="continue" id="continue_no" value="no">
+	</div>
+	<input type="button" id="submit" value="submit">
+</form>
+	<p id="demo"></p>
+
+	<script>
+		function radioFunction(){
+			var yes = document.getElementById('continue_yes').checked;
+			var no = document.getElementById('continue_no').checked;
+
+			var text = document.getElementById('demo');
+
+			if(yes == "" && no == ""){
+				text.innerHTML = "cannot leave empty" ;
+				return false;
+			}else{
+				text.innerHTML = "good choice"
+				return true;
+			}
+
+		} 
+
+		var button = document.getElementById('submit').addEventListener('click',radioFunction);
+	</script>
+</body>
+</html>

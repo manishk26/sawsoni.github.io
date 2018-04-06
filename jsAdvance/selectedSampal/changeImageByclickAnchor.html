@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Change Image</title>
+</head>
+<style>
+	img {
+		width: 350px;
+		height: 200px;
+		padding-left: 30px;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	ul {
+		 list-style-type: none;
+		 /*padding: 0;*/
+		}
+	ul li {
+		display: inline-block;
+	}
+
+	ul a {
+		 display: block;
+		 width: 112px;
+		height: 25px;
+		line-height: 25px;
+		background-color: #075DAD;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 1.2em;
+		border-radius: 5px;
+	}
+</style>
+<body>
+		<h1>Pictures</h1>
+		<p>It has to display only one image at a time and cancel the existing one
+		</p>
+		<ul>
+			<li><a  data-img="sculpture-img" href="#"  id="sculpture">sculpture</a></li>
+			<li><a data-img="sea-img" href="#" id="sea">sea</a></li>
+			<li><a data-img="tea-img" href="#" id="tea">tea</a></li>
+		</ul>
+
+		<img src="../image/sculpture.jpg" alt="img" class="hide"  id="sculpture-img">
+		<img src="../image/sea.jpg" alt="img" class="hide" id="sea-img">
+		<img src="../image/teacup.jpg" alt="img" class="hide" id="tea-img">
+
+		<script src="../js/changeImageByclickAnchor.js"></script>
+</body>
+</html>

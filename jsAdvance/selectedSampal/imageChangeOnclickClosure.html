@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image change</title>
+</head>
+<body>
+	<p>through the IIFE function i did this,the IIFE function is returning a function</p>
+	<div><img  id="bulbImg" src="../image/pic_bulboff.gif" alt="image"><span  id="clickSpan" style= "outline:1px solid red; cursor: pointer">click me</span></div>
+
+	<script>
+		var fun = (function(){	
+		var i = "on";
+		function b(){
+			var img = document.getElementById('bulbImg');
+			if(i == 'on'){
+				img.src = "../image/pic_bulbon.gif";
+				console.log('helloIf');
+					i = 'off';
+			}else{
+					img.src = "../image/pic_bulboff.gif";
+					console.log('helloElse');
+						i = 'on';
+				}
+		}
+
+			return b;
+		})();
+
+	document.getElementById('clickSpan').addEventListener('click',fun);
+
+		// setTimeout(fun(),5000);
+		//  setInterval(fun(),2000);
+		// var timer = setInterval(fun(),2000);
+
+
+	
+
+
+
+
+
+	</script>
+</body>
+</html>
