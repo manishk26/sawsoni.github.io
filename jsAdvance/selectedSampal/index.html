@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Closure Slide Show</title>
+</head>
+<style>
+	img {
+		width: 450px;
+		height: 450px;
+		margin-left: 100px;  
+	}
+	#back {
+		display: inline-block;
+		position: absolute;
+		top: 220px;
+		left: 110px;
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+		}
+	#front {
+		display: inline-block;
+		position: absolute;
+		top: 220px;
+		left: 525px;
+		width: 30px;
+		height: 30px;
+		font-size: 20px;
+
+		}
+		.flex {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+		}
+</style>
+<body>
+	<div><a href="../../Index.html">Home</a></div>
+	<div class="flex">
+		<div><a href="changeImageByclickAnchor.html">changeImage</a></div>
+		<div><a href="closureIncreageFontSize.html">IncreageFontSize</a></div>
+		<div><a href="couterUseInSlideShow.html">SlideShow</a></div>
+		<div><a href="eventBubbling.html">eventBubbling</a></div>
+		<div><a href="imageChangeOnclickClosure.html">imageChange</a></div>
+		<div><a href="inputFieldChange.html">inputField</a></div>
+		<div><a href="jsConditionIfElse.html">Condition</a></div>
+		<div><a href="radioButtonEvent.html">radioButton</a></div>
+		<div><a href="setTimeIntervalUseinWabpage.html">setTimeInte</a></div>
+		<div><a href="slideShowArrayWithCSS3.html">slideShow</a></div>
+		<div><a href="sunSringAndIndexOfAndLastIndexof.html">Indexof</a></div>
+		<div><a href="switchStatementWithInput.html">switch</a></div>
+	</div>
+	<div>
+	<button id="back"><b> < </b></button>
+	<span id="display"><img src="../image/sea.jpg"></span>
+	<button id="front"> <b> > </b> </button>
+	</div>
+
+	<div id="test"></div>
+	<script src="../js/closureImageLooping.js"></script>
+</body>
+</html>

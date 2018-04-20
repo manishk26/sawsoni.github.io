@@ -1,8 +1,14 @@
+	body{
+		font-size: 14px;
+		font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+	}
+	
+
 	div {
 			box-sizing: border-box;
 		}
 	:root{
-		--main-color-color :#0AB;
+		--main-color-color :#2F8965;
 	}
 		
 	#mainDiv {
@@ -38,14 +44,15 @@
 		text-align: center;
 		padding-top: 5px;
 
+
 	}
 
 	.searchWrapper > input {
 		padding: 10px;
 		width: 80%;
 		height: 30px;
-		font-size: 1em;
 		border-radius: 5px;
+		font-size: inherit;
 
 	}
 	/*=====*/
@@ -102,6 +109,7 @@
 		flex:1 0 20%;
 		padding: 10px;
 		border-right: 1px solid grey;
+		color: #FFF;
 
 	}
 
@@ -123,6 +131,7 @@
 			justify-content: flex-end;
 			padding: 10px;
 			padding-right: 30px;
+			color: #FFF;
 		}
 /*==================btn warpper========*/
 	.btnWrapper {
@@ -138,14 +147,16 @@
 		background-color: var(--main-color-color);
 		color:#FFF;
 		cursor:pointer;
+		font-size: inherit;
 	}
 	#deleteAllBTN{
 		background-color: var(--main-color-color);
 		color:#FFF;
 		cursor: no-drop;
+		font-size: inherit;
 
 	}
-/*==================new STudent create========*/
+/*================== New Student Create========*/
 	    .fieldsetChildDiv {
       --main-shadow-h-size: 3px;
       --main-shadow-v-size: 4px;
@@ -199,7 +210,6 @@
       width: 500px;
       padding: 6px 12px;
       margin-bottom: 5px;
-      font-size: .7em;
   }
   .content>p>img {
       /*display: block;*/
@@ -221,8 +231,7 @@
       margin-top: 20px;
       background-color: #0AB;
       padding: 6px 10px;
-      color: #A00;
-      font-size: .8em;
+      color: #FFF;
       cursor: pointer;
   }
   @media only screen and (max-width: 600px){

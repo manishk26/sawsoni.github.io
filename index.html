@@ -1,248 +1,291 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Learning</title>
-	 <link rel="icon" href="image/gradientStar.png" type="image/png">
-</head>
-	
+	<meta charset="UTF-8">
+	<title>newIndex</title>
 	<style>
-		body {
-	    	
+		div {
+			border:0;
+			/*vertical-align: baseline;*/
+			margin: 0;
+			padding: 0;
 		}
 
+		#wrapper {
+				width: 100%;
+			    text-align: center;
+    			font-size: 16px;
+    			font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+			}
 
-		* {
-			box-sizing: border-box;
+		.portfolio-intro {
+			position: relative;
+			height: 100%;
 		}
-
-		.wrapper {
-			width: 95%;
-			margin:0 auto;
-		}
-		.pageHeader {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-between;
-			padding: 10px;
-			background-color: #0AB;
-		}
-
-		.pageHeaderchild1 {
-			flex: 1 0 30%;
-		}
-		.pageHeaderchild2 {
-			flex: 1 0 60%;
+	
+		.site-name {
+		font-size: 12px;
+    	text-transform: uppercase;
+    	letter-spacing: 0.26em;
+    	font-weight: 700;
+    	padding-top: 20px;
+   	 	text-align: center;
+    	/*font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;*/
 		}
 
-		.flexParentROW {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-between;
-			padding: 10px;
-
-		}
-		.navcolumn > a {
+		.site-name-link {
 			display: block;
-			padding: 6px;
+			width: 100px;
+			margin: 0 auto;
+			color: #783127; 
+			border-bottom: 0px solid #783127;
 			text-decoration: none;
-			color: #000;
-			/*border: 1px solid red;*/
+    		transition: border-bottom 0.2s ease-in-out;
+    			
 		}
-		.navcolumn > a:hover {
-			text-decoration: underline;
+		.site-name-link:hover {
+			border-bottom: 3px solid #783127;
 		}
-		.stu-manag-sublink {
-			display:none;
+		.singal-page-header {
+			font-size: 42px;
+    		font-weight: 400;
+    		line-height: 1.3em;
+		}
+		.ampersant {
+			font-family: Baskerville, "EB Garamond", 					serif;
+    		font-style: italic
+		}
+		.work-items {
+			width: 90%;
+			margin: -80px auto 0 auto;
+			padding: 30px;
+			display: flex;
+			flex-flow: row wrap;
 		}
 
-		  div.one:hover > ul.stu-manag-sublink > li {
-			display: block;
+		.section-header {
+
+    		font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+		    font-size: 176px;
+		    font-weight: 700;
+		    text-align: left;
+		    z-index: 10;
+		    position: relative;
+		    line-height: 0.6em;
+		    pointer-events: none;
+		    flex: 1 100%;
 		}
-		.sectionBody {
-		display: flex;
-		flex-flow: row wrap;
-		margin-top: 70px;
-		}
-		.sectionBodychild {
-			flex: 1 0 30%;
-		}
-		.verticalLineParent {
+
+		.viewProjectShow {
+			background-color: none;
+			padding: 10px 15px;
+			position: absolute;
+			top: -30px;
+			right: 0;
+			transition: all .8s linear 0s;
+			width: 100px;
+			height: 0;
 			text-align: center;
-			/*position: relative;*/
+			/*z-index: 100;*/
+			color: transparent;
+		}
+		
+
+		.child1:hover .viewProjectShow,.child2:hover .viewProjectShow,.child3:hover .viewProjectShow,.child4:hover .viewProjectShow,.child5:hover .viewProjectShow,.child6:hover .viewProjectShow{
+			top: 0px;
+			height:50px;
+			line-height: 50px;
+			background-color: #000;
+			color: #fff;
 		}
 
-		.verticalLine {
-			
-			border:2px solid #0AB;
-			
+		.work-item {
+			padding: 30px;
+		    box-sizing: border-box;
+
 		}
-		.imgDiv {
-			width: 400px;
-			text-align: right;
-			/*border:1px solid red;*/
+		.child1 {
+			background-color: #35936c;
+		    flex: 1 100%;
+		    text-align: left;
+		    margin: -150px auto 0 auto;
+		    display: flex;
+		    flex-flow: row wrap;
+		    position: relative;
+		}
+		.link-allItem {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 		}
 
-		.circle {
-			width: 200px;
-			height: 200px;
-			border-radius: 200px;
-			/*background-color: #000;*/
-			
-			/*position: absolute;*/
-			/*top: 70px;*/
-			/*left: 300px;*/
+		.child1-child1 {
+			flex: 1 10%;
+			background-color: #35936c;
+    		color: #fff;
+
+		}
+		.child1-child2 {
+			flex: 2 20%;
+			background-color: #35936c;
+    		color: #fff;
+
+		}
+		.paragraph_font_size {
+			font-size: 1.2em;
+		}
+		.student-work-header {
+			min-height: 2em;
+    		margin-bottom: 1em;
+    		font: normal 62px "EB Garamond", serif;
 		}
 
-		.massageParent{
-			/*float: right;*/
+		.child2 {
+			/*background-color: #9d91aa;*/
+			background-color: #1a1a1a;
+			color: white;
+			flex: 1 50%;
+			position: relative;
 		}
-		.Box{
-	      width: 350px;
-	      height: 200px;
-	      background-color: #0AB;
-	      border-radius: 10px;
-	      position: relative;
-	      margin-bottom: 50px;
-    	}
-    	.Box::before{
-	    content: "";
-	     display: block;
-	      position: absolute;
-	      top: 39%;
-	      left: -17px;
-	      border-top: 12px solid transparent;
-	      border-right: 17px solid #0AB;
-	      border-bottom: 12px solid transparent;
-    	}
-	footer {
-		padding: 20px;
-		color: #FFF;
-		background-color: #0AB;
-	}
+		.child3 {
+			background-color: #224a54;
+			flex: 1 50%;
+			color: white;
+			position: relative;
+		}
+		.child4 {
+			background: linear-gradient(#b84336, #c44736);
+			flex: 1 100%;
+			color: white;
+			position: relative;
+		}
+		.child5 {
+			background: linear-gradient(darkcyan, #0AB);
+			flex: 1 50%;
+			color: white;
+			position: relative;
+		}
+		.child6 {
+			background: linear-gradient(darkcyan, #000);
+			flex: 1 50%;
+			color: white;
+			position: relative;
+		}
+		.child7 {
+			background: linear-gradient(#b84336,#c44736);
+			flex: 1 100%;
+			color: white;
+			margin: 50px auto 0 auto;
+		    position: relative;
+		    display: flex;
+		    flex-flow: row wrap;
 
-
+		}
+		.child7-child {
+			flex: 1 400px;
+		}
+		
 	</style>
 </head>
 <body>
+	<div id="wrapper">
 
+		<div class="portfolio-intro">
+			<h1 class="site-name"><a href="#" class="site-name-link">Soni Saw</a></h1>
 
-	
-	<div class="wrapper">
-		<header class="pageHeader">
-		<div class="pageHeaderchild1"><h2 id="editableText" contentEditable>BRAVE NEW CREATIVE <span onclick="myFunction(this)"><i style="font-size: .5em">click</i></span></h2></div>
+			<h2 class="singal-page-header">My design<span class="ampersant" > & </span>my work</h2>
+		</div>
 
-		<div class="flexParentROW pageHeaderchild2">
-			<div class="navcolumn one"><a href="StudentManagement/index.html">Student Management</a>
-				<ul class="stu-manag-sublink">
-					<li><a href="">Stu-Manag-flexBox-ajax</a></li>
-					<li><a href="">Stu-Manag-css-promise</a></li>
-					<li><a href="">Stu-Manag-fetch</a></li>
-					<li><a href="">Stu-Manag-vanillaJS</a></li>
-				</ul>
+		<div class="work-items">
+			<!-- <h2 class="section-header hello">hi...</h2> -->
+
+			
+			<h2 class="section-header">Work.</h2>
+			
+			<div class="work-item child1 ">
+				<div class="child1-child1">
+					<div>
+						<h2 class="student-work-header" style="text-decoration: underline;">Student <br> Management</h2>
+					</div>
+					<span class="viewProjectShow">View project</span>
+					
+					</div>
+					<div class="child1-child2 paragraph_font_size">
+						<p> This is a demo Student Management tool, where user can view, search,<br/> create, edit and delete student/s.<br/>
+							I have used :
+						<ul>
+							<li><span style="border-bottom: 1px solid #000; color:#000">JQuery Library </span> - A popular library for DOM manupulation</li>
+							<li><span style="border-bottom: 1px solid #000; color:#000">JQuery Ajax </span> - The function returns promise object. The promise objects has been thenified in which I am updating a DOM element.</li>
+							<li><span style="border-bottom: 1px solid #000; color:#000">CSS3 Flex Layout - </span> With above response of ajax request, I have created flex container with multiple flex childrens which looks like table, row and column. The first row is sticky which looks a like table <i style="color:black">header</i>. The last row of the container looks like a <i style="color:black">footer</i> which is also sticky. The data rows will get a scroll if it exceed height of the container.</li>
+							
+						</ul>
+						</p>
+					</div>
+					<a href="StudentManagement/index.html" class="link-allItem"></a>
 			</div>
-			<div class="navcolumn"><a href="position_layouts/index.html">Position Layouts</a></div>
-			<div class="navcolumn"><a href="basic_layout/index.html">Basic Layouts</a></div>
-			<div class="navcolumn"><a href="javascript_basic/index.html">javascriptBasic</a></div>
-			<div class="navcolumn"><a href="form_validation/index.html">Form Validation</a></div>
+			<!-- child1 end -->
+			<div class="work-item child2 ">
+				<div class="child2-child">
+					<h2 class="singal-page-header">Disign with HTML5 <span class="ampersant">  & </span>CSS3</h2>
+					<p>I have disign 10 layout with pure html5 and use css3 .That show my creativety</p>
+					<span class="viewProjectShow">View project</span>
+				</div>
+				<a href="position_layouts/index.html" class="link-allItem"></a>
+			</div>
+			<div class="work-item child3 ">
+				<div class="child3-child">
+					<h2 class="singal-page-header">Sementic Element layout</h2>
+					<p>I have used sementic Element.</p>
+					<p>
+					A semantic element clearly describes its meaning to both the browser and the developer</p>
+					<span class="viewProjectShow">View project</span>
+				</div>
+				<a href="basic_layout/index.html" class="link-allItem"></a>
+			</div>
+			<div class="work-item child4 ">
+				<div class="child4-child">
+					<h2 class="singal-page-header">Event Handling</h2>
+					<p>While lernning event handler example</p>
+					<span class="viewProjectShow">View project</span>
+				</div>
+				<a href="javascript_basic/index.html" class="link-allItem"></a>
+			</div>
+			<div class="work-item child5 ">
+				<div class="child5-child">
+					<h2 class="singal-page-header">Validation Practice</h2>
+					<p>Take user input and validate the input according to the requerment</p>
+					<span class="viewProjectShow">View project</span>
+				</div>
+				<a href="form_validation/index.html" class="link-allItem"></a>
+			</div>
+			<div class="work-item child6 ">
+				<div class="child6-child">
+					<h2 class="singal-page-header">Closure <span class="ampersant"> & </span>Slide Show </h2>
+					<span class="viewProjectShow">View project</span>
+				</div>
+				<a href="jsAdvance/selectedSampal/index.html" class="link-allItem"></a>
+			</div>
+
+			<div class="work-item child7 ">
+				<div class="child7-child">
+					<p>I love to design. I have taken tranning through Aspire gate institute from past 1 year.</p>
+					<p>Soni Saw</p>
+					<p>Bangalore India</p>
+
+				</div>
+				<div class="child7-child">
+					<img src="image/mypix_small.png"/>
+				</div>
+			</div>
+
+
 			
 		</div>
-		</header>
-<div class="sectionBody">
-	<div class="imgDiv sectionBodychild">
-			<a href="#">Portfolio</a>
-			<span class="circle"><img src="image/mypix.jpg" alt="img" width="200px" height="200px" style="border-radius: 200px;"></span>
+		<!-- work-items end -->
 
-	</div>
-	<div class="verticalLineParent sectionBodychild">
-		<div>
-			<div class="work"><a href="StudentManagement/index.html">Student Management</a></div>
-			
-			<hr class="verticalLine" width="1" size="200">
-
-		</div>
-
-		<div>
-			<!-- <div class="circle"></div> -->
-			<div class="work"><a href="position_layouts/index.html">Position Layouts</a></div>
-			<hr class="verticalLine" width="1" size="200">
-			
-		</div>
-		<div>
-			<!-- <div class="circle"></div> -->
-			<div class="work"><a href="basic_layout/index.html">Basic Layouts</a></div>
-			<hr class="verticalLine" width="1" size="200">
-		</div>
-		<div>
-			<!-- <div class="circle"></div> -->
-			<div class="work"><a href="javascript_basic/index.html">javascriptBasic</a></div>
-			<hr class="verticalLine" width="1" size="200">
-		</div>
-		<div>
-			<!-- <div class="circle"></div> -->
-			<div class="work"><a href="form_validation/index.html">Form Validation</a></div>
-			<hr class="verticalLine" width="1" size="200">
-		</div>
-
-	</div>
-
-	<div class="massageParent sectionBodychild">
-		<div class="massage Box">
-			<ul>
-				<li>a</li>
-				<li>b</li>
-				<li>c</li>
-			</ul>
-		</div>
-		<div class="massage Box">
-			<ul>
-				<li>a</li>
-				<li>b</li>
-				<li>c</li>
-			</ul>
-		</div>
-		<div class="massage Box">
-			<ul>
-				<li>a</li>
-				<li>b</li>
-				<li>c</li>
-			</ul>
-		</div>
-		<div class="massage Box">
-			<ul>
-				<li>a</li>
-				<li>b</li>
-				<li>c</li>
-			</ul>
-		</div>
-		<div class="massage Box">
-			<ul>
-				<li>a</li>
-				<li>b</li>
-				<li>c</li>
-			</ul>
-		</div>
 		
 	</div>
-</div>
-<footer>
-	<p><b>&copy;  Soni Saw copyright 2018</b></p>
-</footer>
-</div>
-
-<script>
-	function myFunction(button) {
-    var x = document.getElementById("editableText");
-    if (x.contentEditable == "true") {
-        x.contentEditable = "false";
-        button.innerHTML = "click Change";
-        button.style.fontSize = "0.5em";
-    } else {
-        x.contentEditable = "true";
-        button.innerHTML = "click save";
-         button.style.fontSize = "0.5em";
-    }
-}
-</script>
-
 </body>
 </html>

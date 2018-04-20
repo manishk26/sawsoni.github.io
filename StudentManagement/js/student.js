@@ -1,5 +1,5 @@
-var URL  = 'https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students/';
-//var URL = "http://demo.soni.com:3000/students/";
+//var URL  = 'https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students/';
+var URL = "http://demo.soni.com:3000/students/";
 function newStudentBtnClick(){
         var c = $('#createStudent');
         c.css('display','block'); // show div to create 

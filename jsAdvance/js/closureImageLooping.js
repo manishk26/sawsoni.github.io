@@ -34,7 +34,7 @@ function SliderCounter(array){
         
     }
 }
-    var array = ["<img src='image/sea.jpg' alt='img'>","<img src='image/sculpture.jpg' alt='img'>","<img src='image/teacup.jpg' alt='img'>"];
+    var array = ["<img src='../image/sea.jpg' alt='img'>","<img src='../image/sculpture.jpg' alt='img'>","<img src='../image/teacup.jpg' alt='img'>"];
     // var array = ["test1","test2","test3"];
     var slide = SliderCounter(array);
         
