@@ -4,25 +4,25 @@
   "students": [
     {
       "id": "1",
-      "name": "Moni",
+      "name": "Monika",
       "class": "Pre-KG",
       "age": "2"
     },
     {
       "id": "2",
-      "name": "moni",
+      "name": "Kunika",
       "class": "Nursery",
       "age": "4"
     },
     {
       "id": "3",
-      "name": "Koni",
+      "name": "Soni",
       "class": "LKG",
       "age": "2"
     },
     {
       "id": "4",
-      "name": "Naresh",
+      "name": "Avika",
       "class": "LKG",
       "age": "2"
     },
@@ -34,13 +34,13 @@
     },
     {
       "id": "6",
-      "name": "moni",
+      "name": "Sushma",
       "class": "Nursery",
       "age": "4"
     },
     {
       "id": "7",
-      "name": "Koni",
+      "name": "Avinash",
       "class": "LKG",
       "age": "2"
     },
@@ -52,49 +52,49 @@
     },
     {
       "id": "9",
-      "name": "Moni",
+      "name": "Suresh",
       "class": "Pre-KG",
       "age": "2"
     },
     {
       "id": "10",
-      "name": "moni",
+      "name": "Dinesh",
       "class": "Nursery",
       "age": "4"
     },
     {
       "id": "11",
-      "name": "Koni",
+      "name": "Prakash",
       "class": "LKG",
       "age": "2"
     },
     {
       "id": "12",
-      "name": "Naresh",
+      "name": "Ganesh",
       "class": "LKG",
       "age": "2"
     },
     {
       "id": "13",
-      "name": "Moni",
+      "name": "Tom",
       "class": "Pre-KG",
       "age": "2"
     },
     {
       "id": "14",
-      "name": "moni",
+      "name": "Jimmy",
       "class": "Nursery",
       "age": "4"
     },
     {
       "id": "15",
-      "name": "Koni",
+      "name": "Jonny",
       "class": "LKG",
       "age": "2"
     },
     {
       "id": "16",
-      "name": "Naresh",
+      "name": "Reena",
       "class": "LKG",
       "age": "2"
     }
