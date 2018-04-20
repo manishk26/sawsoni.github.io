@@ -22,6 +22,7 @@ function getRow(student) {
         				<div class ="deleteDiv"> <button class="deleteBtn" onclick='deleteStudent(${student.id})'>&#215</button> </div>`;
     return row = `<div class="row">${columns}</div>`;
 }
+
 // create rows of students
 function getRows(students) {
     if (Array.isArray(students)) {
@@ -38,6 +39,7 @@ function domUpdateEle(classN, data) {
     // document.querySelector(classN).innerHTML = data;
     $(classN).html(data);
 }
+
 // $.ajax to get data
 function getStudents(url) {
     $.ajax({
@@ -46,12 +48,10 @@ function getStudents(url) {
     }).then((response) => {
         var rows = getRows(response);
         domUpdateEle('.rowContainer', rows);
+        $('#total').html(response.length); //this will show total no of student
     })
 }
-//click the the button
-/*$('#getData').on('click', () => {
-	getStudents('http://demo.soni.com:3000/students');
-})*/
+
 // $.ajax to get data through input
 function searchStudent() {
     var input = $('#serchByClass').val();
@@ -108,7 +108,7 @@ function deleteStudent(id) {
         url: url,
         method: 'DELETE'
     }).then((response) => {
-        alert(`Student ${id} delete successfully.`);
+        //alert(`Student ${id} delete successfully.`);
         searchStudent();
     }).catch((error) => {
         alert('sorry...' + error);

@@ -2,192 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>newIndex</title>
-	<style>
-		div {
-			border:0;
-			/*vertical-align: baseline;*/
-			margin: 0;
-			padding: 0;
-		}
-
-		#wrapper {
-				width: 100%;
-			    text-align: center;
-    			font-size: 16px;
-    			font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
-			}
-
-		.portfolio-intro {
-			position: relative;
-			height: 100%;
-		}
+	<title>soni4naresh@gmail.com</title>
 	
-		.site-name {
-		font-size: 12px;
-    	text-transform: uppercase;
-    	letter-spacing: 0.26em;
-    	font-weight: 700;
-    	padding-top: 20px;
-   	 	text-align: center;
-    	/*font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;*/
-		}
-
-		.site-name-link {
-			display: block;
-			width: 100px;
-			margin: 0 auto;
-			color: #783127; 
-			border-bottom: 0px solid #783127;
-			text-decoration: none;
-    		transition: border-bottom 0.2s ease-in-out;
-    			
-		}
-		.site-name-link:hover {
-			border-bottom: 3px solid #783127;
-		}
-		.singal-page-header {
-			font-size: 42px;
-    		font-weight: 400;
-    		line-height: 1.3em;
-		}
-		.ampersant {
-			font-family: Baskerville, "EB Garamond", 					serif;
-    		font-style: italic
-		}
-		.work-items {
-			width: 90%;
-			margin: -80px auto 0 auto;
-			padding: 30px;
-			display: flex;
-			flex-flow: row wrap;
-		}
-
-		.section-header {
-
-    		font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
-		    font-size: 176px;
-		    font-weight: 700;
-		    text-align: left;
-		    z-index: 10;
-		    position: relative;
-		    line-height: 0.6em;
-		    pointer-events: none;
-		    flex: 1 100%;
-		}
-
-		.viewProjectShow {
-			background-color: none;
-			padding: 10px 15px;
-			position: absolute;
-			top: -30px;
-			right: 0;
-			transition: all .8s linear 0s;
-			width: 100px;
-			height: 0;
-			text-align: center;
-			/*z-index: 100;*/
-			color: transparent;
-		}
-		
-
-		.child1:hover .viewProjectShow,.child2:hover .viewProjectShow,.child3:hover .viewProjectShow,.child4:hover .viewProjectShow,.child5:hover .viewProjectShow,.child6:hover .viewProjectShow{
-			top: 0px;
-			height:50px;
-			line-height: 50px;
-			background-color: #000;
-			color: #fff;
-		}
-
-		.work-item {
-			padding: 30px;
-		    box-sizing: border-box;
-
-		}
-		.child1 {
-			background-color: #35936c;
-		    flex: 1 100%;
-		    text-align: left;
-		    margin: -150px auto 0 auto;
-		    display: flex;
-		    flex-flow: row wrap;
-		    position: relative;
-		}
-		.link-allItem {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
-
-		.child1-child1 {
-			flex: 1 10%;
-			background-color: #35936c;
-    		color: #fff;
-
-		}
-		.child1-child2 {
-			flex: 2 20%;
-			background-color: #35936c;
-    		color: #fff;
-
-		}
-		.paragraph_font_size {
-			font-size: 1.2em;
-		}
-		.student-work-header {
-			min-height: 2em;
-    		margin-bottom: 1em;
-    		font: normal 62px "EB Garamond", serif;
-		}
-
-		.child2 {
-			/*background-color: #9d91aa;*/
-			background-color: #1a1a1a;
-			color: white;
-			flex: 1 50%;
-			position: relative;
-		}
-		.child3 {
-			background-color: #224a54;
-			flex: 1 50%;
-			color: white;
-			position: relative;
-		}
-		.child4 {
-			background: linear-gradient(#b84336, #c44736);
-			flex: 1 100%;
-			color: white;
-			position: relative;
-		}
-		.child5 {
-			background: linear-gradient(darkcyan, #0AB);
-			flex: 1 50%;
-			color: white;
-			position: relative;
-		}
-		.child6 {
-			background: linear-gradient(darkcyan, #000);
-			flex: 1 50%;
-			color: white;
-			position: relative;
-		}
-		.child7 {
-			background: linear-gradient(#b84336,#c44736);
-			flex: 1 100%;
-			color: white;
-			margin: 50px auto 0 auto;
-		    position: relative;
-		    display: flex;
-		    flex-flow: row wrap;
-
-		}
-		.child7-child {
-			flex: 1 400px;
-		}
-		
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -199,31 +16,33 @@
 		</div>
 
 		<div class="work-items">
-			<!-- <h2 class="section-header hello">hi...</h2> -->
-
 			
 			<h2 class="section-header">Work.</h2>
 			
 			<div class="work-item child1 ">
 				<div class="child1-child1">
-					<div>
-						<h2 class="student-work-header" style="text-decoration: underline;">Student <br> Management</h2>
+
+					<div style="position: relative;">
+						<h2 class="student-work-header">Student <br> Management</h2>
+						<a href="StudentManagement/index.html" class="link-allItem"></a>
 					</div>
-					<span class="viewProjectShow">View project</span>
+					<span class="viewProjectShow"><a href="StudentManagement/index.html" style="color:#FFF; text-decoration:none;">View project</a></span>
 					
 					</div>
 					<div class="child1-child2 paragraph_font_size">
-						<p> This is a demo Student Management tool, where user can view, search,<br/> create, edit and delete student/s.<br/>
-							I have used :
-						<ul>
-							<li><span style="border-bottom: 1px solid #000; color:#000">JQuery Library </span> - A popular library for DOM manupulation</li>
-							<li><span style="border-bottom: 1px solid #000; color:#000">JQuery Ajax </span> - The function returns promise object. The promise objects has been thenified in which I am updating a DOM element.</li>
-							<li><span style="border-bottom: 1px solid #000; color:#000">CSS3 Flex Layout - </span> With above response of ajax request, I have created flex container with multiple flex childrens which looks like table, row and column. The first row is sticky which looks a like table <i style="color:black">header</i>. The last row of the container looks like a <i style="color:black">footer</i> which is also sticky. The data rows will get a scroll if it exceed height of the container.</li>
+						<p> This is a Student Management project which is hosted on <a href="https://pages.github.com/">github.io</a>. The source code is committed in my github <a href="https://github.com/SawSoni/sawsoni.github.io.git"> repository </a>. The project has features of view, search, create, edit and delete student/s. Please click <a href="StudentManagement/index.html">here </a> to view the project's features.<br/>
+							To build this project, i am using :
+						<ul style="list-style-type: square; color: #000">
+							<li>JQuery Library  - <span class='white'>A popular library for DOM manupulation.</span></li>
+							<li>JQuery Ajax  - <span class='white'>The function returns promise object. The promise objects has been thenified in which I am updating a DOM element.</span></li>
+							<li>CSS3 Flex Layout - <span class="white">With above response of ajax request, I have created flex container with multiple flex childrens which looks like table, row and column. The first row is sticky which looks a like table <i style="color:black">header</i>. The last row of the container looks like a <i style="color:black">footer</i> which is also sticky. The data rows will get a scroll if it exceed height of the container.</span></li>
+							<li>My JSON Server - <span class="white">For JSON Server, I am using Fake Online REST server. Please click <a href="https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students">here </a> to see my <a href="https://my-json-server.typicode.com/SawSoni/sawsoni.github.io/students">fake server </a></span></li>
 							
 						</ul>
 						</p>
 					</div>
-					<a href="StudentManagement/index.html" class="link-allItem"></a>
+					<!--
+					<a href="StudentManagement/index.html" class="link-allItem"></a> -->
 			</div>
 			<!-- child1 end -->
 			<div class="work-item child2 ">
@@ -279,8 +98,6 @@
 					<img src="image/mypix_small.png"/>
 				</div>
 			</div>
-
-
 			
 		</div>
 		<!-- work-items end -->

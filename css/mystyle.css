@@ -1,0 +1,188 @@
+div {
+	border:0;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper {
+		width: 100%;
+	    text-align: center;
+		font-size: 16px;
+		font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+	}
+
+.portfolio-intro {
+	position: relative;
+	height: 100%;
+}
+
+.site-name {
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 0.26em;
+font-weight: 700;
+padding-top: 20px;
+text-align: center;
+/*font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;*/
+}
+
+.site-name-link {
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	color: #783127; 
+	border-bottom: 0px solid #783127;
+	text-decoration: none;
+	transition: border-bottom 0.2s ease-in-out;
+		
+}
+.site-name-link:hover {
+	border-bottom: 3px solid #783127;
+}
+.singal-page-header {
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 1.3em;
+}
+.ampersant {
+	font-family: Baskerville, "EB Garamond", 					serif;
+	font-style: italic
+}
+.work-items {
+	width: 90%;
+	margin: -80px auto 0 auto;
+	padding: 30px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.section-header {
+
+	font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 176px;
+    font-weight: 700;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+    line-height: 0.6em;
+    pointer-events: none;
+    flex: 1 100%;
+}
+
+.viewProjectShow {
+	background-color: none;
+	padding: 10px 15px;
+	position: absolute;
+	top: -30px;
+	right: 0;
+	transition: all .8s linear 0s;
+	width: 100px;
+	height: 0;
+	text-align: center;
+	/*z-index: 100;*/
+	color: transparent;
+}
+
+
+.child1:hover .viewProjectShow,.child2:hover .viewProjectShow,.child3:hover .viewProjectShow,.child4:hover .viewProjectShow,.child5:hover .viewProjectShow,.child6:hover .viewProjectShow{
+	top: 0px;
+	height:50px;
+	line-height: 50px;
+	background-color: #000;
+	color: #fff;
+}
+
+.work-item {
+	padding: 30px;
+    box-sizing: border-box;
+
+}
+.child1 {
+	background-color: #35936c;
+    flex: 1 100%;
+    text-align: left;
+    margin: -150px auto 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+.link-allItem {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.child1-child1 {
+	flex: 1 10%;
+	background-color: #35936c;
+	color: #fff;
+
+}
+.child1-child2 {
+	flex: 2 20%;
+	background-color: #35936c;
+	color: #fff;
+
+}
+.paragraph_font_size {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+.student-work-header {
+	min-height: 2em;
+	margin-bottom: 1em;
+	font: normal 62px "EB Garamond", serif;
+}
+
+.child2 {
+	/*background-color: #9d91aa;*/
+	background-color: #1a1a1a;
+	color: white;
+	flex: 1 50%;
+	position: relative;
+}
+.child3 {
+	background-color: #224a54;
+	flex: 1 50%;
+	color: white;
+	position: relative;
+}
+.child4 {
+	background: linear-gradient(#b84336, #c44736);
+	flex: 1 100%;
+	color: white;
+	position: relative;
+}
+.child5 {
+	background: linear-gradient(darkcyan, #0AB);
+	flex: 1 50%;
+	color: white;
+	position: relative;
+}
+.child6 {
+	background: linear-gradient(darkcyan, #000);
+	flex: 1 50%;
+	color: white;
+	position: relative;
+}
+.child7 {
+	background: linear-gradient(#b84336,#c44736);
+	flex: 1 100%;
+	color: white;
+	margin: 50px auto 0 auto;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.child7-child {
+	flex: 1 400px;
+}
+.underline {
+	text-decoration: underline;
+}
+.white {
+	color: #FFF;
+}
