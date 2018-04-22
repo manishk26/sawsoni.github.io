@@ -4,30 +4,42 @@
 	<title>Dynamic table</title>
 	<script src="js/external/jquery/dist/jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/dynamic_table.css">
+	<link rel="stylesheet" type="text/css" href="css/layout10.css">
+
 	<script type="text/javascript" src="js/dynamic_table.js"></script>
 </head>
 <body>
-
+<div id="wrapper">
+		<header id="site_header" style="display: flex; padding:20px;">
+			<div class="site_header_container" style="flex: 1 1 20px">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="site_header_container" style="flex: 2 2 40px">
+				<h1> This is a dynamic row example</h1>
+			</div>
+		</header>
+	
+	</div>
 	<div><a href="index.html">Home</a></div>
 	<code>
 		 <p>$#60 = < </p>
 		 <p>$#62 = > </p>
 		$('table').each(function(index,obj){ 
 
- 			var tableRow = '$#60 tr $#62';
+ 			var tableRow = '< tr >';
  				$('tr:last td').each(function(ind,object){ 
 
- 					tableRow = tableRow + '$#60td$#62' + $(this).html()  + '$#60/td $#62';
+ 					tableRow = tableRow + '< td >' + $(this).html()  + ' < /td >';
 
  				}); 
- 				tableRow = tableRow + '$#60/tr$#62';
+ 				tableRow = tableRow + ' < /tr >';
 
  				console.log(tableRow );
 
  				$(this).append(tableRow);
 
 	</code>
-	<div id="wrapper">
+	<div id="wrapper_dt">
 
 
 	<a href="#" id="rowButton" >Create new row </a>
@@ -59,5 +71,8 @@
 	</form>
 
 </div>
+<div style="margin-top: 100px">
+		<hr/>
+	</div>
 </body>
 </html>

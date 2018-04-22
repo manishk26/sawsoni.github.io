@@ -1,7 +1,31 @@
 	body {
-		padding: 30px;
+		/*padding: 30px;*/
 		font-family: sans-serif;
 	}
+
+  .flex_container{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+    .flex_container > div > a {
+      display: block;
+      text-decoration: none;
+      color: #0AB;
+      transition: all .4s;
+    }
+    .flex_container > div > a:hover {
+      background-color: #0AB;
+      color: #000;
+      padding: 0 30px;
+      border-radius: 10px;
+    }
+
+  .page_header{
+      background: linear-gradient(darkcyan, #FFF);
+      padding: 5px;
+      color: #FFF;
+    }
 
 	.box {
 		box-sizing: border-box;
@@ -52,8 +76,17 @@
       	transition: all 0.4s;
     }
 
-     h1{
+     .childContent{
       margin-top: 20%;
       margin-bottom: 20px;
+    }
+
+    .floatRight {
+      position: relative;
+      top: -380px;
+      right: 80px;
+      float: right;
+      /*font-size: 1.3em;*/
+      margin-left: 10px;
     }
     

@@ -4,47 +4,66 @@
 	<title>toggle image with animation</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/toggle_img_with_animation.css">
-	<style>
-		.flex {
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-around;
-		}
-	</style>
+	
 </head>
 
 <body>
-	<div class="flex">
-	<div><a href="../index.html">Home</a></div>
-	<div><a href="assign.html">Assign</a></div>
-	<div><a href="bubble.html">bubble</a></div>
-	<div><a href="button_toggle_custom_attr.html">button_toggle</a></div>
-	
-	<div><a href="creat_table.html">creat_table</a></div>
-	<div><a href="dropdown.html">dropdown</a></div>
-	<div><a href="exercise 10 _for loop.html">for loop</a></div>
-	<div><a href="exercise3.html">exercise3</a></div>
-	<div><a href="exercise5_if_condi.html">if_condi</a></div>
-	<div><a href="exercise6_switch_stat.html">switch</a></div>
-	<div><a href="exercise7_nestedfunction_if.html">InputValue</a></div>
-	<div><a href="exercise9_toggale_button.html">togga_button</a></div>
-	<div><a href="layout4MQ.html">exercise4MQ</a></div>
-	<div><a href="practice_navbar.html">navbar</a></div>
-	<div><a href="toggle_div_bg.html">div_bg</a></div>
-	<div><a href="toggle_manydiv_bgcolor.html">manydiv</a></div>
-	<div><a href="toggle_with _custom_attribute_data.html">custom_attr</a></div>
+
+	<div class="wrapper">
+		<header class="page_header">
+			<h1>LOGO</h1>
+		</header>
+	</div>
+
+	<div class="flex_container">
+		<div><a href="../index.html">Home</a></div>
+		<div><a href="assign.html">Assign</a></div>
+		<div><a href="bubble.html">Bubble</a></div>
+		<div><a href="button_toggle_custom_attr.html">Toggle Button</a></div>
+		
+		<div><a href="creat_table.html">Creat Table</a></div>
+		<div><a href="dropdown.html">Dropdown</a></div>
+		<div><a href="exercise 10 _for loop.html">For Loop</a></div>
+		<!-- <div><a href="exercise3.html">exercise3</a></div> -->
+		<div><a href="exercise5_if_condi.html">If Condition</a></div>
+		<div><a href="exercise6_switch_stat.html">Switch</a></div>
+		<div><a href="exercise7_nestedfunction_if.html">Input Value</a></div>
+		<div><a href="exercise9_toggale_button.html">Another Toggle Button </a></div>
+		<!-- <div><a href="layout4MQ.html">exercise4MQ</a></div> -->
+		<!-- <div><a href="practice_navbar.html">navbar</a></div> -->
+		<!-- <div><a href="toggle_div_bg.html">div_bg</a></div> -->
+		<!-- <div><a href="toggle_manydiv_bgcolor.html">manydiv</a></div> -->
+		<div><a href="toggle_with _custom_attribute_data.html">Custom Attr</a></div>
 
 	</div>
+
 	<div id="rel_parent" class="relative box" onclick="toggleTextDiv()">
 		<img src="imgs/sea.jpg" alt="img">
-
+		
 		<div id="abs_child" class="absolute">
-			<h1><em>JavaScript is fun</em></h1>
+			<h1 class="childContent"><em>JavaScript is fun</em></h1>
     		<p><em>JavaScript is event driven language. This is how JS toggle animation is done</em></p>
 		</div>
 
 	</div>
-	
+	<div class="floatRight">
+	<h4>Click on image to see the JS toggle animation.</h4>
+	<ul>
+		<li>First need one parent div.</li>
+		<li>And parent div is having two child 1: img 2: div With content</li>
+		<li>Now child div having two class in my case<br>
+		1st class is .absolute and in this class the div position <br> is absolute having negative value of top & left -100%<br>and background color is rgba(00,00,00,0.6) here <b style="color:red">a</b> stand for <br>alpha and the value of alpha is 0.6,<br>opacity for a color 0.0 (fully transparent) and 1.0 (fully opaque).</li>
+		<li>Transiton property value with all 0.4s time</li> 
+		<ul>
+			<li>2nd class is .newclassdiv</li>
+			<li>Now in this case i change the value of top & left to 0</li>
+			<ul>
+			<li>I have written a function which <br>is toggling with these class on click event</li>
+		</ul>
+		</ul>
+		
+	</ul>
+	</div>
 
 <script type="text/javascript" src="js/toggle_img_with_animation.js"></script>
 </body>

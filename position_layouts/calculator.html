@@ -3,12 +3,37 @@
 <head>
 	<title>My Calculator</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/layout10.css">
 	<script src="js/external/jquery/dist/jquery.js"></script>
 	<script src="js/calc.js"></script>
+	<style>
+		body {
+			margin:20px;
+		}
+		button {
+			padding: 5px;
+			background-color: #DDD;
+			border: 1px solid black;
+		}
+		input {
+			padding:5px;
+		}
+	</style>
 </head>
 <body>
-	<div><a href="index.html">Home</a></div>
-	<h3> This is my calculator</h3>
+	<div>
+	<div id="wrapper">
+		<header id="site_header" style="display: flex; padding:20px;">
+			<div class="site_header_container" style="flex: 1 1 20px">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="site_header_container" style="flex: 2 2 40px">
+				<h1> This is my calculator</h1>
+			</div>
+		</header>
+	
+	</div>
+	<div style="margin-top: 100px">
 	<p> Sum: <span id='result'></span> </p>
 	<p> Difference: <span id='diffResult'></span></p>
 	<p> Muitipication: <span id='multiplyResult'></span></p>
@@ -17,5 +42,10 @@
 	<button id='add'>Add</button>
 	<button id="sub">Substract</button>
 	<button id="multi">Multiply</button>
+	<div style="margin-top: 100px">
+		<hr/>
+	</div>
+</div>
+</div>
 </body>
 </html>

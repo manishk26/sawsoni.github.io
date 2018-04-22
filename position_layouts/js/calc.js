@@ -1,12 +1,12 @@
 $(document).ready(function(){
-	console.log("document is ready for jquery");
+	console.log("document is ready ");
 
 	/**
-	adding an eventlister on calculator
-	The event is click
+	* An eventlister on calculator
+	* The event is click
 	**/
 
-	$('#add').on('click mouseover', function(){
+	$('#add').on('click', function(){
 		var x = $('#x').val();
 		var y = $('#y').val();
 		var result = $('#result');
@@ -14,7 +14,7 @@ $(document).ready(function(){
 	})
 	
 
-	$('#sub').on('click mouseover', function(){
+	$('#sub').on('click', function(){
 		var x = $('#x').val();
 		var y = $('#y').val();
 		var diffresult = $('#diffResult');

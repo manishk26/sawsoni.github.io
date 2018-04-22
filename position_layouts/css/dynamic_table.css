@@ -1,5 +1,5 @@
 
- #wrapper {
+ #wrapper_dt {
  	width: 80%;
  	margin: 15px auto;
  	box-sizing: border-box;
@@ -27,13 +27,12 @@
  }
 
   .box {
-
   	 width: 33.33%;
   }
 
  tr {
   	width: 100%;
-  	/*background-color: green;*/
+  	border: 0px;
   	margin-right: 1px;
   }
 
