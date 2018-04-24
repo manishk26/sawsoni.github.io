@@ -181,13 +181,13 @@
       margin: 10px;
       
       padding: 12px;
-      background-color: #0AB;
+      background-color: var(--main-color-color);
       box-shadow: var(--main-shadow-h-size) var(--main-shadow-v-size) var(--main-shadow-b-size) var(--main-shadow-color);
   }
 
   .fieldsetArea {
     padding: 20px;
-    border: 2px solid #0AB;
+    border: 2px solid var(--main-color-color);
 
   }
 
@@ -200,7 +200,7 @@
   }
 
   .legendArea{
-    color: #A0A;
+    color: #FFF;
   }
 
 
@@ -229,9 +229,9 @@
     text-decoration: none;
   }
  
-  .buttonTD> a >.btnAnc {
+  .buttonTD > a >.btnAnc {
       margin-top: 20px;
-      background-color: #0AB;
+      background-color: var(--main-color-color);
       padding: 6px 10px;
       color: #FFF;
       cursor: pointer;

@@ -1,6 +1,25 @@
 {
   "persons": [],
-  "products": [],
+  "products": [
+    {
+      "id":"1",
+      "category":"Kurtas",
+      "brand":"Tissu",
+      "name":"Peach Printed Kurta",
+      "image":"Vedic-Pink-Printed-Kurta-5843-502407003.png",
+      "price":"2199",
+      "description":"Exhibiting a fabulous mix of pink and white, this kurta from Vedic is a heart stealer. Featuring contrast piping on the edges and potli-button detail on the placket, it is decorated with a chic contemporary-block print. Fashioned in regular fit from cotton for plush softness, it will go well with white palazzo pants and mojaris."
+    },
+    {
+      "id":"2",
+      "category":"Kurtas",
+      "brand":"Vedic",
+      "name":"Pink Printed Kurta",
+      "image":"Vedic-Pink-Printed-Kurta-5843-502407003.png",
+      "price":"2999",
+      "description":"Exhibiting a fabulous mix of pink and white, this kurta from Vedic is a heart stealer. Featuring contrast piping on the edges and potli-button detail on the placket, it is decorated with a chic contemporary-block print. Fashioned in regular fit from cotton for plush softness, it will go well with white palazzo pants and mojaris."
+    }
+  ],
   "students": [
     {
       "id": "1",

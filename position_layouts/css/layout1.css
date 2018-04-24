@@ -4,11 +4,16 @@
 		padding: 0;
 		box-sizing: border-box;
 	}
+
 	#wrapper {
 		width: 100%;
 	}
+	.headerWrapper {
+		background-color: #DDD;
+	}
 	section {
 		width: 100%;
+		margin-top: 30px;
 	}
 	#section_container {
 		width: 90%;

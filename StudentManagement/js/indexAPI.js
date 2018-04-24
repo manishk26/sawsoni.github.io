@@ -217,16 +217,16 @@ function getStudentDetail(id) {
                             </tr>
                             <tr>
                                 <td class="buttonTD" colspan="2">
-                                    
+                                        <a href="#">
                                         <button class="btnAnc" onclick="cancel(this)">
                                             Cancel
                                         </button>
-                                    
-                                    
+                                        </a>
+                                        <a href="#">
                                         <button class="btnAnc" onclick="updateStudent(this)">
                                             Save
                                         </button>
-                                    
+                                        </a>
                                 </td>
                             </tr>
                         </table>
