@@ -82,17 +82,19 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color:var(--main-color-color);
+		/*color:var(--main-color-color);*/
 		margin-top: 10px;
 	}
 	/*********ROW Header*************/	
 	 .header {
 	 		margin-top: 0px;
 			position: sticky;
+			top: 73px;
 			width: 100%;
-
 			background-color: var(--main-color-color);
+			
 		}
+		
 	/************ROW flex****************/
 	.rowContainer {
 			width: 100%;
@@ -104,19 +106,26 @@
 	.row {
 		display: flex;
 		flex-flow: row wrap;
-		border-top:  1px solid grey;
+		border-top:  1px solid var(--main-color-color);
 	}
+	.header > div:nth-child(1),.header >div:nth-child(2), .header >div:nth-child(3),.header >div:nth-child(4),.header >div:nth-child(5){
+		color: #FFF;
+	}
+	/*.header > div {
+		color: #FFF;
+	}*/
 
 	.row > div {
 		flex:1 0 20%;
 		padding: 10px;
-		border-right: 1px solid grey;
+		border-right: 1px solid var(--main-color-color);
 		color: #000;
 
 	}
 
+
 	.rowContainer > div:nth-last-child(1) {
-		border-bottom: 1px solid grey;
+		border-bottom: 1px solid var(--main-color-color);
 	}
 	.deleteBtn {
 		color: red;
