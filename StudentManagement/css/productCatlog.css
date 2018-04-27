@@ -1,0 +1,127 @@
+ * {
+ 	margin:0;
+ 	padding: 0;
+ }
+ 
+ #wrapper {
+ 	width: 98%;
+ 	margin: 0 auto;
+ 	box-sizing: border-box;
+ 	/*background-color: #DDD;*/
+ 	/*border:1px solid #DDD;*/
+ }
+
+ .headerFlex-container {
+ 	display: flex;
+ 	flex-flow: row wrap;
+ 	/*padding: 5px;*/
+ 	justify-content: space-between;
+ 	border:1px solid #DDD;
+ }
+ .headerFlex-container >.headerFlex-Child {
+ 	/*height: 50px;*/
+  	text-align: center;
+  	line-height: 50px;
+ }
+ .headerFlex-Child:nth-child(1) {
+ 	flex: 0 0 15%;
+ }
+ .headerFlex-Child:nth-child(2) {
+ 	flex: 0 0 50%;
+ }
+ .headerFlex-Child:nth-child(3) {
+ 	flex: 0 0 25%;
+ 	position: relative;
+ 	
+ 	/*align-self: right;*/
+ 	/*align-content: flex-end;*/
+
+ }
+ .headerFlex-Child:nth-child(4) {
+ 	flex: 0 0 8%;
+ }
+
+ .nav-container {
+ 	display: flex;
+ 	flex-flow: row wrap;
+ 	/*align-content: flex-start;*/
+ }
+ .nav-container > div {
+ 	flex: 0 10%;
+ 	margin: 5px;
+  	text-align: center;
+  	
+ }
+ .nav-container > div > a {
+ 	display: block;
+ 	width: 100%;
+ }
+
+ .searchInput {
+ 	display: block;
+ 	/*font-size: 1.2em;*/
+ 	margin: 8px auto 0 auto;
+ 	height: 40px;
+	padding-left: 50px;
+	border-radius: 4px;
+	background-color: #DDD;
+	color: #FFF;
+	transition: all .3s;
+	width: 300px;
+	
+	
+ }
+ .icon-container {
+ 	position:absolute;
+	top: 3px;
+	left: 1px;
+ 	width: 54px;
+ 	height: 53px;
+	}
+ .search_child {
+ 	display: block;
+ 	height: 53px;
+ 	line-height: 53px;
+ 	width: 54px;
+ 	position: relative;
+ 	cursor: pointer;
+ 	
+}
+
+ .search_child > i  {
+		display: block;
+		width: 54px;
+		font-size: 1.6em;
+		color: #FFF;
+		position:absolute;
+		top: 13px;
+		left: 1px;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		
+	}
+
+	 .searchInput:focus {
+		background-color:#0F0B35;
+		outline: 0;
+		color:#FFF;
+		}
+/*header end*/
+
+	.asideSectionBody {
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	.asideBody {
+		flex:0 20%;
+		border:1px solid #DDD;
+		justify-content: space-between;
+	}
+
+	.sectionBody {
+		flex:0 75%;
+		border:1px solid #DDD;
+	}
+

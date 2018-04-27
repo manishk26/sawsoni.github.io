@@ -16,7 +16,7 @@ $(document).ready(() => {
         <div>${student.class}</div>
         <div>${student.age}</div>
         `;
-        return row = `<div class='row'>${columns}</div>`;
+        return var row = `<div class='row'>${columns}</div>`;
     }
     // create rows of students
     function getRows(students) {
